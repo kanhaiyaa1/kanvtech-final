@@ -1,0 +1,682 @@
+/* Kanvtech theme overrides — fonts + brand colors, layered on top of the compiled Tailwind bundle */
+
+/* Fonts: Poppins (headings) + Inter (body), matching the logo's rounded-geometric wordmark */
+:root {
+    --font-nunito: "Inter", "Helvetica Neue", Arial, sans-serif;
+    --font-heading: "Poppins", "Helvetica Neue", Arial, sans-serif;
+
+    /* Brand colors from the logo: cyan K, deep-cyan/navy wordmark, coral swoosh */
+    --color-accent: #F26A3D;
+    --color-brand-navy: #0B1B2B;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+}
+
+/* Coral accent — use sparingly: one highlight word, one underline, hover states */
+.text-accent { color: var(--color-accent); }
+.border-accent { border-color: var(--color-accent); }
+.bg-accent { background-color: var(--color-accent); }
+.hover\:text-accent:hover { color: var(--color-accent); }
+.hover\:border-accent:hover { border-color: var(--color-accent); }
+
+/* Hero/heading gradient: bright cyan -> deep cyan */
+.text-gradient-brand {
+    background-image: linear-gradient(90deg, #05B4F3, #039ECE);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+/* WhatsApp brand green for the floating button (fixed hex, not a theme token) */
+.bg-whatsapp { background-color: #25D366; }
+
+/* ============================================================
+   CLEANLINESS PASS
+   ============================================================ */
+
+/* Heading / body neutrals from the logo palette.
+   Wrapped in @layer base so utility classes (text-white, text-primary, etc.)
+   from Tailwind's `utilities` layer always win, matching how Tailwind v4's
+   cascade layers (theme, base, components, utilities) are meant to resolve —
+   unlayered CSS would otherwise beat utilities regardless of specificity. */
+@layer base {
+    h1, h2, h3, h4, h5, h6 { color: var(--color-brand-navy); }
+    .dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark h6 { color: var(--color-white); }
+    body { color: #5B6472; }
+    .dark body { color: var(--color-white); }
+}
+
+/* Font weight ceiling: never render above 700 */
+h1, h2, h3, h4, h5, h6, .font-bold { font-weight: 700; }
+.font-semibold { font-weight: 600; }
+.font-medium { font-weight: 500; }
+
+/* Eyebrow labels: consistent small-caps style, primary color, wide tracking */
+h6.text-primary.text-sm.font-bold.uppercase,
+span.text-primary.text-xs.font-bold.uppercase {
+    letter-spacing: .08em;
+}
+
+/* Section background wash: soft cyan instead of gray, used sparingly for alternating sections */
+.bg-gray-50 { background-color: #F2FBFE; }
+.dark .bg-gray-50 { background-color: var(--color-slate-800); }
+
+/* Cards: consistent radius + hairline border, minimal shadow */
+.rounded-md, .rounded-xl { border-radius: 14px; }
+.shadow-sm, .shadow-xs {
+    box-shadow: 0 1px 2px rgba(11, 27, 43, .04);
+    border: 1px solid #EAEEF2;
+}
+.dark .shadow-sm, .dark .shadow-xs { border-color: rgba(255, 255, 255, .08); }
+
+/* Buttons: unified pill shape, smooth hover, consistent everywhere */
+a.rounded-md, button.rounded-md { border-radius: 999px; }
+a[class*="bg-primary"], button[class*="bg-primary"] {
+    transition: transform .25s ease-out, box-shadow .25s ease-out, background-color .25s ease-out, border-color .25s ease-out;
+}
+a[class*="bg-primary"]:hover, button[class*="bg-primary"]:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(3, 158, 206, .18);
+}
+a.border-primary.bg-transparent, a.border-primary.text-primary {
+    transition: transform .25s ease-out, background-color .25s ease-out, color .25s ease-out;
+}
+a.border-primary.bg-transparent:hover, a.border-primary.text-primary:hover {
+    transform: translateY(-2px);
+}
+
+/* ============================================================
+   ANIMATION LAYER
+   ============================================================ */
+
+/* Card / feature hover lift (buttons handled above) */
+.group.rounded-xl, .group.rounded-md, .counter-box, .card-hover {
+    transition: transform .25s ease-out, border-color .25s ease-out, box-shadow .25s ease-out;
+}
+.group.rounded-xl:hover, .group.rounded-md:hover {
+    transform: translateY(-4px);
+}
+
+/* Nav: smooth background/shadow transition on scroll-triggered sticky state */
+#topnav { transition: background-color .3s ease-out, box-shadow .3s ease-out, backdrop-filter .3s ease-out; }
+#topnav.nav-sticky { backdrop-filter: saturate(180%) blur(8px); }
+
+/* Nav links: animated underline in primary color on hover/active */
+.navigation-menu > li > a {
+    position: relative;
+}
+.navigation-menu > li > a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background-color: var(--color-primary);
+    transition: width .25s ease-out;
+}
+.navigation-menu > li > a:hover::after,
+.navigation-menu > li.active > a::after {
+    width: 100%;
+}
+
+/* Hero entrance: fade-up, staggered per line, runs once on load */
+.hero-animate {
+    opacity: 0;
+    transform: translateY(16px);
+    animation: kv-fade-up .6s ease-out forwards;
+}
+.hero-animate.hero-delay-1 { animation-delay: .15s; }
+.hero-animate.hero-delay-2 { animation-delay: .3s; }
+.hero-animate.hero-delay-3 { animation-delay: .45s; }
+
+@keyframes kv-fade-up {
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Gentle float loop for hero illustration/imagery */
+.float-loop {
+    animation: kv-float 5s ease-in-out infinite;
+}
+@keyframes kv-float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+/* AOS timing/easing overrides — calm, not bouncy */
+[data-aos] {
+    transition-duration: 500ms !important;
+    transition-timing-function: ease-out !important;
+}
+
+/* Stagger card reveals within a grid, ~80-100ms apart */
+.grid > [data-aos]:nth-child(2) { transition-delay: 90ms !important; }
+.grid > [data-aos]:nth-child(3) { transition-delay: 180ms !important; }
+.grid > [data-aos]:nth-child(4) { transition-delay: 270ms !important; }
+.grid > [data-aos]:nth-child(5) { transition-delay: 360ms !important; }
+.grid > [data-aos]:nth-child(6) { transition-delay: 450ms !important; }
+
+/* Respect prefers-reduced-motion: disable all transforms/reveals */
+@media (prefers-reduced-motion: reduce) {
+    [data-aos], .hero-animate, .float-loop, .group.rounded-xl, .group.rounded-md,
+    a[class*="bg-primary"], button[class*="bg-primary"], .counter-box {
+        animation: none !important;
+        transition: none !important;
+        transform: none !important;
+        opacity: 1 !important;
+    }
+}
+
+/* ============================================================
+   TESTIMONIAL MARQUEE (two-row, opposite-direction, CSS-only)
+   ============================================================ */
+
+.testimonial-marquee-row {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+
+/* Fade-to-smoke edges so cards appear to dissolve in/out at left & right */
+.testimonial-marquee-row::before,
+.testimonial-marquee-row::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: clamp(48px, 10vw, 160px);
+    z-index: 2;
+    pointer-events: none;
+}
+.testimonial-marquee-row::before {
+    left: 0;
+    background: linear-gradient(to right, #FFFFFF, rgba(255, 255, 255, 0));
+}
+.testimonial-marquee-row::after {
+    right: 0;
+    background: linear-gradient(to left, #FFFFFF, rgba(255, 255, 255, 0));
+}
+.dark .testimonial-marquee-row::before {
+    background: linear-gradient(to right, var(--color-slate-900), rgba(15, 23, 42, 0));
+}
+.dark .testimonial-marquee-row::after {
+    background: linear-gradient(to left, var(--color-slate-900), rgba(15, 23, 42, 0));
+}
+
+.testimonial-track {
+    display: flex;
+    width: max-content;
+    gap: 1.5rem;
+    will-change: transform;
+}
+
+.testimonial-track-ltr { animation: kv-marquee-ltr 38s linear infinite; }
+.testimonial-track-rtl { animation: kv-marquee-rtl 38s linear infinite; }
+
+@keyframes kv-marquee-ltr {
+    from { transform: translateX(-50%); }
+    to { transform: translateX(0); }
+}
+@keyframes kv-marquee-rtl {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+}
+
+.testimonial-marquee-row:hover .testimonial-track {
+    animation-play-state: paused;
+}
+
+.testimonial-card {
+    flex: 0 0 320px;
+    background: #FFFFFF;
+    border: 1px solid #EAEEF2;
+    border-radius: 14px;
+    padding: 1.5rem;
+    box-shadow: 0 1px 2px rgba(11, 27, 43, .04);
+}
+.dark .testimonial-card {
+    background: var(--color-slate-900);
+    border-color: rgba(255, 255, 255, .08);
+}
+
+.testimonial-card .stars i {
+    color: var(--color-accent);
+    font-size: 14px;
+}
+
+.testimonial-card .quote {
+    color: #5B6472;
+    font-size: .9375rem;
+    line-height: 1.6;
+    margin-top: .75rem;
+    margin-bottom: 1.25rem;
+}
+.dark .testimonial-card .quote { color: var(--color-white); }
+
+.testimonial-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 999px;
+    background: color-mix(in srgb, var(--color-primary) 10%, transparent);
+    color: var(--color-primary);
+    font-weight: 600;
+    font-size: .8125rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.testimonial-card .name {
+    color: var(--color-brand-navy);
+    font-weight: 600;
+    font-size: .9375rem;
+}
+.dark .testimonial-card .name { color: var(--color-white); }
+
+.testimonial-card .role {
+    color: #5B6472;
+    font-size: .8125rem;
+}
+
+@media (max-width: 640px) {
+    .testimonial-card { flex-basis: 260px; padding: 1.125rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .testimonial-track-ltr, .testimonial-track-rtl {
+        animation: none !important;
+    }
+}
+
+/* ============================================================
+   INDUSTRIES — sticky scroll-stacking cards
+   ============================================================ */
+
+.industry-stack {
+    position: relative;
+    margin-top: 1rem;
+}
+
+.industry-sticky {
+    position: sticky;
+    top: 96px;
+    padding-bottom: 2.5rem;
+}
+
+.industry-card {
+    position: relative;
+    background: #FFFFFF;
+    border: 1px solid #EAEEF2;
+    border-radius: 20px;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr;
+    box-shadow: 0 1px 2px rgba(11, 27, 43, .04);
+    transition: transform .4s ease-out, opacity .4s ease-out, box-shadow .4s ease-out;
+}
+.industry-card-tint { background: #F2FBFE; }
+.dark .industry-card { background: var(--color-slate-900); border-color: rgba(255, 255, 255, .08); }
+.dark .industry-card-tint { background: var(--color-slate-800); }
+
+.industry-card-media {
+    min-height: 280px;
+}
+.industry-card-media img {
+    width: 100%;
+    height: 100%;
+    min-height: 280px;
+    object-fit: cover;
+    display: block;
+}
+
+.industry-card-body {
+    padding: 2.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: .75rem;
+    justify-content: center;
+}
+
+@media (min-width: 768px) {
+    .industry-card {
+        grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+        align-items: stretch;
+    }
+    .industry-card-reverse {
+        grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
+    }
+    .industry-card-reverse .industry-card-media {
+        order: 2;
+    }
+    .industry-card-media { min-height: 460px; }
+    .industry-card-media img { min-height: 460px; }
+    .industry-card-body { padding: 3rem 3.5rem; }
+}
+
+.industry-card-icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 999px;
+    background: color-mix(in srgb, var(--color-primary) 8%, transparent);
+    color: var(--color-primary);
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.industry-card-title {
+    color: var(--color-brand-navy);
+    font-weight: 600;
+    font-size: 1.375rem;
+    margin-top: .5rem;
+}
+.dark .industry-card-title { color: var(--color-white); }
+
+.industry-card-desc {
+    color: #5B6472;
+    font-size: 1rem;
+    line-height: 1.6;
+    max-width: 46rem;
+}
+.dark .industry-card-desc { color: rgba(255, 255, 255, .7); }
+
+/* Coral detail accent, used sparingly on the icon's inner ring */
+.industry-card-icon::after {
+    content: "";
+    position: absolute;
+    margin-top: -56px;
+    width: 8px;
+    height: 8px;
+    border-radius: 999px;
+    background: var(--color-accent);
+    transform: translate(20px, -4px);
+}
+
+/* Last card in the stack reads as the "active" one on top: stronger shadow */
+.industry-sticky:last-child .industry-card {
+    box-shadow: 0 16px 34px rgba(11, 27, 43, .14);
+}
+
+/* Cards behind the next one: scaled + dimmed, toggled via JS as the next card reaches the pin line */
+.industry-sticky.is-covered .industry-card {
+    transform: scale(.95);
+    opacity: .85;
+    box-shadow: 0 1px 2px rgba(11, 27, 43, .04);
+}
+
+/* Mobile: keep the same sticky-stack overlap as desktop, just sized for small screens */
+@media (max-width: 767px) {
+    .industry-sticky {
+        padding-bottom: 1.75rem;
+    }
+    .industry-card-body { padding: 1.75rem 1.5rem; }
+    .industry-card-media, .industry-card-media img { min-height: 220px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .industry-sticky { position: static; }
+    .industry-card, .industry-sticky.is-covered .industry-card {
+        transform: none !important;
+        opacity: 1 !important;
+        transition: none !important;
+    }
+}
+
+/* ============================================================
+   FOOTER REVEAL — footer sits fixed at the bottom; page content
+   scrolls over it and only uncovers it at the very end of the page.
+   #site-content wraps everything except <footer>; JS sets its
+   margin-bottom to the footer's real height so the reveal gap is exact.
+   ============================================================ */
+
+#site-content {
+    position: relative;
+    z-index: 1;
+    background: #FFFFFF;
+}
+.dark #site-content {
+    background: var(--color-slate-900);
+}
+
+footer.site-footer-fixed {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    /* Reduced motion: keep the footer in normal document flow instead of a scroll-reveal effect */
+    footer.site-footer-fixed {
+        position: static;
+    }
+    #site-content {
+        margin-bottom: 0 !important;
+    }
+}
+
+/* ============================================================
+   "Why Businesses Choose Kanvtech" tabs — short, uniform image height
+   ============================================================ */
+.why-tab-img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+}
+@media (min-width: 768px) {
+    .why-tab-img { height: 160px; }
+}
+
+/* ============================================================
+   NAVBAR — breathing room + a sane megamenu
+   ============================================================ */
+
+#topnav .container {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    transition: padding .3s ease-out;
+}
+#topnav.nav-sticky .container {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* Contact snippet in the nav action zone */
+.nav-contact-email {
+    color: #5B6472;
+    font-weight: 500;
+    font-size: .875rem;
+    white-space: nowrap;
+}
+.nav-contact-email:hover { color: var(--color-primary); }
+.dark .nav-contact-email { color: rgba(255, 255, 255, .75); }
+
+/* Megamenu: the stock template centers this on the viewport at ~1100px wide,
+   which drifts far away from the "Solutions & Services" trigger. Pin it under
+   the trigger instead, and let it wrap into three compact columns. */
+#topnav .navigation-menu > li .submenu.megamenu {
+    position: absolute !important;
+    inset-inline-start: 0 !important;
+    top: 100% !important;
+    translate: 0 0 !important;
+    width: 620px !important;
+    max-width: min(620px, 92vw) !important;
+    white-space: normal !important;
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 1.5rem !important;
+    padding: 1.5rem !important;
+    box-shadow: 0 12px 30px rgba(11, 27, 43, .12);
+}
+#topnav .navigation-menu > li .submenu.megamenu > li {
+    width: auto !important;
+    flex: none !important;
+}
+#topnav .navigation-menu > li .submenu.megamenu > li > ul {
+    padding: 0 !important;
+}
+#topnav .navigation-menu > li .submenu.megamenu .sub-menu-item {
+    white-space: normal !important;
+}
+
+/* ============================================================
+   DELIGHT LAYER — small touches that make the page feel alive
+   ============================================================ */
+
+/* 1. Top scroll-progress bar */
+#scroll-progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 3px;
+    width: 0%;
+    background: linear-gradient(90deg, #05B4F3, #039ECE);
+    z-index: 1001;
+    transition: width .1s linear;
+}
+
+/* 2. Back-to-top: circular scroll-progress ring around the button */
+.back-to-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.back-to-top-ring {
+    position: absolute;
+    inset: 0;
+    transform: rotate(-90deg);
+}
+.back-to-top-ring-bg {
+    fill: none;
+    stroke: rgba(11, 27, 43, .1);
+    stroke-width: 3;
+}
+.dark .back-to-top-ring-bg { stroke: rgba(255, 255, 255, .15); }
+.back-to-top-ring-fg {
+    fill: none;
+    stroke: var(--color-primary);
+    stroke-width: 3;
+    stroke-linecap: round;
+    stroke-dasharray: 132;
+    stroke-dashoffset: 132;
+    transition: stroke-dashoffset .1s linear;
+}
+.back-to-top-icon {
+    position: relative;
+    z-index: 1;
+    width: 36px;
+    height: 36px;
+    border-radius: 999px;
+    background: var(--color-primary);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.05rem;
+    transition: transform .25s ease-out;
+}
+.back-to-top:hover .back-to-top-icon {
+    transform: translateY(-2px);
+}
+
+/* 3. WhatsApp floating button: gentle pulsing halo to invite a tap */
+.whatsapp-fab {
+    position: fixed;
+}
+.whatsapp-fab-halo {
+    position: absolute;
+    inset: 0;
+    border-radius: 999px;
+    background: #25D366;
+    opacity: .55;
+    animation: kv-whatsapp-pulse 2.4s ease-out infinite;
+    z-index: -1;
+}
+@keyframes kv-whatsapp-pulse {
+    0% { transform: scale(1); opacity: .45; }
+    100% { transform: scale(1.9); opacity: 0; }
+}
+
+/* 4. Click ripple on every primary button/link */
+.kv-ripple {
+    position: absolute;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, .55);
+    transform: scale(0);
+    animation: kv-ripple-anim .55s ease-out forwards;
+    pointer-events: none;
+}
+@keyframes kv-ripple-anim {
+    to { transform: scale(2.6); opacity: 0; }
+}
+
+/* 5. Testimonial card 3D tilt on hover */
+.testimonial-card {
+    transform-style: preserve-3d;
+    transition: transform .2s ease-out, box-shadow .2s ease-out;
+}
+.testimonial-card:hover {
+    box-shadow: 0 14px 28px rgba(11, 27, 43, .12);
+}
+
+/* 6. Counter "pop" once it finishes counting up */
+.counter-value.kv-counted {
+    display: inline-block;
+    animation: kv-counter-pop .4s ease-out;
+}
+@keyframes kv-counter-pop {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.18); }
+    100% { transform: scale(1); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .whatsapp-fab-halo { animation: none !important; display: none; }
+    .kv-ripple { animation: none !important; display: none; }
+    .testimonial-card { transition: none !important; }
+    .counter-value.kv-counted { animation: none !important; }
+    #scroll-progress-bar, .back-to-top-ring-fg { transition: none !important; }
+}
+
+/* ============================================================
+   HERO — full-bleed background photo, centered white text
+   ============================================================ */
+
+.hero-kv-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(11, 27, 43, .55) 0%, rgba(11, 27, 43, .65) 100%);
+    z-index: 0;
+}
+
+.hero-kv .container { position: relative; z-index: 1; }
+
+.hero-eyebrow {
+    letter-spacing: .06em;
+    background: rgba(255, 255, 255, .12);
+    border: 1px solid rgba(255, 255, 255, .25);
+}
+
+.hero-trust-row i {
+    font-size: 1rem;
+}
+.hero-trust-divider {
+    width: 1px;
+    height: 16px;
+    background: rgba(255, 255, 255, .35);
+}
+@media (max-width: 480px) {
+    .hero-trust-divider { display: none; }
+}
+
+@media (max-width: 767px) {
+    .hero-kv-blob { display: none; }
+}
