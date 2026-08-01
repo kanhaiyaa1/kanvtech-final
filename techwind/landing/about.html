@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en" class="light scroll-smooth" dir="ltr">
+
+<head>
+        <meta charset="UTF-8">
+        <title>About Us — Kanvtech Solutions | HRMS, Payroll, Tally &amp; Cloud Partner</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="Kanvtech Solutions is an IT company providing HRMS, payroll, Tally, cloud services and custom software.">
+        <meta name="keywords" content="about kanvtech solutions, it solutions company mumbai, hrms payroll software company mumbai, tally solutions provider mumbai">
+        <meta name="author" content="Kanvtech Solutions Private Limited">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <!-- favicon -->
+        <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+        <!-- Css -->
+        <link href="assets/libs/tiny-slider/tiny-slider.css" rel="stylesheet">
+        <link href="assets/libs/tobii/css/tobii.min.css" rel="stylesheet">
+        <!-- Main Css -->
+        <link href="assets/libs/remixicon/fonts/remixicon.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="assets/css/tailwind.min.css">
+        <link rel="stylesheet" href="assets/css/custom-theme.css">
+        <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+
+    </head>
+
+    <body class="font-nunito text-base text-slate-900 dark:text-white dark:bg-slate-900">
+        <!-- Loader Start -->
+        <!-- <div id="preloader">
+            <div id="status">
+                <div class="spinner">
+                    <div class="double-bounce1"></div>
+                    <div class="double-bounce2"></div>
+                </div>
+            </div>
+        </div> -->
+        <!-- Loader End -->
+
+        <!-- Scroll progress bar -->
+        <div id="scroll-progress-bar"></div>
+
+        <div id="site-content">
+        <!-- Start Navbar -->
+        <nav id="topnav" class="defaultscroll is-sticky">
+            <div class="container relative">
+                <!-- Logo container-->
+                <a class="logo" href="index.html">
+                    <span class="inline-block dark:hidden">
+                        <img src="assets/images/logo-dark.png" class="l-dark" height="24" alt="">
+                        <img src="assets/images/logo-light.png" class="l-light" height="24" alt="">
+                    </span>
+                    <img src="assets/images/logo-light.png" height="24" class="hidden dark:inline-block" alt="">
+                </a>
+
+                <!-- End Logo container-->
+                <div class="menu-extras">
+                    <div class="menu-item">
+                        <!-- Mobile menu toggle-->
+                        <a class="navbar-toggle" id="isToggle" onclick="toggleMenu()">
+                            <div class="lines">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </a>
+                        <!-- End mobile menu toggle-->
+                    </div>
+                </div>
+
+                <!--Action zone Start-->
+                <ul class="buy-button list-none mb-0 flex items-center">
+                    <li class="inline mb-0">
+                        <a href="mailto:connect@kanvtech.com" class="nav-contact-email hidden xl:inline-flex items-center gap-1.5" title="Email us">
+                            <i class="ri-mail-line"></i> connect@kanvtech.com
+                        </a>
+                    </li>
+                    <li class="inline ps-3 mb-0">
+                        <a href="tel:+917045998877" class="hidden lg:inline-flex size-9 items-center justify-center tracking-wide align-middle duration-500 text-base text-center rounded-full bg-primary/5 hover:bg-primary border border-primary/10 hover:border-primary text-primary hover:text-white" title="Call +91 70459 98877"><i class="ri-phone-line"></i></a>
+                    </li>
+                </ul>
+                <!--Action zone End-->
+
+                <div id="navigation">
+                    <!-- Navigation Menu-->
+                    <ul class="navigation-menu nav-light">
+                        <li><a href="index.html" class="sub-menu-item">Home</a></li>
+                        <li><a href="about.html" class="sub-menu-item">About Us</a></li>
+
+                        <li class="has-submenu parent-parent-menu-item">
+                            <a href="page-services.html">Solutions &amp; Services</a><span class="menu-arrow"></span>
+
+                            <ul class="submenu megamenu">
+                                <li>
+                                    <ul>
+                                        <li class="uppercase text-xs font-semibold text-slate-400 px-4 pt-2 pb-1">Software</li>
+                                        <li><a href="spine-payroll.html" class="sub-menu-item">Spine Payroll</a></li>
+                                        <li><a href="spine-hr-suite.html" class="sub-menu-item">Spine HRMS</a></li>
+                                        <li><a href="spine-asset.html" class="sub-menu-item">Spine Asset</a></li>
+                                        <li><a href="tally-prime.html" class="sub-menu-item">Tally Prime</a></li>
+                                        <li><a href="tally-prime-server.html" class="sub-menu-item">Tally Prime Server</a></li>
+                                    </ul>
+                                </li>
+
+                                <li>
+                                    <ul>
+                                        <li class="uppercase text-xs font-semibold text-slate-400 px-4 pt-2 pb-1">Services</li>
+                                        <li><a href="tally-software-services.html" class="sub-menu-item">Tally Software Services (TSS)</a></li>
+                                        <li><a href="tally-services.html" class="sub-menu-item">Tally Services</a></li>
+                                        <li><a href="tally-on-cloud.html" class="sub-menu-item">Tally on Cloud</a></li>
+                                    </ul>
+                                </li>
+
+                                <li>
+                                    <ul>
+                                        <li class="uppercase text-xs font-semibold text-slate-400 px-4 pt-2 pb-1">Solutions</li>
+                                        <li><a href="app-development.html" class="sub-menu-item">App Development</a></li>
+                                        <li><a href="customize-solutions.html" class="sub-menu-item">Custom Software</a></li>
+                                        <li><a href="cloud-server.html" class="sub-menu-item">Cloud Services</a></li>
+                                        <li><a href="tally-customization.html" class="sub-menu-item">Tally Customization</a></li>
+                                        <li><a href="tally-add-on.html" class="sub-menu-item">Tally Add-On</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li><a href="career.html" class="sub-menu-item">Career</a></li>
+                        <li><a href="contact.html" class="sub-menu-item">Contact Us</a></li>
+                    </ul><!--end navigation menu-->
+                </div><!--end navigation-->
+            </div><!--end container-->
+        </nav><!--end header-->
+        <!-- End Navbar -->
+
+        <!-- Floating WhatsApp button -->
+        <a href="https://wa.me/917045998877" target="_blank" rel="noopener" class="whatsapp-fab fixed bottom-5 inset-e-5 z-50 size-14 inline-flex items-center justify-center rounded-full bg-whatsapp text-white text-2xl shadow-lg hover:scale-105 transition-transform" title="Chat on WhatsApp">
+            <span class="whatsapp-fab-halo" aria-hidden="true"></span>
+            <i class="ri-whatsapp-line"></i>
+        </a>
+
+        <!-- Start Hero -->
+        <!-- TODO: swap background image for a real Kanvtech/office photo once client assets arrive -->
+        <section class="relative table w-full py-36 lg:py-44 bg-[url('../../assets/images/company/aboutus.jpg')] bg-no-repeat bg-center bg-cover">
+            <div class="absolute inset-0 bg-slate-900 opacity-75"></div>
+            <div class="container relative">
+                <div class="grid grid-cols-1 pb-8 text-center mt-10">
+                    <h1 class="mb-6 md:text-4xl text-3xl md:leading-normal leading-normal font-medium text-white">Solutions That Help Your Business <span class="text-primary">Grow</span></h1>
+
+                    <p class="text-slate-300 text-lg max-w-xl mx-auto">Kanvtech Solutions is a technology company. We provide HRMS, payroll, accounting, cloud and custom software for growing businesses, along with the support to keep them running.</p>
+                </div><!--end grid-->
+            </div><!--end container-->
+
+            <div class="absolute text-center z-10 bottom-5 inset-s-0 inset-e-0 mx-3">
+                <ul class="tracking-[0.5px] mb-0 inline-block">
+                   <li class="inline-block uppercase text-13 font-bold duration-500 ease-in-out text-white/50 hover:text-white"><a href="index.html">Kanvtech</a></li>
+                   <li class="inline-block text-base text-white/50 mx-0.5 ltr:rotate-0 rtl:rotate-180"><i class="ri-arrow-right-s-line"></i></li>
+                    <li class="inline-block uppercase text-13 font-bold duration-500 ease-in-out text-white" aria-current="page">About Us</li>
+                </ul>
+            </div>
+        </section><!--end section-->
+        <div class="relative">
+            <div class="shape absolute sm:-bottom-px -bottom-0.5 inset-s-0 inset-e-0 overflow-hidden z-1 text-white dark:text-slate-900">
+                <svg class="w-full h-auto scale-[2.0] origin-top" viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z" fill="currentColor"></path>
+                </svg>
+            </div>
+        </div>
+        <!-- End Hero -->
+
+        <!-- Start Section-->
+        <section class="relative md:py-24 py-16">
+            <div class="container relative">
+                <div class="grid md:grid-cols-12 grid-cols-1 items-center gap-7.5">
+                    <div class="lg:col-span-5 md:col-span-6" data-aos="fade-right">
+                        <!-- TODO: swap for real Kanvtech team/office photos once client assets arrive -->
+                        <div class="grid grid-cols-12 gap-6 items-center">
+                            <div class="col-span-6">
+                                <div class="grid grid-cols-1 gap-6">
+                                    <img src="assets/images/about/ab03.jpg" class="shadow-sm rounded-md" alt="">
+                                    <img src="assets/images/about/ab02.jpg" class="shadow-sm rounded-md" alt="">
+                                </div>
+                            </div>
+
+                            <div class="col-span-6">
+                                <div class="grid grid-cols-1 gap-6">
+                                    <img src="assets/images/about/ab01.jpg" class="shadow-sm rounded-md" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="lg:col-span-7 md:col-span-6" data-aos="fade-up">
+                        <div class="lg:ms-5">
+                            <div class="flex mb-4">
+                                <span class="text-primary text-2xl font-bold mb-0"><span class="counter-value text-6xl font-bold" data-target="18">18</span>+</span>
+                                <span class="self-end font-medium ms-2">Years <br> Combined Experience</span>
+                            </div>
+
+                            <h3 class="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">Who We Are</h3>
+
+                            <p class="text-slate-400 max-w-xl mb-4">Kanvtech Solutions Private Limited has over 18 years of combined experience in business software and enterprise IT. Our team has worked across HRMS, payroll, accounting, cloud infrastructure and custom development for businesses of every size.</p>
+
+                            <p class="text-slate-400 max-w-xl">Our team configures each system directly with your staff, and handles issues, updates and training as they come up after go-live.</p>
+
+                            <div class="mt-6">
+                                <a href="contact.html" class="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-primary hover:bg-primary-700 border-primary hover:border-primary-700 text-white rounded-md me-2 mt-2"><i class="ri-mail-line font-normal"></i> Contact us</a>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--end grid-->
+            </div><!--end container-->
+        </section><!--end section-->
+        <!-- End Section-->
+
+        <!-- Start -->
+        <section class="relative md:py-24 py-16">
+            <div class="container relative">
+                <div class="grid grid-cols-1 pb-8 text-center" data-aos="fade-up">
+                    <h6 class="text-primary text-sm font-bold uppercase mb-2">What We Do</h6>
+                    <h3 class="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">Built Around <span class="text-primary">Your Business Systems</span></h3>
+                    <p class="text-slate-400 max-w-2xl mx-auto">Kanvtech provides HRMS and payroll software, Tally services, cloud hosting and custom development.</p>
+                </div><!--end grid-->
+
+                <div class="grid md:grid-cols-3 grid-cols-1 gap-7.5 mt-8">
+                    <div class="group p-6 rounded-lg shadow-sm dark:shadow-gray-800 hover:shadow-md dark:hover:shadow-gray-700 bg-white dark:bg-slate-900 text-center duration-500" data-aos="fade-up">
+                        <div class="size-14 mx-auto bg-primary/5 group-hover:bg-primary group-hover:text-white text-primary rounded-full text-2xl flex align-middle justify-center items-center duration-500">
+                            <i class="ri-team-line"></i>
+                        </div>
+                        <h5 class="mt-5 text-lg font-medium">HRMS &amp; Payroll</h5>
+                        <p class="text-slate-400 mt-2">Spine HRMS &amp; Spine Payroll</p>
+                    </div>
+
+                    <div class="group p-6 rounded-lg shadow-sm dark:shadow-gray-800 hover:shadow-md dark:hover:shadow-gray-700 bg-white dark:bg-slate-900 text-center duration-500" data-aos="fade-up">
+                        <div class="size-14 mx-auto bg-primary/5 group-hover:bg-primary group-hover:text-white text-primary rounded-full text-2xl flex align-middle justify-center items-center duration-500">
+                            <i class="ri-file-chart-2-line"></i>
+                        </div>
+                        <h5 class="mt-5 text-lg font-medium">Tally</h5>
+                        <p class="text-slate-400 mt-2">Software, services &amp; cloud access</p>
+                    </div>
+
+                    <div class="group p-6 rounded-lg shadow-sm dark:shadow-gray-800 hover:shadow-md dark:hover:shadow-gray-700 bg-white dark:bg-slate-900 text-center duration-500" data-aos="fade-up">
+                        <div class="size-14 mx-auto bg-primary/5 group-hover:bg-primary group-hover:text-white text-primary rounded-full text-2xl flex align-middle justify-center items-center duration-500">
+                            <i class="ri-cloud-line"></i>
+                        </div>
+                        <h5 class="mt-5 text-lg font-medium">Cloud Services</h5>
+                        <p class="text-slate-400 mt-2">Secure &amp; accessible anywhere</p>
+                    </div>
+
+                    <div class="group p-6 rounded-lg shadow-sm dark:shadow-gray-800 hover:shadow-md dark:hover:shadow-gray-700 bg-white dark:bg-slate-900 text-center duration-500" data-aos="fade-up">
+                        <div class="size-14 mx-auto bg-primary/5 group-hover:bg-primary group-hover:text-white text-primary rounded-full text-2xl flex align-middle justify-center items-center duration-500">
+                            <i class="ri-code-s-slash-line"></i>
+                        </div>
+                        <h5 class="mt-5 text-lg font-medium">Custom Software</h5>
+                        <p class="text-slate-400 mt-2">Internal tools for your specific workflow</p>
+                    </div>
+
+                    <div class="group p-6 rounded-lg shadow-sm dark:shadow-gray-800 hover:shadow-md dark:hover:shadow-gray-700 bg-white dark:bg-slate-900 text-center duration-500" data-aos="fade-up">
+                        <div class="size-14 mx-auto bg-primary/5 group-hover:bg-primary group-hover:text-white text-primary rounded-full text-2xl flex align-middle justify-center items-center duration-500">
+                            <i class="ri-fingerprint-line"></i>
+                        </div>
+                        <h5 class="mt-5 text-lg font-medium">Asset &amp; Analytics</h5>
+                        <p class="text-slate-400 mt-2">Plus biometric devices</p>
+                    </div>
+
+                    <div class="group p-6 rounded-lg shadow-sm dark:shadow-gray-800 hover:shadow-md dark:hover:shadow-gray-700 bg-white dark:bg-slate-900 text-center duration-500" data-aos="fade-up">
+                        <div class="size-14 mx-auto bg-primary/5 group-hover:bg-primary group-hover:text-white text-primary rounded-full text-2xl flex align-middle justify-center items-center duration-500">
+                            <i class="ri-smartphone-line"></i>
+                        </div>
+                        <h5 class="mt-5 text-lg font-medium">App Development</h5>
+                        <p class="text-slate-400 mt-2">Websites, web apps and mobile apps</p>
+                    </div>
+
+                </div><!--end grid-->
+
+                <div class="grid grid-cols-1 justify-center mt-8">
+                    <div class="text-center">
+                        <a href="page-services.html" class="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-primary hover:bg-primary-700 border-primary hover:border-primary-700 text-white rounded-md">Explore Our Solutions <i class="ri-arrow-right-line font-normal"></i></a>
+                    </div>
+                </div>
+            </div><!--end container-->
+        </section><!--end section-->
+        <!-- End -->
+
+        <!-- Start -->
+        <section class="relative md:py-24 py-16 bg-fixed bg-cover bg-center" style="background-image: url('assets/images/corporate/bg.jpg');">
+            <div class="absolute inset-0" style="background: linear-gradient(to bottom, rgba(11,27,43,.55), rgba(11,27,43,.92));"></div>
+            <div class="container relative">
+                <div class="grid grid-cols-1 pb-8 text-center" data-aos="fade-up">
+                    <h6 class="text-primary text-sm font-bold uppercase mb-2">Who We Serve</h6>
+                    <h3 class="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold text-white">Built for <span class="text-primary">Growing Businesses</span></h3>
+
+                    <p class="text-white/80 max-w-2xl mx-auto">We work with businesses of every size, across manufacturing, retail, healthcare, services, finance and education. Spine Payroll and our other core solutions adapt to how each industry operates.</p>
+                </div><!--end grid-->
+
+                <div class="grid md:grid-cols-6 grid-cols-3 gap-7.5 pb-8" data-aos="fade-up">
+                    <div class="text-center">
+                        <div class="size-14 mx-auto bg-white text-primary rounded-full text-2xl flex align-middle justify-center items-center shadow-xs dark:shadow-gray-800">
+                            <i class="ri-tools-line"></i>
+                        </div>
+                        <p class="text-white/80 text-sm mt-3">Manufacturing</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="size-14 mx-auto bg-white text-primary rounded-full text-2xl flex align-middle justify-center items-center shadow-xs dark:shadow-gray-800">
+                            <i class="ri-store-2-line"></i>
+                        </div>
+                        <p class="text-white/80 text-sm mt-3">Retail</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="size-14 mx-auto bg-white text-primary rounded-full text-2xl flex align-middle justify-center items-center shadow-xs dark:shadow-gray-800">
+                            <i class="ri-heart-pulse-line"></i>
+                        </div>
+                        <p class="text-white/80 text-sm mt-3">Healthcare</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="size-14 mx-auto bg-white text-primary rounded-full text-2xl flex align-middle justify-center items-center shadow-xs dark:shadow-gray-800">
+                            <i class="ri-customer-service-2-line"></i>
+                        </div>
+                        <p class="text-white/80 text-sm mt-3">Services</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="size-14 mx-auto bg-white text-primary rounded-full text-2xl flex align-middle justify-center items-center shadow-xs dark:shadow-gray-800">
+                            <i class="ri-briefcase-4-line"></i>
+                        </div>
+                        <p class="text-white/80 text-sm mt-3">Finance</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="size-14 mx-auto bg-white text-primary rounded-full text-2xl flex align-middle justify-center items-center shadow-xs dark:shadow-gray-800">
+                            <i class="ri-graduation-cap-line"></i>
+                        </div>
+                        <p class="text-white/80 text-sm mt-3">Education</p>
+                    </div>
+                </div><!--end grid-->
+
+            </div><!--end container-->
+        </section><!--end section-->
+        <!-- End -->
+
+        <!-- Start -->
+        <!-- Stats: only real, confirmed figures shown — no placeholder "0" counters per client instruction -->
+        <section class="relative py-16 bg-primary">
+            <div class="container relative">
+                <div class="grid md:grid-cols-4 grid-cols-2 gap-7.5">
+                    <div class="counter-box flex items-center justify-center" data-aos="fade-up">
+                        <h2 class="text-4xl font-bold text-white"><span class="counter-value" data-target="18">18</span>+</h2>
+                        <h5 class="counter-head text-xs font-semibold text-white/70 ms-2">Years of <br> Combined Experience</h5>
+                    </div><!--end counter box-->
+
+                    <div class="counter-box flex items-center justify-center" data-aos="fade-up">
+                        <h2 class="text-4xl font-bold text-white">Spine</h2>
+                        <h5 class="counter-head text-xs font-semibold text-white/70 ms-2">Gold <br> Partner</h5>
+                    </div><!--end counter box-->
+
+                    <div class="counter-box flex items-center justify-center" data-aos="fade-up">
+                        <h2 class="text-4xl font-bold text-white"><span class="counter-value" data-target="5">5</span></h2>
+                        <h5 class="counter-head text-xs font-semibold text-white/70 ms-2">Core <br> Solutions</h5>
+                    </div><!--end counter box-->
+
+                    <div class="counter-box flex items-center justify-center" data-aos="fade-up">
+                        <h2 class="text-4xl font-bold text-white"><i class="ri-customer-service-2-line"></i></h2>
+                        <h5 class="counter-head text-xs font-semibold text-white/70 ms-2">Dedicated <br> Support</h5>
+                    </div><!--end counter box-->
+                </div><!--end grid-->
+            </div><!--end container-->
+        </section><!--end section-->
+        <!-- End -->
+
+        <!-- Start: Trust, Certification & Awards -->
+        <!-- TODO: replace with real Spine Gold Partner badge, certificate logos, client logos, award names, awarding bodies and years once the client shares them -->
+        <section class="relative md:py-24 py-16 bg-gray-50 dark:bg-slate-800">
+            <div class="container relative">
+                <div class="grid grid-cols-1 pb-8 text-center" data-aos="fade-up">
+                    <h6 class="text-primary text-sm font-bold uppercase mb-2">Trust &amp; Recognition</h6>
+                    <h3 class="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">Trusted, Certified &amp; <span class="text-primary">Recognised</span></h3>
+                    <p class="text-slate-400 max-w-2xl mx-auto">We are a Spine Gold Partner, certified to implement Spine's HRMS, Payroll and Asset software to its own standards. Our work has also been recognised with the awards and certifications below.</p>
+                </div><!--end grid-->
+
+                <div class="grid md:grid-cols-6 grid-cols-2 justify-center gap-7.5 mt-8" data-aos="fade-up">
+                    <div class="mx-auto mt-8 h-16 w-24 rounded-md border border-dashed border-gray-300 dark:border-gray-700 flex items-center justify-center text-center text-[11px] leading-tight text-slate-400 px-2">Spine Gold Partner Badge</div>
+                    <div class="mx-auto mt-8 h-16 w-24 rounded-md border border-dashed border-gray-300 dark:border-gray-700 flex items-center justify-center text-center text-[11px] leading-tight text-slate-400 px-2">Certificate</div>
+                    <div class="mx-auto mt-8 h-16 w-24 rounded-md border border-dashed border-gray-300 dark:border-gray-700 flex items-center justify-center text-center text-[11px] leading-tight text-slate-400 px-2">Award</div>
+                    <div class="mx-auto mt-8 h-16 w-24 rounded-md border border-dashed border-gray-300 dark:border-gray-700 flex items-center justify-center text-center text-[11px] leading-tight text-slate-400 px-2">Award</div>
+                    <div class="mx-auto mt-8 h-16 w-24 rounded-md border border-dashed border-gray-300 dark:border-gray-700 flex items-center justify-center text-center text-[11px] leading-tight text-slate-400 px-2">Client Logo</div>
+                    <div class="mx-auto mt-8 h-16 w-24 rounded-md border border-dashed border-gray-300 dark:border-gray-700 flex items-center justify-center text-center text-[11px] leading-tight text-slate-400 px-2">Client Logo</div>
+                </div><!--end grid-->
+            </div><!--end container-->
+        </section><!--end section-->
+        <!-- End: Trust, Certification & Awards -->
+
+        <!-- Start -->
+        <section class="py-20 md:py-28 w-full table relative bg-primary overflow-hidden">
+            <div class="absolute -top-16 -end-16 size-64 rounded-full bg-white/5"></div>
+            <div class="absolute -bottom-20 -start-10 size-72 rounded-full bg-white/5"></div>
+            <div class="container relative">
+                <div class="grid grid-cols-1 pb-8 text-center" data-aos="fade-up">
+                    <h3 class="mb-4 md:text-4xl text-2xl md:leading-normal leading-normal font-semibold text-white">Get in <span class="text-white/90 underline decoration-2 decoration-white/50 underline-offset-4">Touch</span></h3>
+                    <p class="text-white/80 max-w-xl mx-auto text-lg">Tell us what your business needs, and we will help you find the right solution.</p>
+
+                    <div class="mt-8 flex flex-wrap items-center justify-center gap-3">
+                        <a href="contact.html" class="py-2.5 px-6 inline-flex items-center gap-2 font-semibold tracking-wide align-middle duration-500 text-base text-center bg-white hover:bg-slate-100 border border-white text-primary rounded-md">Book a Free Demo <i class="ri-arrow-right-line"></i></a>
+                        <a href="contact.html" class="py-2.5 px-6 inline-flex items-center gap-2 font-semibold tracking-wide align-middle duration-500 text-base text-center bg-transparent hover:bg-white/10 border border-white text-white rounded-md">Send an Enquiry</a>
+                    </div>
+                </div><!--end grid-->
+            </div><!--end container-->
+        </section><!--end section-->
+        <!-- End -->
+        </div><!--end site-content-->
+
+        <!-- Footer Start -->
+        <footer id="site-footer" class="site-footer-fixed bg-slate-900 dark:bg-slate-800 text-gray-200 dark:text-gray-200">
+            <div class="container relative">
+                <div class="grid grid-cols-12">
+                    <div class="col-span-12">
+                        <div class="py-15 px-0">
+                            <div class="grid md:grid-cols-12 grid-cols-1 gap-7.5">
+                                <div class="lg:col-span-4 md:col-span-12">
+                                    <a href="#" class="text-[22px] focus:outline-none">
+                                        <img src="assets/images/logo-light.png" alt="">
+                                    </a>
+                                    <p class="mt-6 text-gray-300">Kanvtech brings HRMS, payroll, Tally, cloud services and custom software together for growing businesses.</p>
+                                    <ul class="list-none mt-6">
+                                        <li class="inline"><a href="https://www.linkedin.com/in/kanvtech-solutions-68a778290/" target="_blank" rel="noopener" class="size-8 inline-flex justify-center items-center text-gray-400 hover:text-white border border-gray-800 dark:border-gray-700 rounded-md hover:border-primary dark:hover:border-primary hover:bg-primary dark:hover:bg-primary"><i class="ri-linkedin-line"></i></a></li>
+                                        <li class="inline"><a href="https://www.facebook.com/people/Kanvtech/61559635234803/" target="_blank" rel="noopener" class="size-8 inline-flex justify-center items-center text-gray-400 hover:text-white border border-gray-800 dark:border-gray-700 rounded-md hover:border-primary dark:hover:border-primary hover:bg-primary dark:hover:bg-primary"><i class="ri-facebook-circle-line"></i></a></li>
+                                        <li class="inline"><a href="https://www.instagram.com/kanvtech/" target="_blank" rel="noopener" class="size-8 inline-flex justify-center items-center text-gray-400 hover:text-white border border-gray-800 dark:border-gray-700 rounded-md hover:border-primary dark:hover:border-primary hover:bg-primary dark:hover:bg-primary"><i class="ri-instagram-line"></i></a></li>
+                                        <li class="inline"><a href="https://x.com/Kanvtech" target="_blank" rel="noopener" class="size-8 inline-flex justify-center items-center text-gray-400 hover:text-white border border-gray-800 dark:border-gray-700 rounded-md hover:border-primary dark:hover:border-primary hover:bg-primary dark:hover:bg-primary"><i class="ri-twitter-x-line"></i></a></li>
+                                        <li class="inline"><a href="https://www.youtube.com/@Kanvtech" target="_blank" rel="noopener" class="size-8 inline-flex justify-center items-center text-gray-400 hover:text-white border border-gray-800 dark:border-gray-700 rounded-md hover:border-primary dark:hover:border-primary hover:bg-primary dark:hover:bg-primary"><i class="ri-youtube-line"></i></a></li>
+                                        <li class="inline"><a href="https://www.sotwe.com/Kanvtech" target="_blank" rel="noopener" title="Sotwe" class="size-8 inline-flex justify-center items-center text-gray-400 hover:text-white border border-gray-800 dark:border-gray-700 rounded-md hover:border-primary dark:hover:border-primary hover:bg-primary dark:hover:bg-primary"><i class="ri-global-line"></i></a></li>
+                                        <li class="inline"><a href="https://wa.me/917045998877" target="_blank" rel="noopener" class="size-8 inline-flex justify-center items-center text-gray-400 hover:text-white border border-gray-800 dark:border-gray-700 rounded-md hover:border-primary dark:hover:border-primary hover:bg-primary dark:hover:bg-primary"><i class="ri-whatsapp-line"></i></a></li>
+                                        <li class="inline"><a href="mailto:connect@kanvtech.com" class="size-8 inline-flex justify-center items-center text-gray-400 hover:text-white border border-gray-800 dark:border-gray-700 rounded-md hover:border-primary dark:hover:border-primary hover:bg-primary dark:hover:bg-primary"><i class="ri-mail-line"></i></a></li>
+
+                                    </ul><!--end icon-->
+                                </div><!--end col-->
+
+                                <div class="lg:col-span-2 md:col-span-4">
+                                    <h5 class="tracking-[1px] text-gray-100 font-semibold">Company</h5>
+                                    <ul class="list-none footer-list mt-6">
+                                        <li><a href="about.html" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out"><i class="ri-arrow-right-s-line"></i> About Us</a></li>
+                                        <li class="mt-2.5"><a href="page-services.html" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out"><i class="ri-arrow-right-s-line"></i> Solutions</a></li>
+                                        <li class="mt-2.5"><a href="career.html" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out"><i class="ri-arrow-right-s-line"></i> Career</a></li>
+                                        <li class="mt-2.5"><a href="contact.html" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out"><i class="ri-arrow-right-s-line"></i> Contact Us</a></li>
+                                    </ul>
+                                </div><!--end col-->
+
+                                <div class="lg:col-span-3 md:col-span-4">
+                                    <h5 class="tracking-[1px] text-gray-100 font-semibold">Useful Links</h5>
+                                    <ul class="list-none footer-list mt-6">
+                                        <li><a href="page-terms.html" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out"><i class="ri-arrow-right-s-line"></i> Terms of Service</a></li>
+                                        <li class="mt-2.5"><a href="page-privacy.html" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out"><i class="ri-arrow-right-s-line"></i> Privacy Policy</a></li>
+                                        <li class="mt-2.5"><a href="disclaimer.html" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out"><i class="ri-arrow-right-s-line"></i> Disclaimer</a></li>
+                                    </ul>
+                                </div><!--end col-->
+
+                                <div class="lg:col-span-3 md:col-span-4">
+                                    <h5 class="tracking-[1px] text-gray-100 font-semibold">Newsletter</h5>
+                                    <p class="mt-6 text-gray-300">Sign up and receive the latest tips via email.</p>
+                                    <form>
+                                        <div class="grid grid-cols-1">
+                                            <div class="my-3">
+                                                <label class="form-label text-gray-300">Write your email <span class="text-red-600">*</span></label>
+                                                <div class="form-icon relative mt-2">
+                                                    <i class="ri-mail-line absolute top-2 inset-s-4 text-gray-100"></i>
+                                                    <input type="email" class="form-input ps-12 rounded w-full py-2 px-3 h-10 bg-gray-800 dark:bg-gray-700 border-0 text-gray-100 focus:shadow-none focus:ring-0 placeholder:text-gray-200 outline-none" placeholder="Email" name="email" required="">
+                                                </div>
+                                            </div>
+
+                                            <button type="submit" id="submitsubscribe" name="send" class="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-primary hover:bg-primary-700 border-primary hover:border-primary-700 text-white rounded-md">Subscribe</button>
+                                        </div>
+                                    </form>
+                                </div><!--end col-->
+                            </div><!--end grid-->
+                        </div><!--end col-->
+                    </div>
+                </div><!--end grid-->
+            </div><!--end container-->
+
+            <div class="py-7.5 px-0 border-t border-gray-800 dark:border-gray-700">
+                <div class="container relative text-center">
+                    <div class="grid md:grid-cols-2 items-center">
+                        <div class="md:text-start text-center">
+                            <p class="mb-0 text-gray-100">© <script>document.write(new Date().getFullYear())</script> Kanvtech Solutions Private Limited. All rights reserved.</p>
+                        </div>
+
+                        <ul class="list-none md:text-end text-center mt-6 md:mt-0">
+                            <li class="inline"><a href="#"><img src="assets/images/payments/american-ex.png" class="max-h-6 inline" title="American Express" alt=""></a></li>
+                            <li class="inline"><a href="#"><img src="assets/images/payments/discover.png" class="max-h-6 inline" title="Discover" alt=""></a></li>
+                            <li class="inline"><a href="#"><img src="assets/images/payments/master-card.png" class="max-h-6 inline" title="Master Card" alt=""></a></li>
+                            <li class="inline"><a href="#"><img src="assets/images/payments/paypal.png" class="max-h-6 inline" title="Paypal" alt=""></a></li>
+                            <li class="inline"><a href="#"><img src="assets/images/payments/visa.png" class="max-h-6 inline" title="Visa" alt=""></a></li>
+                        </ul>
+                    </div><!--end grid-->
+                </div><!--end container-->
+            </div>
+        </footer><!--end footer-->
+        <!-- Footer End -->
+
+        <!-- JAVASCRIPTS -->
+        <script src="assets/libs/tiny-slider/min/tiny-slider.js"></script>
+        <script src="assets/libs/tobii/js/tobii.min.js"></script>
+        <script src="assets/js/plugins.init.js"></script>
+        <script src="assets/js/app.js"></script>
+        <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+        <script>
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches && window.AOS) {
+                AOS.init({ once: true, duration: 500, easing: 'ease-out-cubic', offset: 60 });
+            }
+        </script>
+        <!-- JAVASCRIPTS -->
+    </body>
+</html>

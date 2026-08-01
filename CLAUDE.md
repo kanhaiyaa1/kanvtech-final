@@ -86,10 +86,42 @@ Hero → Trust strip → Positioning ("one partner…") → **Spine Spotlight** 
 
 (The developer has assembled unique Techwind sections for these — keep them; we're improving content section by section.)
 
-## 10. Content style (copywriting)
+## 10. Content style (copywriting) — STRICT
 
-- **Original, human, non-AI tone.** Short, benefit-led, plain English. Vary sentence length. Write to one reader.
-- **Ban AI-tell words:** "in today's fast-paced world", "robust", "seamless", "leverage", "unlock", "elevate", "empower" (overuse).
+The site must read like a professional Indian IT company's brochure — not a startup landing page, not a chatty AI, not a person "explaining" something. This is the standing standard for every page, present and future.
+
+### 1. Language
+- Simple, professional, clear English. Every sentence must be understood by a non-technical reader on first pass.
+- **No sentence may start with:** "So", "And", "But", "Or", "Because". Rewrite the sentence instead.
+- No slang, no casual tone, no clever wordplay.
+- No marketing jargon: "done right", "reimagined", "supercharged", "unleashed", "game-changer", "seamless", "robust", "leverage", "unlock", "elevate", "empower", "streamline", "cutting-edge", "harness", "in today's fast-paced world", "dive in".
+- No vague abstractions: "serious depth of experience", "solving real problems for real businesses", "young and dynamic company". State the fact instead.
+- Em-dashes ("—") are not a sentence habit. Max 1–2 per page, only where a comma or full stop genuinely can't do the job.
+
+### 2. Headings
+- Plain and descriptive. A visitor must understand what the section covers from the heading alone, with no need to read further.
+- GOOD: "About Us", "Our Services", "Why Choose Us", "Our Products".
+- BAD: "Meet Spine: HRMS Done Right", "We Don't Just Build, We Transform".
+- No colons in headings. No questions as headings. No clever or cute phrasing.
+- The one-word highlight `<span>` still applies (see §6.2) — pick a plain word to highlight, not a clever one.
+
+### 3. Content depth
+- Every section needs a minimum of 4–6 lines of meaningful content. No one-liner sections.
+- "Who We Are" / "About" sections must cover: what the company does, its experience, who it serves, what makes it different, and its approach — 6–8 lines minimum.
+- Service/product sections must cover: what it does, who it's for, key features, and benefits — 5–6 lines minimum.
+- No filler. Every sentence must add a new piece of information — never restate the previous sentence in different words.
+
+### 4. Tone
+- Professional, confident, trustworthy — like an established Indian IT company speaking to enterprise clients.
+- Formal but not stiff. Readable but not casual.
+
+### 5. Format
+- Proper paragraphs, not paragraphs made of bullet fragments. Content should flow naturally when read aloud.
+- No ALL CAPS in body text. No exclamation marks.
+
+### Test for every sentence
+"Would a non-technical business owner understand this immediately, and does it read like a serious company wrote it — not a person explaining, not an AI, not a startup pitch?" If not, rewrite it.
+
 - Features = what it does; Benefits = what the client gains. Keep them distinct.
 - Bake in SEO naturally (Mumbai/India + service keywords) without stuffing.
 - Solution sub-page template (for later): H1 (keyword-led) → intro → What it is → Who it's for → Key features → Benefits → FAQ → CTA.

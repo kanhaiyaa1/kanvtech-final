@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en" class="light scroll-smooth" dir="ltr">
+
+<head>
+        <meta charset="UTF-8">
+        <title>App Development Company in Mumbai | Kanvtech</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="Web apps and mobile apps built end to end — portals, dashboards, SaaS products and more. Designed, developed and supported by Kanvtech in Mumbai.">
+        <meta name="keywords" content="app development mumbai, web application development services india, custom web portal developers, mobile app development india, saas development mumbai">
+        <meta name="author" content="Kanvtech Solutions Private Limited">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <!-- favicon -->
+        <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+        <!-- Css -->
+        <link href="assets/libs/tobii/css/tobii.min.css" rel="stylesheet">
+        <!-- Main Css -->
+        <link href="assets/libs/remixicon/fonts/remixicon.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="assets/css/tailwind.min.css">
+        <link rel="stylesheet" href="assets/css/custom-theme.css">
+        <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+
+    </head>
+
+    <body class="font-nunito text-base text-slate-900 dark:text-white dark:bg-slate-900">
+        <!-- Scroll progress bar -->
+        <div id="scroll-progress-bar"></div>
+
+        <div id="site-content">
+        <!-- Start Navbar -->
+        <nav id="topnav" class="defaultscroll is-sticky">
+            <div class="container relative">
+                <!-- Logo container-->
+                <a class="logo" href="index.html">
+                    <span class="inline-block dark:hidden">
+                        <img src="assets/images/logo-dark.png" class="l-dark" height="24" alt="">
+                        <img src="assets/images/logo-dark.png" class="l-light" height="24" alt="">
+                    </span>
+                    <img src="assets/images/logo-light.png" height="24" class="hidden dark:inline-block" alt="">
+                </a>
+
+                <!-- End Logo container-->
+                <div class="menu-extras">
+                    <div class="menu-item">
+                        <!-- Mobile menu toggle-->
+                        <a class="navbar-toggle" id="isToggle" onclick="toggleMenu()">
+                            <div class="lines">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </a>
+                        <!-- End mobile menu toggle-->
+                    </div>
+                </div>
+
+                <!--Action zone Start-->
+                <ul class="buy-button list-none mb-0 flex items-center">
+                    <li class="inline mb-0">
+                        <a href="mailto:connect@kanvtech.com" class="nav-contact-email hidden xl:inline-flex items-center gap-1.5" title="Email us">
+                            <i class="ri-mail-line"></i> connect@kanvtech.com
+                        </a>
+                    </li>
+                    <li class="inline ps-3 mb-0">
+                        <a href="tel:+917045998877" class="hidden lg:inline-flex size-9 items-center justify-center tracking-wide align-middle duration-500 text-base text-center rounded-full bg-primary/5 hover:bg-primary border border-primary/10 hover:border-primary text-primary hover:text-white" title="Call +91 70459 98877"><i class="ri-phone-line"></i></a>
+                    </li>
+                </ul>
+                <!--Action zone End-->
+
+                <div id="navigation">
+                    <!-- Navigation Menu-->
+                    <ul class="navigation-menu">
+                        <li><a href="index.html" class="sub-menu-item">Home</a></li>
+                        <li><a href="about.html" class="sub-menu-item">About Us</a></li>
+
+                        <li class="has-submenu parent-parent-menu-item">
+                            <a href="page-services.html">Solutions &amp; Services</a><span class="menu-arrow"></span>
+
+                            <ul class="submenu megamenu">
+                                <li>
+                                    <ul>
+                                        <li class="uppercase text-xs font-semibold text-slate-400 px-4 pt-2 pb-1">Software</li>
+                                        <li><a href="spine-payroll.html" class="sub-menu-item">Spine Payroll</a></li>
+                                        <li><a href="spine-hr-suite.html" class="sub-menu-item">Spine HRMS</a></li>
+                                        <li><a href="spine-asset.html" class="sub-menu-item">Spine Asset</a></li>
+                                        <li><a href="tally-prime.html" class="sub-menu-item">Tally Prime</a></li>
+                                        <li><a href="tally-prime-server.html" class="sub-menu-item">Tally Prime Server</a></li>
+                                    </ul>
+                                </li>
+
+                                <li>
+                                    <ul>
+                                        <li class="uppercase text-xs font-semibold text-slate-400 px-4 pt-2 pb-1">Services</li>
+                                        <li><a href="tally-software-services.html" class="sub-menu-item">Tally Software Services (TSS)</a></li>
+                                        <li><a href="tally-services.html" class="sub-menu-item">Tally Services</a></li>
+                                        <li><a href="tally-on-cloud.html" class="sub-menu-item">Tally on Cloud</a></li>
+                                    </ul>
+                                </li>
+
+                                <li>
+                                    <ul>
+                                        <li class="uppercase text-xs font-semibold text-slate-400 px-4 pt-2 pb-1">Solutions</li>
+                                        <li><a href="app-development.html" class="sub-menu-item">App Development</a></li>
+                                        <li><a href="customize-solutions.html" class="sub-menu-item">Custom Software</a></li>
+                                        <li><a href="cloud-server.html" class="sub-menu-item">Cloud Services</a></li>
+                                        <li><a href="tally-customization.html" class="sub-menu-item">Tally Customization</a></li>
+                                        <li><a href="tally-add-on.html" class="sub-menu-item">Tally Add-On</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li><a href="career.html" class="sub-menu-item">Career</a></li>
+                        <li><a href="contact.html" class="sub-menu-item">Contact Us</a></li>
+                    </ul><!--end navigation menu-->
+                </div><!--end navigation-->
+            </div><!--end container-->
+        </nav><!--end header-->
+        <!-- End Navbar -->
+
+        <!-- Floating WhatsApp button -->
+        <a href="https://wa.me/917045998877" target="_blank" rel="noopener" class="whatsapp-fab fixed bottom-5 inset-e-5 z-50 size-14 inline-flex items-center justify-center rounded-full bg-whatsapp text-white text-2xl shadow-lg hover:scale-105 transition-transform" title="Chat on WhatsApp">
+            <span class="whatsapp-fab-halo" aria-hidden="true"></span>
+            <i class="ri-whatsapp-line"></i>
+        </a>
+
+        <!-- Start Hero -->
+        <section class="relative table w-full py-36 md:py-44 overflow-hidden bg-white dark:bg-slate-900">
+            <!-- Animated background accents -->
+            <div class="absolute -top-16 -start-16 size-72 rounded-full bg-primary/10 blur-3xl animate-[kv-hero-float_8s_ease-in-out_infinite] -z-1"></div>
+            <div class="absolute top-1/3 -end-10 size-80 rounded-full bg-accent/10 blur-3xl animate-[kv-hero-float_10s_ease-in-out_infinite] -z-1" style="animation-delay:1.5s"></div>
+            <div class="absolute bottom-0 start-1/4 size-56 rounded-full bg-primary/5 blur-3xl animate-[kv-hero-float_9s_ease-in-out_infinite] -z-1" style="animation-delay:.75s"></div>
+
+            <div class="container relative z-2">
+                <div class="grid md:grid-cols-12 grid-cols-1 items-center gap-7.5">
+                    <div class="lg:col-span-7 md:col-span-7">
+                        <div class="md:me-6">
+                            <h1 class="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">App <span class="text-primary">Development</span> Company in Mumbai</h1>
+                            <p class="text-slate-400 text-lg max-w-xl">From a customer portal to a full web or mobile app, Kanvtech designs, builds and maintains it end to end.</p>
+
+                            <div class="mt-8 flex flex-wrap items-center gap-3">
+                                <a href="contact.html" class="py-2.5 px-6 inline-flex items-center gap-2 font-semibold tracking-wide align-middle duration-500 text-base text-center bg-primary hover:bg-primary-700 border border-primary hover:border-primary-700 text-white rounded-md">Book a Free Demo <i class="ri-arrow-right-line"></i></a>
+                                <a href="contact.html" class="py-2.5 px-6 inline-flex items-center gap-2 font-semibold tracking-wide align-middle duration-500 text-base text-center bg-transparent hover:bg-primary border border-primary text-primary hover:text-white rounded-md">Send an Enquiry</a>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="lg:col-span-5 md:col-span-5 md:mt-0 mt-10">
+                        <div class="relative after:content-[''] after:absolute after:h-40 after:w-40 after:bg-primary/10 after:bottom-0 after:inset-e-0 after:z-0 after:rounded-3xl after:animate-[spin_10s_linear_infinite]">
+                            <img src="assets/images/Kanvtech-SaaS-mobile-app-mockup.png" class="relative z-1 float-loop" alt="Web and app development by Kanvtech">
+
+                            <!-- Floating accent chips -->
+                            <div class="hidden md:flex items-center gap-2 absolute top-4 -start-6 z-2 bg-white dark:bg-slate-800 shadow-md rounded-full py-2 px-4 float-loop" style="animation-delay:.4s">
+                                <i class="ri-code-s-slash-line text-primary"></i>
+                                <span class="text-sm font-semibold">Web Apps</span>
+                            </div>
+                            <div class="hidden md:flex items-center gap-2 absolute bottom-6 -end-6 z-2 bg-white dark:bg-slate-800 shadow-md rounded-full py-2 px-4 float-loop" style="animation-delay:1.2s">
+                                <i class="ri-smartphone-line text-primary"></i>
+                                <span class="text-sm font-semibold">Mobile Apps</span>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                </div><!--end grid-->
+            </div><!--end container-->
+
+            <div class="absolute text-center z-10 bottom-5 inset-s-0 inset-e-0 mx-3">
+                <ul class="tracking-[0.5px] mb-0 inline-block">
+                   <li class="inline-block uppercase text-13 font-bold duration-500 ease-in-out text-slate-400 hover:text-primary"><a href="index.html">Kanvtech</a></li>
+                   <li class="inline-block text-base text-slate-400 mx-0.5 ltr:rotate-0 rtl:rotate-180"><i class="ri-arrow-right-s-line"></i></li>
+                    <li class="inline-block uppercase text-13 font-bold duration-500 ease-in-out text-primary" aria-current="page">App Development</li>
+                </ul>
+            </div>
+        </section><!--end section-->
+        <!-- End Hero -->
+
+        <style>
+            @keyframes kv-hero-float {
+                0%, 100% { transform: translateY(0) scale(1); }
+                50% { transform: translateY(-18px) scale(1.05); }
+            }
+            /* This page's hero is light, so the nav needs a solid background even before scrolling (unlike dark-hero pages where a transparent nav is intentional). */
+            #topnav {
+                background-color: rgba(255,255,255,.95);
+                box-shadow: 0 1px 2px rgba(11,27,43,.06);
+            }
+            .dark #topnav {
+                background-color: rgba(15,23,42,.95);
+            }
+        </style>
+
+        <!-- Start: What It Is -->
+        <section class="relative md:py-24 py-16">
+            <div class="container relative">
+                <div class="grid md:grid-cols-12 grid-cols-1 items-center gap-7.5">
+                    <div class="lg:col-span-6 md:col-span-6" data-aos="fade-right">
+                        <img src="assets/images/Futuristic-development-and-digital-innovation.png" alt="App and web development" class="rounded-xl float-loop">
+                    </div>
+
+                    <div class="lg:col-span-6 md:col-span-6" data-aos="fade-up">
+                        <div class="lg:ms-5">
+                            <h6 class="text-primary text-sm font-bold uppercase mb-2">What It Is</h6>
+                            <h3 class="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">Applications <span class="text-primary">Your Business Runs On</span></h3>
+
+                            <p class="text-slate-400 max-w-xl mb-4">App development is about building the web and mobile applications your business runs on, anything from an online store or customer portal to a business dashboard or a custom app your team and clients use every day.</p>
+                            <p class="text-slate-400 max-w-xl">We handle the whole thing: how it looks, how it works behind the scenes, and keeping it running smoothly after launch.</p>
+                        </div>
+                    </div>
+                </div><!--end grid-->
+            </div><!--end container-->
+        </section><!--end section-->
+        <!-- End: What It Is -->
+
+        <!-- Start: Who It's For -->
+        <section class="relative md:py-24 py-16 bg-gray-50 dark:bg-slate-800">
+            <div class="container relative">
+                <div class="grid grid-cols-1 pb-8 text-center" data-aos="fade-up">
+                    <h6 class="text-primary text-sm font-bold uppercase mb-2">Who It's For</h6>
+                    <h3 class="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">Built for Every <span class="text-primary">Stage of Business</span></h3>
+                    <p class="text-slate-400 max-w-2xl mx-auto">Whether you're a startup that needs its first web or mobile app, an SME setting up an e-commerce store or a client portal, or a larger company that needs a custom application, we build for your stage.</p>
+                </div><!--end grid-->
+
+                <div class="grid md:grid-cols-3 grid-cols-1 gap-7.5 mt-8">
+                    <div class="group p-6 rounded-lg shadow-sm dark:shadow-gray-800 hover:shadow-md dark:hover:shadow-gray-700 bg-white dark:bg-slate-900 text-center duration-500" data-aos="fade-up">
+                        <div class="size-14 mx-auto bg-primary/5 group-hover:bg-primary group-hover:text-white text-primary rounded-full text-2xl flex align-middle justify-center items-center duration-500">
+                            <i class="ri-store-2-line"></i>
+                        </div>
+                        <h5 class="mt-5 text-lg font-medium">Online Stores</h5>
+                        <p class="text-slate-400 mt-2">E-commerce sites built to sell</p>
+                    </div>
+
+                    <div class="group p-6 rounded-lg shadow-sm dark:shadow-gray-800 hover:shadow-md dark:hover:shadow-gray-700 bg-white dark:bg-slate-900 text-center duration-500" data-aos="fade-up">
+                        <div class="size-14 mx-auto bg-primary/5 group-hover:bg-primary group-hover:text-white text-primary rounded-full text-2xl flex align-middle justify-center items-center duration-500">
+                            <i class="ri-user-settings-line"></i>
+                        </div>
+                        <h5 class="mt-5 text-lg font-medium">Self-Service Portals</h5>
+                        <p class="text-slate-400 mt-2">Client and customer logins</p>
+                    </div>
+
+                    <div class="group p-6 rounded-lg shadow-sm dark:shadow-gray-800 hover:shadow-md dark:hover:shadow-gray-700 bg-white dark:bg-slate-900 text-center duration-500" data-aos="fade-up">
+                        <div class="size-14 mx-auto bg-primary/5 group-hover:bg-primary group-hover:text-white text-primary rounded-full text-2xl flex align-middle justify-center items-center duration-500">
+                            <i class="ri-dashboard-3-line"></i>
+                        </div>
+                        <h5 class="mt-5 text-lg font-medium">Business Dashboards</h5>
+                        <p class="text-slate-400 mt-2">Company sites and SaaS products</p>
+                    </div>
+                </div><!--end grid-->
+            </div><!--end container-->
+        </section><!--end section-->
+        <!-- End: Who It's For -->
+
+        <!-- Start: Key Features -->
+        <section class="relative md:py-24 py-16">
+            <div class="container relative">
+                <div class="grid grid-cols-1 pb-8 text-center" data-aos="fade-up">
+                    <h6 class="text-primary text-sm font-bold uppercase mb-2">Key Features</h6>
+                    <h3 class="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">What's <span class="text-primary">Included</span></h3>
+                </div><!--end grid-->
+
+                <div class="grid lg:grid-cols-12 md:grid-cols-12 grid-cols-1 mt-8 gap-7.5 items-center">
+                    <div class="lg:col-span-4 md:col-span-6 lg:order-1 order-2">
+                        <div class="grid grid-cols-1 gap-7.5">
+                            <div class="group flex duration-500 xl:p-3" data-aos="fade-up">
+                                <div class="flex md:order-2 order-1 align-middle justify-center items-center size-14 mt-1 bg-primary/5 group-hover:bg-primary group-hover:text-white text-primary rounded-full text-2xl shadow-xs dark:shadow-gray-800 duration-500">
+                                    <i class="ri-layout-4-line text-xl"></i>
+                                </div>
+                                <div class="flex-1 md:order-1 order-2 md:text-end md:me-4 md:ms-0 ms-4">
+                                    <h4 class="mb-0 text-lg font-medium">Responsive Design</h4>
+                                    <p class="text-slate-400 mt-3">UI/UX that works across mobile, tablet and desktop</p>
+                                </div>
+                            </div>
+
+                            <div class="group flex duration-500 xl:p-3" data-aos="fade-up">
+                                <div class="flex md:order-2 order-1 align-middle justify-center items-center size-14 mt-1 bg-primary/5 group-hover:bg-primary group-hover:text-white text-primary rounded-full text-2xl shadow-xs dark:shadow-gray-800 duration-500">
+                                    <i class="ri-code-s-slash-line text-xl"></i>
+                                </div>
+                                <div class="flex-1 md:order-1 order-2 md:text-end md:me-4 md:ms-0 ms-4">
+                                    <h4 class="mb-0 text-lg font-medium">Frontend &amp; Backend</h4>
+                                    <p class="text-slate-400 mt-3">Built on modern, reliable frameworks</p>
+                                </div>
+                            </div>
+
+                            <div class="group flex duration-500 xl:p-3" data-aos="fade-up">
+                                <div class="flex md:order-2 order-1 align-middle justify-center items-center size-14 mt-1 bg-primary/5 group-hover:bg-primary group-hover:text-white text-primary rounded-full text-2xl shadow-xs dark:shadow-gray-800 duration-500">
+                                    <i class="ri-database-2-line text-xl"></i>
+                                </div>
+                                <div class="flex-1 md:order-1 order-2 md:text-end md:me-4 md:ms-0 ms-4">
+                                    <h4 class="mb-0 text-lg font-medium">Secure Database Design</h4>
+                                    <p class="text-slate-400 mt-3">Structured, secure data management</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="lg:col-span-4 md:col-span-12 lg:mx-8 lg:order-2 order-1">
+                        <img src="assets/images/Modern-SaaS-dashboard-UI-mockup.png" class="mx-auto md:max-w-75" alt="Kanvtech app and web development">
+                    </div>
+
+                    <div class="lg:col-span-4 md:col-span-6 order-3">
+                        <div class="grid grid-cols-1 gap-7.5">
+                            <div class="group flex duration-500 xl:p-3" data-aos="fade-up">
+                                <div class="flex align-middle justify-center items-center size-14 mt-1 bg-primary/5 group-hover:bg-primary group-hover:text-white text-primary rounded-full text-2xl shadow-xs dark:shadow-gray-800 duration-500">
+                                    <i class="ri-plug-line text-xl"></i>
+                                </div>
+                                <div class="flex-1 ms-4">
+                                    <h4 class="mb-0 text-lg font-medium">Integrations</h4>
+                                    <p class="text-slate-400 mt-3">Payment gateways, SMS/email, CRMs and analytics</p>
+                                </div>
+                            </div>
+
+                            <div class="group flex duration-500 xl:p-3" data-aos="fade-up">
+                                <div class="flex align-middle justify-center items-center size-14 mt-1 bg-primary/5 group-hover:bg-primary group-hover:text-white text-primary rounded-full text-2xl shadow-xs dark:shadow-gray-800 duration-500">
+                                    <i class="ri-shield-check-line text-xl"></i>
+                                </div>
+                                <div class="flex-1 ms-4">
+                                    <h4 class="mb-0 text-lg font-medium">Security Built In</h4>
+                                    <p class="text-slate-400 mt-3">SSL, encryption and data protection</p>
+                                </div>
+                            </div>
+
+                            <div class="group flex duration-500 xl:p-3" data-aos="fade-up">
+                                <div class="flex align-middle justify-center items-center size-14 mt-1 bg-primary/5 group-hover:bg-primary group-hover:text-white text-primary rounded-full text-2xl shadow-xs dark:shadow-gray-800 duration-500">
+                                    <i class="ri-cloud-line text-xl"></i>
+                                </div>
+                                <div class="flex-1 ms-4">
+                                    <h4 class="mb-0 text-lg font-medium">Cloud Deployment &amp; Support</h4>
+                                    <p class="text-slate-400 mt-3">Hosting, plus post-launch updates</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--end grid-->
+            </div><!--end container-->
+        </section><!--end section-->
+        <!-- End: Key Features -->
+
+        <!-- Start: Benefits -->
+        <section class="relative md:py-24 py-16 bg-gray-50 dark:bg-slate-800">
+            <div class="container relative">
+                <div class="grid grid-cols-1 pb-8 text-center" data-aos="fade-up">
+                    <h6 class="text-primary text-sm font-bold uppercase mb-2">Benefits</h6>
+                    <h3 class="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">What You <span class="text-primary">Gain</span></h3>
+                </div><!--end grid-->
+
+                <div class="mt-8 rounded-xl border border-gray-200 dark:border-gray-700 overflow-hidden bg-white dark:bg-slate-900" data-aos="fade-up">
+                    <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 divide-y lg:divide-y-0 md:divide-y-0 divide-x-0 lg:divide-x md:divide-x divide-gray-200 dark:divide-gray-700">
+                        <div class="p-8 text-center border-b border-gray-200 dark:border-gray-700 hover:bg-primary/5 duration-500">
+                            <div class="size-14 mx-auto bg-primary/5 text-primary rounded-full text-2xl flex align-middle justify-center items-center">
+                                <i class="ri-time-line"></i>
+                            </div>
+                            <h5 class="text-lg font-medium mt-4">Available Round the Clock</h5>
+                            <p class="text-slate-400 mt-1">Reach customers anytime, grow your market presence</p>
+                        </div>
+
+                        <div class="p-8 text-center border-b border-gray-200 dark:border-gray-700 hover:bg-primary/5 duration-500">
+                            <div class="size-14 mx-auto bg-primary/5 text-primary rounded-full text-2xl flex align-middle justify-center items-center">
+                                <i class="ri-settings-3-line"></i>
+                            </div>
+                            <h5 class="text-lg font-medium mt-4">Automated Workflows</h5>
+                            <p class="text-slate-400 mt-1">Sign-ups, orders and enquiries handled automatically</p>
+                        </div>
+
+                        <div class="p-8 text-center border-b lg:border-b-0 border-gray-200 dark:border-gray-700 hover:bg-primary/5 duration-500">
+                            <div class="size-14 mx-auto bg-primary/5 text-primary rounded-full text-2xl flex align-middle justify-center items-center">
+                                <i class="ri-medal-line"></i>
+                            </div>
+                            <h5 class="text-lg font-medium mt-4">A Professional Presence</h5>
+                            <p class="text-slate-400 mt-1">Builds credibility with a polished, working product</p>
+                        </div>
+
+                        <div class="p-8 text-center hover:bg-primary/5 duration-500">
+                            <div class="size-14 mx-auto bg-primary/5 text-primary rounded-full text-2xl flex align-middle justify-center items-center">
+                                <i class="ri-line-chart-line"></i>
+                            </div>
+                            <h5 class="text-lg font-medium mt-4">Room to Scale</h5>
+                            <p class="text-slate-400 mt-1">Start small and add features as you grow</p>
+                        </div>
+                    </div>
+                </div><!--end grid-->
+            </div><!--end container-->
+        </section><!--end section-->
+        <!-- End: Benefits -->
+
+        <!-- Start: FAQ -->
+        <section class="relative md:py-24 py-16">
+            <div class="container relative">
+                <div class="grid grid-cols-1 pb-8 text-center" data-aos="fade-up">
+                    <h6 class="text-primary text-sm font-bold uppercase mb-2">FAQ</h6>
+                    <h3 class="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">Frequently Asked <span class="text-primary">Questions</span></h3>
+                </div><!--end grid-->
+
+                <div class="max-w-3xl mx-auto mt-8" data-aos="fade-up">
+                    <div id="app-dev-faq" data-accordion="collapse">
+                        <div class="relative shadow-sm dark:shadow-gray-800 rounded-md overflow-hidden">
+                            <h2 class="text-base font-semibold" id="app-dev-faq-heading-1">
+                                <button type="button" class="flex justify-between items-center gap-2 p-5 w-full font-medium text-start" data-accordion-target="#app-dev-faq-body-1" aria-expanded="true" aria-controls="app-dev-faq-body-1">
+                                    <span>What's the difference between a website and a web application?</span>
+                                    <i class="ri-arrow-down-s-line text-xl rotate-180 shrink-0" data-accordion-icon></i>
+                                </button>
+                            </h2>
+                            <div id="app-dev-faq-body-1" aria-labelledby="app-dev-faq-heading-1">
+                                <div class="p-5 pt-0">
+                                    <p class="text-slate-400">A website mainly shows information: pages like your services, pricing or contact details, built for visitors to read. A web application is interactive: it lets users log in, store data, and do things like place an order, track a request or manage an account. Most business projects need a mix of both, an informational front with a working application behind it.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="relative shadow-sm dark:shadow-gray-800 rounded-md overflow-hidden mt-3">
+                            <h2 class="text-base font-semibold" id="app-dev-faq-heading-2">
+                                <button type="button" class="flex justify-between items-center gap-2 p-5 w-full font-medium text-start" data-accordion-target="#app-dev-faq-body-2" aria-expanded="false" aria-controls="app-dev-faq-body-2">
+                                    <span>Will my site or app work on mobile?</span>
+                                    <i class="ri-arrow-down-s-line text-xl shrink-0" data-accordion-icon></i>
+                                </button>
+                            </h2>
+                            <div id="app-dev-faq-body-2" class="hidden" aria-labelledby="app-dev-faq-heading-2">
+                                <div class="p-5 pt-0">
+                                    <p class="text-slate-400">Yes. We build everything responsive by default, so the layout, images and navigation adapt cleanly to phones, tablets and desktops rather than just shrinking the desktop version. Every project is tested across common screen sizes before it goes live.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="relative shadow-sm dark:shadow-gray-800 rounded-md overflow-hidden mt-3">
+                            <h2 class="text-base font-semibold" id="app-dev-faq-heading-3">
+                                <button type="button" class="flex justify-between items-center gap-2 p-5 w-full font-medium text-start" data-accordion-target="#app-dev-faq-body-3" aria-expanded="false" aria-controls="app-dev-faq-body-3">
+                                    <span>Do you build mobile apps too?</span>
+                                    <i class="ri-arrow-down-s-line text-xl shrink-0" data-accordion-icon></i>
+                                </button>
+                            </h2>
+                            <div id="app-dev-faq-body-3" class="hidden" aria-labelledby="app-dev-faq-heading-3">
+                                <div class="p-5 pt-0">
+                                    <p class="text-slate-400">Yes. Alongside websites and web apps, we develop mobile applications depending on what your project needs. Not every project needs a separate mobile app since a responsive web app already works well on a phone, so we help you decide whether a native app is actually necessary before building one.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="relative shadow-sm dark:shadow-gray-800 rounded-md overflow-hidden mt-3">
+                            <h2 class="text-base font-semibold" id="app-dev-faq-heading-4">
+                                <button type="button" class="flex justify-between items-center gap-2 p-5 w-full font-medium text-start" data-accordion-target="#app-dev-faq-body-4" aria-expanded="false" aria-controls="app-dev-faq-body-4">
+                                    <span>Who owns the code once it's built?</span>
+                                    <i class="ri-arrow-down-s-line text-xl shrink-0" data-accordion-icon></i>
+                                </button>
+                            </h2>
+                            <div id="app-dev-faq-body-4" class="hidden" aria-labelledby="app-dev-faq-heading-4">
+                                <div class="p-5 pt-0">
+                                    <p class="text-slate-400">You do. The source code, design files and rights are yours once the project is complete and final payment is cleared. We hand over the full codebase and any account access (hosting, domain, third-party services) needed to run and maintain it independently, or with us, going forward.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="relative shadow-sm dark:shadow-gray-800 rounded-md overflow-hidden mt-3">
+                            <h2 class="text-base font-semibold" id="app-dev-faq-heading-5">
+                                <button type="button" class="flex justify-between items-center gap-2 p-5 w-full font-medium text-start" data-accordion-target="#app-dev-faq-body-5" aria-expanded="false" aria-controls="app-dev-faq-body-5">
+                                    <span>How long does a project take?</span>
+                                    <i class="ri-arrow-down-s-line text-xl shrink-0" data-accordion-icon></i>
+                                </button>
+                            </h2>
+                            <div id="app-dev-faq-body-5" class="hidden" aria-labelledby="app-dev-faq-heading-5">
+                                <div class="p-5 pt-0">
+                                    <p class="text-slate-400">A standard business website is usually a few weeks from approved design to launch. A custom web application or mobile app takes longer, since it involves backend logic, database design and testing, typically a couple of months depending on scope. We give you a clear timeline once we understand what you need built, and update you at each stage.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="relative shadow-sm dark:shadow-gray-800 rounded-md overflow-hidden mt-3">
+                            <h2 class="text-base font-semibold" id="app-dev-faq-heading-6">
+                                <button type="button" class="flex justify-between items-center gap-2 p-5 w-full font-medium text-start" data-accordion-target="#app-dev-faq-body-6" aria-expanded="false" aria-controls="app-dev-faq-body-6">
+                                    <span>What happens after the site goes live?</span>
+                                    <i class="ri-arrow-down-s-line text-xl shrink-0" data-accordion-icon></i>
+                                </button>
+                            </h2>
+                            <div id="app-dev-faq-body-6" class="hidden" aria-labelledby="app-dev-faq-heading-6">
+                                <div class="p-5 pt-0">
+                                    <p class="text-slate-400">We offer ongoing maintenance after launch: bug fixes, security updates, regular backups and performance checks, so it keeps running well as your traffic and content grow. If you need new features or changes down the line, the same team that built it handles those too, since they already know the codebase.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!--end container-->
+        </section><!--end section-->
+        <!-- End: FAQ -->
+
+        <!-- Start: CTA -->
+        <section class="py-20 md:py-28 w-full table relative bg-primary overflow-hidden">
+            <div class="absolute -top-16 -end-16 size-64 rounded-full bg-white/5"></div>
+            <div class="absolute -bottom-20 -start-10 size-72 rounded-full bg-white/5"></div>
+            <div class="container relative">
+                <div class="grid grid-cols-1 pb-8 text-center" data-aos="fade-up">
+                    <h3 class="mb-4 md:text-4xl text-2xl md:leading-normal leading-normal font-semibold text-white">Got an <span class="text-white/90 underline decoration-2 decoration-white/50 underline-offset-4">Idea</span> for an App?</h3>
+                    <p class="text-white/80 max-w-xl mx-auto text-lg">Tell us what you have in mind, and Kanvtech will help you build it.</p>
+
+                    <div class="mt-8 flex flex-wrap items-center justify-center gap-3">
+                        <a href="contact.html" class="py-2.5 px-6 inline-flex items-center gap-2 font-semibold tracking-wide align-middle duration-500 text-base text-center bg-white hover:bg-slate-100 border border-white text-primary rounded-md">Book a Free Demo <i class="ri-arrow-right-line"></i></a>
+                        <a href="contact.html" class="py-2.5 px-6 inline-flex items-center gap-2 font-semibold tracking-wide align-middle duration-500 text-base text-center bg-transparent hover:bg-white/10 border border-white text-white rounded-md">Send an Enquiry</a>
+                    </div>
+                </div><!--end grid-->
+            </div><!--end container-->
+        </section><!--end section-->
+        <!-- End: CTA -->
+        </div><!--end site-content-->
+
+        <!-- Footer Start -->
+        <footer id="site-footer" class="site-footer-fixed bg-slate-900 dark:bg-slate-800 text-gray-200 dark:text-gray-200">
+            <div class="container relative">
+                <div class="grid grid-cols-12">
+                    <div class="col-span-12">
+                        <div class="py-15 px-0">
+                            <div class="grid md:grid-cols-12 grid-cols-1 gap-7.5">
+                                <div class="lg:col-span-4 md:col-span-12">
+                                    <a href="#" class="text-[22px] focus:outline-none">
+                                        <img src="assets/images/logo-light.png" alt="">
+                                    </a>
+                                    <p class="mt-6 text-gray-300">Kanvtech brings HRMS, payroll, Tally, cloud services and custom software together for growing businesses.</p>
+                                    <ul class="list-none mt-6">
+                                        <li class="inline"><a href="https://www.linkedin.com/in/kanvtech-solutions-68a778290/" target="_blank" rel="noopener" class="size-8 inline-flex justify-center items-center text-gray-400 hover:text-white border border-gray-800 dark:border-gray-700 rounded-md hover:border-primary dark:hover:border-primary hover:bg-primary dark:hover:bg-primary"><i class="ri-linkedin-line"></i></a></li>
+                                        <li class="inline"><a href="https://www.facebook.com/people/Kanvtech/61559635234803/" target="_blank" rel="noopener" class="size-8 inline-flex justify-center items-center text-gray-400 hover:text-white border border-gray-800 dark:border-gray-700 rounded-md hover:border-primary dark:hover:border-primary hover:bg-primary dark:hover:bg-primary"><i class="ri-facebook-circle-line"></i></a></li>
+                                        <li class="inline"><a href="https://www.instagram.com/kanvtech/" target="_blank" rel="noopener" class="size-8 inline-flex justify-center items-center text-gray-400 hover:text-white border border-gray-800 dark:border-gray-700 rounded-md hover:border-primary dark:hover:border-primary hover:bg-primary dark:hover:bg-primary"><i class="ri-instagram-line"></i></a></li>
+                                        <li class="inline"><a href="https://x.com/Kanvtech" target="_blank" rel="noopener" class="size-8 inline-flex justify-center items-center text-gray-400 hover:text-white border border-gray-800 dark:border-gray-700 rounded-md hover:border-primary dark:hover:border-primary hover:bg-primary dark:hover:bg-primary"><i class="ri-twitter-x-line"></i></a></li>
+                                        <li class="inline"><a href="https://www.youtube.com/@Kanvtech" target="_blank" rel="noopener" class="size-8 inline-flex justify-center items-center text-gray-400 hover:text-white border border-gray-800 dark:border-gray-700 rounded-md hover:border-primary dark:hover:border-primary hover:bg-primary dark:hover:bg-primary"><i class="ri-youtube-line"></i></a></li>
+                                        <li class="inline"><a href="https://www.sotwe.com/Kanvtech" target="_blank" rel="noopener" title="Sotwe" class="size-8 inline-flex justify-center items-center text-gray-400 hover:text-white border border-gray-800 dark:border-gray-700 rounded-md hover:border-primary dark:hover:border-primary hover:bg-primary dark:hover:bg-primary"><i class="ri-global-line"></i></a></li>
+                                        <li class="inline"><a href="https://wa.me/917045998877" target="_blank" rel="noopener" class="size-8 inline-flex justify-center items-center text-gray-400 hover:text-white border border-gray-800 dark:border-gray-700 rounded-md hover:border-primary dark:hover:border-primary hover:bg-primary dark:hover:bg-primary"><i class="ri-whatsapp-line"></i></a></li>
+                                        <li class="inline"><a href="mailto:connect@kanvtech.com" class="size-8 inline-flex justify-center items-center text-gray-400 hover:text-white border border-gray-800 dark:border-gray-700 rounded-md hover:border-primary dark:hover:border-primary hover:bg-primary dark:hover:bg-primary"><i class="ri-mail-line"></i></a></li>
+
+                                    </ul><!--end icon-->
+                                </div><!--end col-->
+
+                                <div class="lg:col-span-2 md:col-span-4">
+                                    <h5 class="tracking-[1px] text-gray-100 font-semibold">Company</h5>
+                                    <ul class="list-none footer-list mt-6">
+                                        <li><a href="about.html" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out"><i class="ri-arrow-right-s-line"></i> About Us</a></li>
+                                        <li class="mt-2.5"><a href="page-services.html" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out"><i class="ri-arrow-right-s-line"></i> Solutions</a></li>
+                                        <li class="mt-2.5"><a href="career.html" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out"><i class="ri-arrow-right-s-line"></i> Career</a></li>
+                                        <li class="mt-2.5"><a href="contact.html" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out"><i class="ri-arrow-right-s-line"></i> Contact Us</a></li>
+                                    </ul>
+                                </div><!--end col-->
+
+                                <div class="lg:col-span-3 md:col-span-4">
+                                    <h5 class="tracking-[1px] text-gray-100 font-semibold">Useful Links</h5>
+                                    <ul class="list-none footer-list mt-6">
+                                        <li><a href="page-terms.html" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out"><i class="ri-arrow-right-s-line"></i> Terms of Service</a></li>
+                                        <li class="mt-2.5"><a href="page-privacy.html" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out"><i class="ri-arrow-right-s-line"></i> Privacy Policy</a></li>
+                                        <li class="mt-2.5"><a href="disclaimer.html" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out"><i class="ri-arrow-right-s-line"></i> Disclaimer</a></li>
+                                    </ul>
+                                </div><!--end col-->
+
+                                <div class="lg:col-span-3 md:col-span-4">
+                                    <h5 class="tracking-[1px] text-gray-100 font-semibold">Newsletter</h5>
+                                    <p class="mt-6 text-gray-300">Sign up and receive the latest tips via email.</p>
+                                    <form>
+                                        <div class="grid grid-cols-1">
+                                            <div class="my-3">
+                                                <label class="form-label text-gray-300">Write your email <span class="text-red-600">*</span></label>
+                                                <div class="form-icon relative mt-2">
+                                                    <i class="ri-mail-line absolute top-2 inset-s-4 text-gray-100"></i>
+                                                    <input type="email" class="form-input ps-12 rounded w-full py-2 px-3 h-10 bg-gray-800 dark:bg-gray-700 border-0 text-gray-100 focus:shadow-none focus:ring-0 placeholder:text-gray-200 outline-none" placeholder="Email" name="email" required="">
+                                                </div>
+                                            </div>
+
+                                            <button type="submit" id="submitsubscribe" name="send" class="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-primary hover:bg-primary-700 border-primary hover:border-primary-700 text-white rounded-md">Subscribe</button>
+                                        </div>
+                                    </form>
+                                </div><!--end col-->
+                            </div><!--end grid-->
+                        </div><!--end col-->
+                    </div>
+                </div><!--end grid-->
+            </div><!--end container-->
+
+            <div class="py-7.5 px-0 border-t border-gray-800 dark:border-gray-700">
+                <div class="container relative text-center">
+                    <div class="grid md:grid-cols-2 items-center">
+                        <div class="md:text-start text-center">
+                            <p class="mb-0 text-gray-100">© <script>document.write(new Date().getFullYear())</script> Kanvtech Solutions Private Limited. All rights reserved.</p>
+                        </div>
+
+                        <ul class="list-none md:text-end text-center mt-6 md:mt-0">
+                            <li class="inline"><a href="#"><img src="assets/images/payments/american-ex.png" class="max-h-6 inline" title="American Express" alt=""></a></li>
+                            <li class="inline"><a href="#"><img src="assets/images/payments/discover.png" class="max-h-6 inline" title="Discover" alt=""></a></li>
+                            <li class="inline"><a href="#"><img src="assets/images/payments/master-card.png" class="max-h-6 inline" title="Master Card" alt=""></a></li>
+                            <li class="inline"><a href="#"><img src="assets/images/payments/paypal.png" class="max-h-6 inline" title="Paypal" alt=""></a></li>
+                            <li class="inline"><a href="#"><img src="assets/images/payments/visa.png" class="max-h-6 inline" title="Visa" alt=""></a></li>
+                        </ul>
+                    </div><!--end grid-->
+                </div><!--end container-->
+            </div>
+        </footer><!--end footer-->
+        <!-- Footer End -->
+
+        <!-- JAVASCRIPTS -->
+        <script src="assets/libs/tobii/js/tobii.min.js"></script>
+        <script src="assets/js/plugins.init.js"></script>
+        <script src="assets/js/app.js"></script>
+        <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+        <script>
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches && window.AOS) {
+                AOS.init({ once: true, duration: 500, easing: 'ease-out-cubic', offset: 60 });
+            }
+        </script>
+        <!-- JAVASCRIPTS -->
+    </body>
+</html>
