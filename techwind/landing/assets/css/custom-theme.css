@@ -1,5 +1,30 @@
 /* Kanvtech theme overrides — fonts + brand colors, layered on top of the compiled Tailwind bundle */
 
+/* On real mobile viewports, #topnav (position:fixed; left:0; right:0) was
+   measuring wider than the actual screen (confirmed ~478px on a 390px-wide
+   device), pushing the hamburger icon and phone number off past the visible
+   edge and forcing a horizontal scrollbar site-wide. Pinning its width
+   explicitly instead of relying on left/right alone, plus a hard
+   overflow-x:hidden safety net on the page, eliminates both regardless of
+   what specific content triggered the wider measurement. */
+html, body {
+    /* clip, not hidden: overflow-x:hidden computes overflow-y to auto on
+       elements where it was visible, which silently turns html/body into a
+       scroll container and breaks every position:sticky descendant on the
+       page (found via tally-solutions.html's horizontal card gallery going
+       blank). overflow:clip has no such side effect. */
+    overflow-x: clip;
+    max-width: 100vw;
+}
+#topnav {
+    width: 100%;
+    max-width: 100vw;
+}
+#topnav .container {
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
 /* Fonts: Poppins (headings) + Inter (body), matching the logo's rounded-geometric wordmark */
 :root {
     --font-nunito: "Inter", "Helvetica Neue", Arial, sans-serif;
@@ -101,7 +126,7 @@ a.border-primary.bg-transparent:hover, a.border-primary.text-primary:hover {
 
 /* Nav: smooth background/shadow transition on scroll-triggered sticky state */
 #topnav { transition: background-color .3s ease-out, box-shadow .3s ease-out, backdrop-filter .3s ease-out; }
-#topnav.nav-sticky { backdrop-filter: saturate(180%) blur(8px); }
+#topnav.nav-sticky { backdrop-filter: saturate(180%) blur(8px); border-bottom: 1px solid #BEEBFA; }
 
 /* Nav links: animated underline in primary color on hover/active */
 .navigation-menu > li > a {
@@ -483,6 +508,9 @@ footer.site-footer-fixed {
     padding-bottom: 16px;
     transition: padding .3s ease-out;
 }
+@media (min-width: 992px) {
+    #topnav .container { max-width: 1400px; }
+}
 #topnav.nav-sticky .container {
     padding-top: 10px;
     padding-bottom: 10px;
@@ -498,32 +526,148 @@ footer.site-footer-fixed {
 .nav-contact-email:hover { color: var(--color-primary); }
 .dark .nav-contact-email { color: rgba(255, 255, 255, .75); }
 
+.nav-contact-phone {
+    color: #5B6472;
+    font-weight: 500;
+    font-size: .875rem;
+    white-space: nowrap;
+}
+.nav-contact-phone:hover { color: var(--color-primary); }
+.dark .nav-contact-phone { color: rgba(255, 255, 255, .75); }
+
+/* Keep logo, nav links and the phone number on one row instead of the
+   phone floating up to the top of the bar on its own line. */
+@media (min-width: 992px) {
+    #topnav .container { display: flex; align-items: center; flex-wrap: nowrap; }
+    #topnav .container > .menu-extras { display: none; }
+    #topnav .container > .logo { order: 1; flex: 0 0 auto; margin-inline-start: 1.5rem; }
+    #topnav .container > #navigation { order: 2; flex: 1 1 auto; }
+    #topnav .container > .buy-button { order: 3; flex: 0 0 auto; float: none; margin-inline-end: 5rem; }
+}
+
 /* Megamenu: the stock template centers this on the viewport at ~1100px wide,
    which drifts far away from the "Solutions & Services" trigger. Pin it under
-   the trigger instead, and let it wrap into three compact columns. */
-#topnav .navigation-menu > li .submenu.megamenu {
-    position: absolute !important;
-    inset-inline-start: 0 !important;
-    top: 100% !important;
-    translate: 0 0 !important;
-    width: 620px !important;
-    max-width: min(620px, 92vw) !important;
-    white-space: normal !important;
-    display: grid !important;
-    grid-template-columns: repeat(3, 1fr) !important;
-    gap: 1.5rem !important;
-    padding: 1.5rem !important;
-    box-shadow: 0 12px 30px rgba(11, 27, 43, .12);
+   the trigger instead, and let it wrap into two compact columns (Services / Solutions).
+   Desktop only (the mobile menu uses its own simple in-flow accordion submenu —
+   applying this unconditionally forced a fixed 460px, 2-column grid onto the
+   mobile dropdown too, which made it overflow horizontally and overlap the
+   menu items below it). */
+@media (min-width: 992px) {
+    #topnav .navigation-menu > li .submenu.megamenu {
+        position: absolute !important;
+        inset-inline-start: 0 !important;
+        top: 100% !important;
+        translate: 0 0 !important;
+        width: 460px !important;
+        max-width: min(460px, 92vw) !important;
+        white-space: normal !important;
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 1.5rem !important;
+        padding: 1.5rem !important;
+        box-shadow: 0 12px 30px rgba(11, 27, 43, .12);
+    }
+    #topnav .navigation-menu > li .submenu.megamenu > li {
+        width: auto !important;
+        flex: none !important;
+    }
+    #topnav .navigation-menu > li .submenu.megamenu > li > ul {
+        padding: 0 !important;
+    }
+    #topnav .navigation-menu > li .submenu.megamenu .sub-menu-item {
+        white-space: normal !important;
+    }
 }
-#topnav .navigation-menu > li .submenu.megamenu > li {
-    width: auto !important;
-    flex: none !important;
+
+/* ============================================================
+   MOBILE NAV — rebuilt from scratch for <992px.
+   The stock theme's mobile submenu only opens when the parent
+   link's href is literally "javascript:void(0)" (see app.js);
+   our menu items use real page URLs instead, so that toggle
+   never fired and taps fell through to the desktop hover/absolute
+   megamenu styling — a fixed 460px box that overflowed the
+   screen and sat on top of the items below it. This block
+   replaces the whole mobile presentation with a plain, in-flow
+   stacked list, and the paired script (mobile-nav.js) drives the
+   Solutions & Services arrow so tapping it expands the submenu
+   in place instead of navigating away.
+   ============================================================ */
+@media (max-width: 991px) {
+    #topnav .container { position: relative; }
+    #navigation {
+        position: static !important;
+        clear: both !important;
+        inset: auto !important;
+        width: 100% !important;
+        height: calc(100vh - 93px) !important;
+        height: calc(100dvh - 93px) !important;
+        max-height: none !important;
+        overflow-x: hidden !important;
+        overflow-y: auto !important;
+        box-shadow: none !important;
+    }
+    #topnav .navigation-menu,
+    #topnav .navigation-menu > li {
+        float: none !important;
+        width: 100% !important;
+    }
+    /* "Solutions & Services" stays expanded on mobile instead of collapsing —
+       simpler than a tap-to-expand accordion when there are only two groups. */
+    #topnav .navigation-menu > li .submenu {
+        position: static !important;
+        inset: auto !important;
+        translate: 0 0 !important;
+        display: block !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 !important;
+        padding: .25rem 0 .5rem 1.25rem !important;
+        box-shadow: none !important;
+        background: transparent !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+    }
+    #topnav .navigation-menu > li .submenu.megamenu {
+        grid-template-columns: none !important;
+        gap: 0 !important;
+    }
+    #topnav .navigation-menu > li .submenu.megamenu > li {
+        width: 100% !important;
+        overflow: visible !important;
+    }
+    #topnav .navigation-menu > li .submenu.megamenu > li > ul {
+        padding-inline-start: 0 !important;
+    }
+    /* No longer a toggle — the submenu is always open, so the arrow has
+       nothing left to indicate. */
+    #topnav .navigation-menu > li.has-submenu > .menu-arrow {
+        display: none !important;
+    }
+    /* Drop the "Solutions & Services" label itself — its submenu (Services /
+       Solutions groups) already sits always-open right where it was, so the
+       label was just a redundant extra heading above them. */
+    #topnav .navigation-menu > li.has-submenu > a {
+        display: none !important;
+    }
+
+    /* "Services" and "Solutions" stay expanded, same as the parent
+       "Solutions & Services" — all links show right away, nothing to tap. */
+    #topnav .navigation-menu .mm-group-title {
+        display: flex !important;
+        align-items: center;
+        margin-top: .5rem !important;
+    }
+    #topnav .navigation-menu .mm-group-body {
+        display: block !important;
+    }
 }
-#topnav .navigation-menu > li .submenu.megamenu > li > ul {
-    padding: 0 !important;
-}
-#topnav .navigation-menu > li .submenu.megamenu .sub-menu-item {
-    white-space: normal !important;
+
+/* Reset default <ul> spacing/markers on the nested items list at all widths
+   (desktop keeps it always visible, just without browser bullet styling). */
+#topnav .navigation-menu .mm-group-items {
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 /* ============================================================
@@ -590,6 +734,15 @@ footer.site-footer-fixed {
 /* 3. WhatsApp floating button: gentle pulsing halo to invite a tap */
 .whatsapp-fab {
     position: fixed;
+}
+/* On mobile the footer's bottom bar (copyright + policy links) reaches the
+   true end of the page with nothing left to scroll past, so the fixed
+   WhatsApp button was left permanently covering "Disclaimer" with no way
+   to scroll it clear. Reserve space so the footer never sits under it. */
+@media (max-width: 991px) {
+    #site-footer {
+        padding-bottom: 5rem;
+    }
 }
 .whatsapp-fab-halo {
     position: absolute;
