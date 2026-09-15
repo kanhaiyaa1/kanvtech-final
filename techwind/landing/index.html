@@ -143,36 +143,86 @@
             <i class="ri-whatsapp-line"></i>
         </a>
 
-        <!-- Start Home -->
-        <section class="hero-kv relative overflow-hidden pt-36 pb-16 md:pt-44 md:pb-24 bg-cover bg-center" style="background-image: url('https://forbetterweb.com/html/universal/img/header/14.jpg');">
-            <div class="hero-kv-overlay" aria-hidden="true"></div>
-
-            <div class="container relative">
-                <div class="grid grid-cols-1 justify-items-center text-center">
-                    <div class="max-w-3xl">
-                        <span class="hero-animate hero-eyebrow inline-flex items-center gap-2 text-white text-xs font-bold uppercase tracking-wide px-3 py-1.5 rounded-full">
-                            <i class="ri-building-4-line"></i> Complete IT Solutions Company
-                        </span>
-
-                        <h1 class="hero-animate hero-delay-1 font-bold leading-tight mt-5 text-4xl md:text-5xl lg:text-6xl text-white">Your <span class="text-primary">Technology</span> &amp; Software Solutions Partner</h1>
-
-                        <p class="hero-animate hero-delay-2 text-white text-lg max-w-xl mx-auto mt-5">HRMS, Payroll, Attendance, Custom Software, Cloud and Business Solutions, built and supported by one team.</p>
-
-                        <div class="hero-animate hero-delay-3 mt-8 flex flex-wrap items-center justify-center gap-3">
-                            <a href="contact.html" class="py-2.5 px-6 inline-flex items-center gap-2 font-semibold tracking-wide align-middle duration-500 text-base text-center bg-primary hover:bg-primary-700 border border-primary hover:border-primary-700 text-white rounded-md">Book a Free Demo <i class="ri-arrow-right-line"></i></a>
-                            <a href="solutions-services.html" class="py-2.5 px-6 inline-flex items-center gap-2 font-semibold tracking-wide align-middle duration-500 text-base text-center bg-transparent hover:bg-white border border-white text-white hover:text-primary rounded-md">Explore Our Solutions</a>
+        <!-- Start Home - Carousel -->
+        <section id="hero-carousel" class="relative overflow-hidden" data-carousel="static">
+            <div class="relative h-screen overflow-hidden">
+                <!-- Slide 1: Kanvtech Solutions (Original) -->
+                <div class="hero-kv relative overflow-hidden pt-36 pb-16 md:pt-44 md:pb-24 bg-cover bg-center duration-700 ease-in-out absolute inset-0 transition-all transform translate-x-0 z-20" style="background-image: url('https://forbetterweb.com/html/universal/img/header/14.jpg');" data-carousel-item="active">
+                    <div class="hero-kv-overlay" aria-hidden="true"></div>
+                    <div class="container relative flex items-center justify-center h-full">
+                        <div class="grid grid-cols-1 justify-items-center text-center">
+                            <div class="max-w-3xl">
+                                <span class="hero-animate hero-eyebrow inline-flex items-center gap-2 text-white text-xs font-bold uppercase tracking-wide px-3 py-1.5 rounded-full">
+                                    <i class="ri-building-4-line"></i> Complete IT Solutions Company
+                                </span>
+                                <h1 class="hero-animate hero-delay-1 font-bold leading-tight mt-5 text-4xl md:text-5xl lg:text-6xl text-white">Your <span class="text-primary">Technology</span> &amp; Software Solutions Partner</h1>
+                                <p class="hero-animate hero-delay-2 text-white text-lg max-w-xl mx-auto mt-5">HRMS, Payroll, Attendance, Custom Software, Cloud and Business Solutions, built and supported by one team.</p>
+                                <div class="hero-animate hero-delay-3 mt-8 flex flex-wrap items-center justify-center gap-3">
+                                    <a href="contact.html" class="py-2.5 px-6 inline-flex items-center gap-2 font-semibold tracking-wide align-middle duration-500 text-base text-center bg-primary hover:bg-primary-700 border border-primary hover:border-primary-700 text-white rounded-md">Book a Free Demo <i class="ri-arrow-right-line"></i></a>
+                                    <a href="page-services.html" class="py-2.5 px-6 inline-flex items-center gap-2 font-semibold tracking-wide align-middle duration-500 text-base text-center bg-transparent hover:bg-white border border-white text-white hover:text-primary rounded-md">Explore Our Solutions</a>
+                                </div>
+                                <div class="hero-animate hero-delay-3 hero-trust-row mt-8 flex flex-wrap items-center justify-center text-sm text-white">
+                                    <span class="flex items-center gap-1.5 px-4"><i class="ri-award-line text-white"></i> 18+ Years of Experience</span>
+                                    <span class="flex items-center gap-2 px-4"><img src="assets/images/digital/spine-gold-partner.png" alt="" class="w-8 h-auto"> Spine Gold Partner</span>
+                                    <span class="flex items-center gap-1.5 px-4"><i class="ri-customer-service-2-line text-white"></i> Implementation &amp; Support</span>
+                                </div>
+                            </div>
                         </div>
+                    </div>
+                </div>
 
-                        <div class="hero-animate hero-delay-3 hero-trust-row mt-8 flex flex-wrap items-center justify-center text-sm text-white">
-                            <span class="flex items-center gap-1.5 px-4"><i class="ri-award-line text-white"></i> 18+ Years of Experience</span>
-                            <span class="flex items-center gap-2 px-4"><img src="assets/images/digital/spine-gold-partner.png" alt="" class="w-8 h-auto"> Spine Gold Partner</span>
-                            <span class="flex items-center gap-1.5 px-4"><i class="ri-customer-service-2-line text-white"></i> Implementation &amp; Support</span>
+                <!-- Slide 2: Biometric Attendance -->
+                <div class="relative overflow-hidden pt-36 pb-16 md:pt-44 md:pb-24 bg-cover bg-center duration-700 ease-in-out absolute inset-0 transition-all transform translate-x-full z-10" style="background-image: url('assets/images/business/Bio360-Biometric-Attendance-Hero-Banner.png');" data-carousel-item="">
+                    <div class="absolute inset-0 ltr:md:bg-linear-to-r rtl:md:bg-linear-to-l md:from-slate-900 md:via-slate-900/80 md:to-slate-900/20 bg-slate-900/70 z-2" aria-hidden="true"></div>
+                    <div class="container relative flex items-center justify-center h-full z-3">
+                        <div class="grid grid-cols-1 justify-items-start text-start md:max-w-2xl">
+                            <div class="max-w-3xl">
+                                <h1 class="font-bold leading-tight mt-5 text-4xl md:text-5xl lg:text-6xl text-white">Connect. Sync. <span class="text-primary">Manage. Without Limits.</span></h1>
+                                <p class="text-white/80 text-lg max-w-xl mt-5">Reliable Biometric Devices with Multi-Database Support for a Smarter, More Connected Business.</p>
+                                <div class="mt-8 flex flex-wrap items-center gap-3">
+                                    <a href="biometrics.html" class="py-2.5 px-6 inline-flex items-center gap-2 font-semibold tracking-wide align-middle duration-500 text-base text-center bg-primary hover:bg-primary-700 border border-primary hover:border-primary-700 text-white rounded-md">Learn More <i class="ri-arrow-right-line"></i></a>
+                                </div>
+                            </div>
                         </div>
-                    </div><!--end col-->
-                </div><!--end grid-->
-            </div><!--end container-->
-        </section><!--end section-->
-        <!-- End Home -->
+                    </div>
+                </div>
+
+                <!-- Slide 3: Fieldzust -->
+                <div class="relative overflow-hidden pt-36 pb-16 md:pt-44 md:pb-24 bg-cover bg-center duration-700 ease-in-out absolute inset-0 transition-all transform -translate-x-full z-10" style="background-image: url('assets/images/business/Fieldzust-Service-Tracking-Hero-Banner.png');" data-carousel-item="">
+                    <div class="absolute inset-0 ltr:md:bg-linear-to-l rtl:md:bg-linear-to-r md:from-slate-900 md:via-slate-900/80 md:to-slate-900/20 bg-slate-900/70 z-2" aria-hidden="true"></div>
+                    <div class="container relative flex items-center justify-center h-full z-3">
+                        <div class="grid grid-cols-1 justify-items-end text-end md:max-w-2xl md:ms-auto">
+                            <div class="max-w-3xl">
+                                <h1 class="font-bold leading-tight mt-5 text-4xl md:text-5xl lg:text-6xl text-white">Your Field Operations <span class="text-primary">Made Simple. More Impactful.</span></h1>
+                                <p class="text-white/80 text-lg max-w-xl mt-5 md:ms-auto">Fieldzust is an all-in-one field workforce management platform that helps businesses track, manage and empower their teams in real-time - anytime, anywhere.</p>
+                                <div class="mt-8 flex flex-wrap items-center gap-3 md:justify-end">
+                                    <a href="customize-solutions.html" class="py-2.5 px-6 inline-flex items-center gap-2 font-semibold tracking-wide align-middle duration-500 text-base text-center bg-primary hover:bg-primary-700 border border-primary hover:border-primary-700 text-white rounded-md">Explore Now <i class="ri-arrow-right-line"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Carousel Navigation -->
+            <button type="button" class="flex absolute top-1/2 -translate-y-1/2 inset-s-0 z-30 justify-center items-center px-4 cursor-pointer group focus:outline-none" data-carousel-prev="">
+                <span class="inline-flex justify-center items-center size-10 rounded-full border border-white hover:border-primary hover:bg-primary group-focus:outline-none transition-all">
+                    <svg class="size-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                    </svg>
+                    <span class="hidden">Previous</span>
+                </span>
+            </button>
+            <button type="button" class="flex absolute top-1/2 -translate-y-1/2 inset-e-0 z-30 justify-center items-center px-4 cursor-pointer group focus:outline-none" data-carousel-next="">
+                <span class="inline-flex justify-center items-center size-10 rounded-full border border-white hover:border-primary hover:bg-primary group-focus:outline-none transition-all">
+                    <svg class="size-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                    </svg>
+                    <span class="hidden">Next</span>
+                </span>
+            </button>
+        </section>
+        <!-- End Home - Carousel -->
 
             <div class="container relative md:mt-24 mt-16 pb-16 md:pb-24">
                 <div class="grid md:grid-cols-12 grid-cols-1 items-center gap-7.5">
