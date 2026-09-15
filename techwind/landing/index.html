@@ -144,10 +144,10 @@
         </a>
 
         <!-- Start Home - Carousel -->
-        <div id="hero-carousel" class="relative w-full overflow-hidden min-h-[600px]" data-carousel="static">
+        <div id="hero-carousel" class="relative w-full h-screen overflow-hidden" data-carousel="static">
             <!-- Slide 1: Kanvtech Solutions (Original) -->
-            <div class="hidden duration-1000 ease-in-out" data-carousel-item="active">
-                <div class="hero-kv relative w-full overflow-hidden pt-36 pb-16 md:pt-44 md:pb-24 bg-cover bg-center flex items-center justify-center" style="background-image: url('https://forbetterweb.com/html/universal/img/header/14.jpg');">
+            <div class="w-full h-full duration-1000 ease-in-out" data-carousel-item="active">
+                <div class="hero-kv relative w-full h-full overflow-hidden pt-36 pb-16 md:pt-44 md:pb-24 bg-cover bg-center flex items-center justify-center" style="background-image: url('https://forbetterweb.com/html/universal/img/header/14.jpg');">
                     <div class="hero-kv-overlay absolute inset-0" aria-hidden="true"></div>
                     <div class="container relative z-10">
                         <div class="grid grid-cols-1 justify-items-center text-center">
@@ -173,13 +173,13 @@
             </div>
 
             <!-- Slide 2: Biometric Attendance -->
-            <div class="hidden duration-1000 ease-in-out" data-carousel-item="">
-                <div class="w-full relative overflow-hidden pt-36 pb-16 md:pt-44 md:pb-24 flex items-center justify-center" style="background: url('assets/images/business/Bio360-Biometric-Attendance-Hero-Banner.png') center/cover no-repeat;">
+            <div class="w-full h-full hidden duration-1000 ease-in-out" data-carousel-item="">
+                <div class="w-full h-full relative overflow-hidden pt-36 pb-16 md:pt-44 md:pb-24 flex items-center justify-center" style="background: url('assets/images/business/Bio360-Biometric-Attendance-Hero-Banner.png') center/cover no-repeat;">
                     <div class="absolute inset-0 bg-gradient-to-r from-slate-900 via-slate-900/80 to-slate-900/20 md:bg-gradient-to-r md:from-slate-900 md:via-slate-900/80 md:to-slate-900/20 bg-slate-900/60"></div>
                     <div class="container relative z-10">
                         <div class="grid grid-cols-1 justify-items-start text-start md:max-w-2xl">
                             <div class="max-w-3xl">
-                                <h1 class="font-bold leading-tight text-4xl md:text-5xl lg:text-6xl text-white">Connect. Sync. <br>Manage. <span class="text-primary">Without Limits.</span></h1>
+                                <h1 class="font-bold leading-tight text-3xl md:text-4xl lg:text-5xl text-white">Connect. Sync. Manage.<br> <span class="text-primary">Without Limits.</span></h1>
                                 <p class="text-white/80 text-lg max-w-xl mt-5">Reliable Biometric Devices with Multi-Database Support for a Smarter, More Connected Business.</p>
                                 <div class="mt-8 flex flex-wrap items-center gap-3">
                                     <a href="biometrics.html" class="py-2.5 px-6 inline-flex items-center gap-2 font-semibold tracking-wide align-middle duration-500 text-base text-center bg-primary hover:bg-primary-700 border border-primary hover:border-primary-700 text-white rounded-md">Learn More <i class="ri-arrow-right-line"></i></a>
@@ -191,13 +191,13 @@
             </div>
 
             <!-- Slide 3: Fieldzust -->
-            <div class="hidden duration-1000 ease-in-out" data-carousel-item="">
-                <div class="w-full relative overflow-hidden pt-36 pb-16 md:pt-44 md:pb-24 flex items-center justify-center" style="background: url('assets/images/business/Fieldzust-Service-Tracking-Hero-Banner.png') center/cover no-repeat;">
+            <div class="w-full h-full hidden duration-1000 ease-in-out" data-carousel-item="">
+                <div class="w-full h-full relative overflow-hidden pt-36 pb-16 md:pt-44 md:pb-24 flex items-center justify-center" style="background: url('assets/images/business/Fieldzust-Service-Tracking-Hero-Banner.png') center/cover no-repeat;">
                     <div class="absolute inset-0 bg-gradient-to-l from-slate-900 via-slate-900/80 to-slate-900/20 md:bg-gradient-to-l md:from-slate-900 md:via-slate-900/80 md:to-slate-900/20 bg-slate-900/60"></div>
                     <div class="container relative z-10">
                         <div class="grid grid-cols-1 justify-items-start text-start md:max-w-2xl">
                             <div class="max-w-3xl">
-                                <h1 class="font-bold leading-tight text-4xl md:text-5xl lg:text-6xl text-white">Your Field Operations <span class="text-primary">Made Simple. More Impactful.</span></h1>
+                                <h1 class="font-bold leading-tight text-3xl md:text-4xl lg:text-5xl text-white">Your Field Operations <br><span style="color: rgb(6, 177, 45);">Made Simple. <br> More Impactful.</span></h1>
                                 <p class="text-white/80 text-lg max-w-xl mt-5">Fieldzust is an all-in-one field workforce management platform that helps businesses track, manage and empower their teams in real-time - anytime, anywhere.</p>
                                 <div class="mt-8 flex flex-wrap items-center gap-3">
                                     <a href="customize-solutions.html" class="py-2.5 px-6 inline-flex items-center gap-2 font-semibold tracking-wide align-middle duration-500 text-base text-center bg-primary hover:bg-primary-700 border border-primary hover:border-primary-700 text-white rounded-md">Explore Now <i class="ri-arrow-right-line"></i></a>
@@ -209,15 +209,11 @@
             </div>
 
             <!-- Carousel Navigation -->
-            <button type="button" class="absolute top-1/2 -translate-y-1/2 left-0 z-30 flex justify-center items-center px-4 h-full cursor-pointer group focus:outline-none" data-carousel-prev="">
-                <span class="inline-flex justify-center items-center size-10 rounded-full border border-white hover:border-primary hover:bg-primary group-focus:outline-none transition-all">
-                    <i class="ri-arrow-left-line text-white text-xl"></i>
-                </span>
+            <button type="button" style="position: absolute; left: 20px; top: 50%; transform: translateY(-50%); z-index: 40; display: flex; align-items: center; justify-content: center; cursor: pointer; background: rgba(255,255,255,0.1); border: 2px solid white; border-radius: 50%; width: 48px; height: 48px; transition: all 0.3s ease;" data-carousel-prev="" onmouseover="this.style.background='rgba(20,102,199,0.3)'; this.style.borderColor='rgb(20,102,199)'" onmouseout="this.style.background='rgba(255,255,255,0.1)'; this.style.borderColor='white'">
+                <i class="ri-arrow-left-line" style="color: white; font-size: 24px;"></i>
             </button>
-            <button type="button" class="absolute top-1/2 -translate-y-1/2 right-0 z-30 flex justify-center items-center px-4 h-full cursor-pointer group focus:outline-none" data-carousel-next="">
-                <span class="inline-flex justify-center items-center size-10 rounded-full border border-white hover:border-primary hover:bg-primary group-focus:outline-none transition-all">
-                    <i class="ri-arrow-right-line text-white text-xl"></i>
-                </span>
+            <button type="button" style="position: absolute; right: 20px; top: 50%; transform: translateY(-50%); z-index: 40; display: flex; align-items: center; justify-content: center; cursor: pointer; background: rgba(255,255,255,0.1); border: 2px solid white; border-radius: 50%; width: 48px; height: 48px; transition: all 0.3s ease;" data-carousel-next="" onmouseover="this.style.background='rgba(20,102,199,0.3)'; this.style.borderColor='rgb(20,102,199)'" onmouseout="this.style.background='rgba(255,255,255,0.1)'; this.style.borderColor='white'">
+                <i class="ri-arrow-right-line" style="color: white; font-size: 24px;"></i>
             </button>
         </div>
         <!-- End Home - Carousel -->
