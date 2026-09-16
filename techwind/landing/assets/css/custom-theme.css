@@ -477,6 +477,7 @@ footer.site-footer-fixed {
     z-index: 0;
 }
 
+
 @media (prefers-reduced-motion: reduce) {
     /* Reduced motion: keep the footer in normal document flow instead of a scroll-reveal effect */
     footer.site-footer-fixed {
@@ -832,4 +833,65 @@ footer.site-footer-fixed {
 
 @media (max-width: 767px) {
     .hero-kv-blob { display: none; }
+}
+
+/* ============================================================
+   FOOTER — multi-column grid layout
+   ============================================================ */
+
+/* Footer cols wrapper spans 8 columns in the outer 12-column grid */
+.footer-cols-wrapper {
+    grid-column: span 8;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+}
+
+/* Reset the old col-span classes for the first 3 columns */
+.footer-cols-wrapper > div:nth-child(1),
+.footer-cols-wrapper > div:nth-child(2),
+.footer-cols-wrapper > div:nth-child(3) {
+    grid-column: span 1 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    min-width: 0;
+}
+
+.footer-cols-wrapper > div:nth-child(2) {
+    margin-left: -1.5rem !important;
+}
+
+.footer-cols-wrapper > div:nth-child(3) {
+    margin-left: 0 !important;
+}
+
+/* HR and newsletter span full width of wrapper */
+.footer-cols-wrapper > hr,
+.footer-cols-wrapper > div:nth-child(5) {
+    grid-column: 1 / -1 !important;
+}
+
+/* Reduce top margin of newsletter section */
+.footer-newsletter {
+    margin-top: 0.5rem !important;
+}
+
+/* Remove padding from footer column headings */
+.footer-cols-wrapper h5 {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+@media (max-width: 767px) {
+    .footer-cols-wrapper {
+        grid-column: span 12;
+        grid-template-columns: 1fr;
+    }
+    .footer-cols-wrapper > div:nth-child(1),
+    .footer-cols-wrapper > div:nth-child(2),
+    .footer-cols-wrapper > div:nth-child(3),
+    .footer-cols-wrapper > hr,
+    .footer-cols-wrapper > div:nth-child(5) {
+        grid-column: auto !important;
+    }
 }
