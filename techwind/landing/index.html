@@ -37,6 +37,28 @@
         <link rel="stylesheet" href="assets/css/tailwind.min.css">
         <link rel="stylesheet" href="assets/css/custom-theme.css">
         <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+        <style>
+            /* Mobile banner images for carousel slides */
+            @media (max-width: 767px) {
+                .bio-banner {
+                    background-image: url('assets/images/business/Bio360-Biometric-Attendance-Hero-Banner-mobile.png') !important;
+                }
+                .fieldzust-banner {
+                    background-image: url('assets/images/business/Fieldzust-Service-Tracking-Hero-Banner-mobile.png') !important;
+                }
+                /* Reduce spacing on Fieldzust slide for mobile */
+                .fieldzust-slide .container {
+                    padding-top: 0.5rem;
+                    padding-bottom: 0.5rem;
+                }
+                .fieldzust-slide h1 {
+                    margin-top: 0;
+                }
+                .fieldzust-slide .mt-8 {
+                    margin-top: 1rem;
+                }
+            }
+        </style>
 
     </head>
     
@@ -156,12 +178,12 @@
                                     <i class="ri-building-4-line"></i> Complete IT Solutions Company
                                 </span>
                                 <h1 class="hero-animate hero-delay-1 font-bold leading-tight mt-5 text-4xl md:text-5xl lg:text-6xl text-white">Your <span class="text-primary">Technology</span> &amp; Software Solutions Partner</h1>
-                                <p class="hero-animate hero-delay-2 text-white text-lg max-w-xl mx-auto mt-5">HRMS, Payroll, Attendance, Custom Software, Cloud and Business Solutions, built and supported by one team.</p>
+                                <p class="hero-animate hero-delay-2 text-white text-lg max-w-xl mx-auto mt-5">HRMS, Spine Payroll, Attendance, Custom Software, Cloud and Business Solutions, built and supported by one team.</p>
                                 <div class="hero-animate hero-delay-3 mt-8 flex flex-wrap items-center justify-center gap-3">
                                     <a href="contact.html" class="py-2.5 px-6 inline-flex items-center gap-2 font-semibold tracking-wide align-middle duration-500 text-base text-center bg-primary hover:bg-primary-700 border border-primary hover:border-primary-700 text-white rounded-md">Book a Free Demo <i class="ri-arrow-right-line"></i></a>
-                                    <a href="page-services.html" class="py-2.5 px-6 inline-flex items-center gap-2 font-semibold tracking-wide align-middle duration-500 text-base text-center bg-transparent hover:bg-white border border-white text-white hover:text-primary rounded-md">Explore Our Solutions</a>
+                                    <a href="solutions-services.html" class="py-2.5 px-6 inline-flex items-center gap-2 font-semibold tracking-wide align-middle duration-500 text-base text-center bg-transparent hover:bg-white border border-white text-white hover:text-primary rounded-md">Explore Our Solutions</a>
                                 </div>
-                                <div class="hero-animate hero-delay-3 hero-trust-row mt-8 flex flex-wrap items-center justify-center text-sm text-white">
+                                <div class="hero-animate hero-delay-3 hero-trust-row mt-8 hidden md:flex flex-wrap items-center justify-center text-sm text-white">
                                     <span class="flex items-center gap-1.5 px-4"><i class="ri-award-line text-white"></i> 18+ Years of Experience</span>
                                     <span class="flex items-center gap-2 px-4"><img src="assets/images/digital/spine-gold-partner.png" alt="" class="w-8 h-auto"> Spine Gold Partner</span>
                                     <span class="flex items-center gap-1.5 px-4"><i class="ri-customer-service-2-line text-white"></i> Implementation &amp; Support</span>
@@ -174,7 +196,7 @@
 
             <!-- Slide 2: Biometric Attendance -->
             <div class="w-full h-full hidden transition-all duration-1000 ease-in-out" data-carousel-item="">
-                <div class="w-full h-full relative overflow-hidden pt-16 pb-12 md:pt-20 md:pb-16 flex items-center justify-center" style="background: url('assets/images/business/Bio360-Biometric-Attendance-Hero-Banner.png') center/cover no-repeat;">
+                <div class="w-full h-full relative overflow-hidden pt-16 pb-12 md:pt-20 md:pb-16 flex items-center justify-center bio-banner" style="background: url('assets/images/business/Bio360-Biometric-Attendance-Hero-Banner.png') center/cover no-repeat;">
                     <div class="absolute inset-0 bg-gradient-to-r from-slate-900 via-slate-900/80 to-slate-900/20 md:bg-gradient-to-r md:from-slate-900 md:via-slate-900/80 md:to-slate-900/20 bg-slate-900/60"></div>
                     <div class="container relative z-10">
                         <div class="grid grid-cols-1 justify-items-start text-start md:max-w-2xl">
@@ -191,14 +213,14 @@
             </div>
 
             <!-- Slide 3: Fieldzust -->
-            <div class="w-full h-full hidden duration-1000 ease-in-out" data-carousel-item="">
-                <div class="w-full h-full relative overflow-hidden pt-16 pb-12 md:pt-20 md:pb-16 flex items-center justify-center" style="background: url('assets/images/business/Fieldzust-Service-Tracking-Hero-Banner.png') center/cover no-repeat;">
+            <div class="w-full h-full hidden duration-1000 ease-in-out fieldzust-slide" data-carousel-item="">
+                <div class="w-full h-full relative overflow-hidden pt-16 pb-12 md:pt-20 md:pb-16 flex items-center justify-center fieldzust-banner" style="background: url('assets/images/business/Fieldzust-Service-Tracking-Hero-Banner.png') center/cover no-repeat;">
                     <div class="absolute inset-0 bg-gradient-to-l from-slate-900 via-slate-900/80 to-slate-900/20 md:bg-gradient-to-l md:from-slate-900 md:via-slate-900/80 md:to-slate-900/20 bg-slate-900/60"></div>
                     <div class="container relative z-10">
                         <div class="grid grid-cols-1 justify-items-start text-start md:max-w-2xl">
                             <div class="max-w-3xl">
-                                <h1 class="font-bold leading-tight text-3xl md:text-4xl lg:text-5xl text-white">Your Field Operations <br><span style="color: rgb(6, 177, 45);">Made Simple. <br> More Impactful.</span></h1>
-                                <p class="text-white/80 text-lg max-w-xl mt-5">Fieldzust is an all-in-one field workforce management platform that helps businesses track, manage and empower their teams in real-time - anytime, anywhere.</p>
+                                <h1 class="font-bold leading-tight text-xl sm:text-2xl md:text-4xl lg:text-5xl text-white">Your Field Operations <br><span style="color: rgb(6, 177, 45);">Made Simple. <br> More Impactful.</span></h1>
+                                <p class="hidden md:block text-white/80 text-lg max-w-xl mt-5">Fieldzust is an all-in-one field workforce management platform that helps businesses track, manage and empower their teams in real-time - anytime, anywhere.</p>
                                 <div class="mt-8 flex flex-wrap items-center gap-3">
                                     <a href="customize-solutions.html" class="py-2.5 px-6 inline-flex items-center gap-2 font-semibold tracking-wide align-middle duration-500 text-base text-center bg-primary hover:bg-primary-700 border border-primary hover:border-primary-700 text-white rounded-md">Explore Now <i class="ri-arrow-right-line"></i></a>
                                 </div>
@@ -209,12 +231,20 @@
             </div>
 
             <!-- Carousel Navigation -->
-            <button type="button" style="position: absolute; left: 20px; top: 50%; transform: translateY(-50%); z-index: 40; display: flex; align-items: center; justify-content: center; cursor: pointer; background: rgba(255,255,255,0.1); border: 2px solid white; border-radius: 50%; width: 48px; height: 48px; transition: all 0.3s ease;" data-carousel-prev="" onmouseover="this.style.background='rgba(20,102,199,0.3)'; this.style.borderColor='rgb(20,102,199)'" onmouseout="this.style.background='rgba(255,255,255,0.1)'; this.style.borderColor='white'">
+            <!-- Arrow buttons - hidden on mobile -->
+            <button type="button" class="hidden md:flex" style="position: absolute; left: 20px; top: 50%; transform: translateY(-50%); z-index: 40; align-items: center; justify-content: center; cursor: pointer; background: rgba(255,255,255,0.1); border: 2px solid white; border-radius: 50%; width: 48px; height: 48px; transition: all 0.3s ease;" data-carousel-prev="" onmouseover="this.style.background='rgba(20,102,199,0.3)'; this.style.borderColor='rgb(20,102,199)'" onmouseout="this.style.background='rgba(255,255,255,0.1)'; this.style.borderColor='white'">
                 <i class="ri-arrow-left-line" style="color: white; font-size: 24px;"></i>
             </button>
-            <button type="button" style="position: absolute; right: 20px; top: 50%; transform: translateY(-50%); z-index: 40; display: flex; align-items: center; justify-content: center; cursor: pointer; background: rgba(255,255,255,0.1); border: 2px solid white; border-radius: 50%; width: 48px; height: 48px; transition: all 0.3s ease;" data-carousel-next="" onmouseover="this.style.background='rgba(20,102,199,0.3)'; this.style.borderColor='rgb(20,102,199)'" onmouseout="this.style.background='rgba(255,255,255,0.1)'; this.style.borderColor='white'">
+            <button type="button" class="hidden md:flex" style="position: absolute; right: 20px; top: 50%; transform: translateY(-50%); z-index: 40; align-items: center; justify-content: center; cursor: pointer; background: rgba(255,255,255,0.1); border: 2px solid white; border-radius: 50%; width: 48px; height: 48px; transition: all 0.3s ease;" data-carousel-next="" onmouseover="this.style.background='rgba(20,102,199,0.3)'; this.style.borderColor='rgb(20,102,199)'" onmouseout="this.style.background='rgba(255,255,255,0.1)'; this.style.borderColor='white'">
                 <i class="ri-arrow-right-line" style="color: white; font-size: 24px;"></i>
             </button>
+
+            <!-- Dot indicators - mobile only -->
+            <div class="md:hidden flex gap-3" style="position: absolute; top: 55%; left: 50%; transform: translate(-50%, -50%); z-index: 9999; padding-top: 572px;">
+                <button type="button" class="carousel-dot dot-0" style="width: 16px; height: 16px; border-radius: 50%; background-color: white; opacity: 1; cursor: pointer; border: none; transition: opacity 0.3s;" data-carousel-slide-to="0" aria-label="Slide 1"></button>
+                <button type="button" class="carousel-dot dot-1" style="width: 16px; height: 16px; border-radius: 50%; background-color: white; opacity: 0.4; cursor: pointer; border: none; transition: opacity 0.3s;" data-carousel-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" class="carousel-dot dot-2" style="width: 16px; height: 16px; border-radius: 50%; background-color: white; opacity: 0.4; cursor: pointer; border: none; transition: opacity 0.3s;" data-carousel-slide-to="2" aria-label="Slide 3"></button>
+            </div>
         </div>
         <!-- End Home - Carousel -->
 
@@ -231,7 +261,7 @@
                             <h6 class="text-primary text-xl font-bold uppercase mb-2">Who We Are</h6>
                             <h3 class="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">A Complete Technology Partner for Your Business</h3>
 
-                            <p class="text-slate-400 max-w-xl mb-6">Kanvtech Solutions is a complete IT solutions company, bringing HRMS software, Spine payroll, Tally Software, cloud services and custom software development together for growing businesses. Backed by <span class="text-primary font-semibold">18 years</span> of combined experience, our team brings proven technical expertise and a strong grasp of statutory compliance to every project. We work with businesses across manufacturing, retail, healthcare, services, finance and education, building the right solution for the way each industry operates.</p>
+                            <p class="text-slate-400 max-w-xl mb-6">Kanvtech Solutions is a complete IT solutions company, bringing HRMS software, Spine Payroll, Tally Software, cloud services and custom software development together for growing businesses. Backed by <span class="text-primary font-semibold">18 years</span> of combined experience, our team brings proven technical expertise and a strong grasp of statutory compliance to every project. We work with businesses across manufacturing, retail, healthcare, services, finance and education, building the right solution for the way each industry operates.</p>
 
                             <a href="about.html" class="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-primary hover:bg-primary-700 border-primary hover:border-primary-700 text-white rounded-md"><i class="ri-booklet-line"></i> Read More About Us</a>
                         </div>
@@ -245,7 +275,7 @@
                 <div class="grid grid-cols-1 pb-8 text-center" data-aos="fade-up">
                     <h3 class="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">Everything Your Business Runs On, <span class="text-primary">Simplified</span></h3>
 
-                    <p class="text-slate-400 max-w-xl mx-auto">Kanvtech provides HRMS, Payroll, Tally, Cloud Services and custom software for everything your business runs on.</p>
+                    <p class="text-slate-400 max-w-xl mx-auto">Kanvtech provides HRMS, Spine Payroll, Tally, Cloud Services and custom software for everything your business runs on.</p>
                 </div>
 
                 <div class="grid lg:grid-cols-12 md:grid-cols-2 grid-cols-1 items-center mt-10 gap-7.5">
@@ -254,10 +284,10 @@
                     </div>
                     <div class="lg:col-span-7" data-aos="fade-up">
                         <div class="lg:ms-10">
-                            <p class="text-slate-400 max-w-xl">HRMS, Payroll, Cloud Services and custom software, backed by a team that knows these systems well.</p>
+                            <p class="text-slate-400 max-w-xl">HRMS, Spine Payroll, Cloud Services and custom software, backed by a team that knows these systems well.</p>
 
                             <ul class="list-none text-slate-400 mt-4">
-                                <li class="mb-1 flex"><i class="ri-checkbox-circle-line text-primary text-[20px] me-2"></i> HRMS &amp; Payroll handled end to end</li>
+                                <li class="mb-1 flex"><i class="ri-checkbox-circle-line text-primary text-[20px] me-2"></i> HRMS &amp; Spine Payroll handled end to end</li>
                                 <li class="mb-1 flex"><i class="ri-checkbox-circle-line text-primary text-[20px] me-2"></i> Cloud Services & custom software built for you</li>
                                 <li class="mb-1 flex"><i class="ri-checkbox-circle-line text-primary text-[20px] me-2"></i> Real support, well beyond go-live</li>
                             </ul>
@@ -279,7 +309,7 @@
                 <div class="grid grid-cols-1 pb-8 text-center" data-aos="fade-up">
                     <h6 class="text-primary text-xl font-bold uppercase mb-2">What We Do</h6>
                     <h3 class="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">Everything Your Business Needs, <span class="text-primary">Organised</span></h3>
-                    <p class="text-slate-400 max-w-xl mx-auto">Kanvtech provides integrated HRMS, Tally software, custom business solutions, accounting systems and cloud services.</p>
+                    <p class="text-slate-400 max-w-xl mx-auto">Kanvtech provides integrated HRMS, Tally Software, custom business solutions, accounting systems and cloud services.</p>
                 </div><!--end grid-->
 
                 <div class="grid md:grid-cols-2 lg:grid-cols-4 grid-cols-1 gap-7.5 mt-8">
@@ -317,7 +347,7 @@
                 <div class="grid grid-cols-1 pb-8 text-center" data-aos="fade-up">
                     <span class="text-primary text-xs font-bold uppercase tracking-wide pb-1 inline-block border-b-2 border-accent mb-3 mx-auto">Authorised Partnership</span>
                     <h3 class="mb-4 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">Spine Payroll and HRMS Implementation</h3>
-                    <p class="text-slate-400 max-w-xl mx-auto">For businesses already using or evaluating Spine, Kanvtech is an authorised Spine Gold Partner. We implement, configure and support Spine Payroll, Spine HRMS and Spine Asset, covering salary processing, statutory compliance and the full workforce lifecycle.</p>
+                    <p class="text-slate-400 max-w-xl mx-auto">For businesses already using or evaluating Spine, Kanvtech is an authorised <span class="text-primary font-semibold">Spine Gold Partner.</span> We implement, configure and support Spine Payroll, Spine HRMS and Spine Asset, covering salary processing, statutory compliance and the full workforce lifecycle.</p>
                 </div><!--end grid-->
 
                 <div class="grid md:grid-cols-12 grid-cols-1 items-center gap-10">
@@ -334,7 +364,7 @@
                                 </div>
                                 <div class="flex-1 ms-4">
                                     <h5 class="text-lg font-semibold"><a href="spine-payroll-hrms.html" class="hover:text-primary">Spine Payroll</a></h5>
-                                    <p class="text-slate-400 mt-2">Accurate, on-time payroll with PF, ESIC and tax compliance built in.</p>
+                                    <p class="text-slate-400 mt-2">Accurate, on-time Spine Payroll with PF, ESIC and tax compliance built in.</p>
                                 </div>
                             </div>
 
@@ -350,7 +380,7 @@
                         </div>
 
                         <div class="mt-6">
-                            <a href="solutions-services.html" class="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-primary hover:bg-primary-700 border-primary hover:border-primary-700 text-white rounded-md">Explore Spine Solutions</a>
+                            <a href="solutions-services.html#software" class="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-primary hover:bg-primary-700 border-primary hover:border-primary-700 text-white rounded-md">Explore Spine Solutions</a>
                         </div>
                     </div>
                 </div><!--end grid-->
@@ -371,7 +401,7 @@
                                 </div>
                                 <div class="flex-1 md:order-1 order-2 md:text-end md:me-4 md:ms-0 ms-4">
                                     <h4 class="mb-0 text-lg font-medium"><a href="spine-payroll-hrms.html" class="hover:text-primary">Spine Payroll &amp; HRMS</a></h4>
-                                    <p class="text-slate-400 mt-3">HRMS and payroll by Spine, set up by Kanvtech.</p>
+                                    <p class="text-slate-400 mt-3">HRMS and Spine Payroll by Spine, set up by Kanvtech.</p>
                                 </div>
                             </div>
                             <!--end feature-->
@@ -382,7 +412,7 @@
                                 </div>
                                 <div class="flex-1 md:order-1 order-2 md:text-end md:me-4 md:ms-0 ms-4">
                                     <h4 class="mb-0 text-lg font-medium"><a href="biometrics.html" class="hover:text-primary">Bio360 Attendance</a></h4>
-                                    <p class="text-slate-400 mt-3">Biometric devices integrated with HRMS and payroll.</p>
+                                    <p class="text-slate-400 mt-3">Biometric devices integrated with HRMS and Spine Payroll.</p>
                                 </div>
                             </div>
                             <!--end feature-->
@@ -434,7 +464,7 @@
                                 </div>
                                 <div class="flex-1 ms-4">
                                     <h4 class="mb-0 text-lg font-medium"><a href="tally-solutions.html" class="hover:text-primary">Tally Software</a></h4>
-                                    <p class="text-slate-400 mt-3">Tally software, services, customisation and cloud access.</p>
+                                    <p class="text-slate-400 mt-3">Tally Software, setup, customisation and cloud access.</p>
                                 </div>
                             </div>
                             <!--end feature-->
@@ -583,7 +613,7 @@
                         <div class="lg:me-6 text-center lg:text-start">
                             <h3 class="mb-4 md:text-4xl text-3xl lg:leading-normal leading-normal text-white font-semibold">Trusted by businesses to run their most important systems</h3>
 
-                            <p class="text-white/80 max-w-xl mx-auto lg:ms-auto">HRMS, Payroll, Cloud and custom software, set up and supported by one reliable partner.</p>
+                            <p class="text-white/80 max-w-xl mx-auto lg:ms-auto">HRMS, Spine Payroll, Cloud and custom software, set up and supported by one reliable partner.</p>
 
                             <div class="mt-6">
                                 <a href="contact.html" class="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-slate-100 hover:bg-slate-200 border-slate-100 hover:border-slate-200 text-primary rounded-md me-2 mt-2">Book a Free Demo</a>
@@ -651,7 +681,7 @@
                 <div class="grid grid-cols-1 pb-8 text-center" data-aos="fade-up">
                     <h3 class="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">Solutions for Every Industry</h3>
 
-                    <p class="text-slate-400 max-w-xl mx-auto">From the shop floor to the back office, our HRMS, payroll, Tally and cloud solutions are configured to match how each industry actually works.</p>
+                    <p class="text-slate-400 max-w-xl mx-auto">From the shop floor to the back office, our HRMS, Spine Payroll, Tally and cloud solutions are configured to match how each industry actually works.</p>
                 </div><!--end grid-->
 
                 <div class="industry-stack">
@@ -758,7 +788,7 @@
                                     <i class="ri-graduation-cap-line"></i>
                                 </div>
                                 <h5 class="industry-card-title">Education</h5>
-                                <p class="industry-card-desc">We bring Spine and Tally Prime together to manage staff payroll, HRMS records and student fee accounting within a single system.</p>
+                                <p class="industry-card-desc">We bring Spine and Tally Prime together to manage staff Spine Payroll, HRMS records and student fee accounting within a single system.</p>
                                 <ul class="flex flex-wrap gap-2 mt-1">
                                     <li class="inline-block text-xs font-semibold text-primary bg-primary/5 rounded-full px-3 py-1">Staff Payroll</li>
                                     <li class="inline-block text-xs font-semibold text-primary bg-primary/5 rounded-full px-3 py-1">HRMS Records</li>
@@ -800,7 +830,7 @@
             <div class="container relative">
                 <div class="grid grid-cols-1 pb-8 text-center" data-aos="fade-up">
                     <h3 class="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">What Our Clients Say</h3>
-                    <p class="text-slate-400 max-w-xl mx-auto">Businesses that trust Kanvtech to run their HRMS, Payroll and Cloud systems.</p>
+                    <p class="text-slate-400 max-w-xl mx-auto">Businesses that trust Kanvtech to run their HRMS, Spine Payroll and Cloud systems.</p>
                 </div><!--end grid-->
             </div><!--end container-->
 
@@ -827,7 +857,7 @@
                                 <ul class="stars list-none flex mb-0 gap-1">
                                     <li><i class="ri-star-s-fill"></i></li><li><i class="ri-star-s-fill"></i></li><li><i class="ri-star-s-fill"></i></li><li><i class="ri-star-s-fill"></i></li><li><i class="ri-star-s-fill"></i></li>
                                 </ul>
-                                <p class="quote">"Kanvtech set up Spine Payroll for our factory and payroll is finally stress-free. Compliance is handled and salaries go out on time every month."</p>
+                                <p class="quote">"Kanvtech set up Spine Payroll for our factory and Spine Payroll is finally stress-free. Compliance is handled and salaries go out on time every month."</p>
                                 <div class="flex items-center gap-3">
                                     <div class="testimonial-avatar">RS</div>
                                     <div>
@@ -841,7 +871,7 @@
                                 <ul class="stars list-none flex mb-0 gap-1">
                                     <li><i class="ri-star-s-fill"></i></li><li><i class="ri-star-s-fill"></i></li><li><i class="ri-star-s-fill"></i></li><li><i class="ri-star-s-fill"></i></li><li><i class="ri-star-s-fill"></i></li>
                                 </ul>
-                                <p class="quote">"Spine HRMS transformed how we manage our team. Attendance, leaves and payroll in one place — our HRMS work is half of what it used to be."</p>
+                                <p class="quote">"Spine HRMS transformed how we manage our team. Attendance, leaves and Spine Payroll in one place — our HRMS work is half of what it used to be."</p>
                                 <div class="flex items-center gap-3">
                                     <div class="testimonial-avatar">PM</div>
                                     <div>
@@ -898,7 +928,7 @@
                                 <ul class="stars list-none flex mb-0 gap-1">
                                     <li><i class="ri-star-s-fill"></i></li><li><i class="ri-star-s-fill"></i></li><li><i class="ri-star-s-fill"></i></li><li><i class="ri-star-s-fill"></i></li><li><i class="ri-star-s-fill"></i></li>
                                 </ul>
-                                <p class="quote">"Kanvtech set up Spine Payroll for our factory and payroll is finally stress-free. Compliance is handled and salaries go out on time every month."</p>
+                                <p class="quote">"Kanvtech set up Spine Payroll for our factory and Spine Payroll is finally stress-free. Compliance is handled and salaries go out on time every month."</p>
                                 <div class="flex items-center gap-3">
                                     <div class="testimonial-avatar">RS</div>
                                     <div>
@@ -912,7 +942,7 @@
                                 <ul class="stars list-none flex mb-0 gap-1">
                                     <li><i class="ri-star-s-fill"></i></li><li><i class="ri-star-s-fill"></i></li><li><i class="ri-star-s-fill"></i></li><li><i class="ri-star-s-fill"></i></li><li><i class="ri-star-s-fill"></i></li>
                                 </ul>
-                                <p class="quote">"Spine HRMS transformed how we manage our team. Attendance, leaves and payroll in one place — our HRMS work is half of what it used to be."</p>
+                                <p class="quote">"Spine HRMS transformed how we manage our team. Attendance, leaves and Spine Payroll in one place — our HRMS work is half of what it used to be."</p>
                                 <div class="flex items-center gap-3">
                                     <div class="testimonial-avatar">PM</div>
                                     <div>
@@ -974,7 +1004,7 @@
                                 <ul class="stars list-none flex mb-0 gap-1">
                                     <li><i class="ri-star-s-fill"></i></li><li><i class="ri-star-s-fill"></i></li><li><i class="ri-star-s-fill"></i></li><li><i class="ri-star-s-fill"></i></li><li><i class="ri-star-s-fill"></i></li>
                                 </ul>
-                                <p class="quote">"From payroll to cloud services, Kanvtech handles all our IT with a single, reliable point of contact. It's been a huge relief."</p>
+                                <p class="quote">"From Spine Payroll to cloud services, Kanvtech handles all our IT with a single, reliable point of contact. It's been a huge relief."</p>
                                 <div class="flex items-center gap-3">
                                     <div class="testimonial-avatar">AR</div>
                                     <div>
@@ -1045,7 +1075,7 @@
                                 <ul class="stars list-none flex mb-0 gap-1">
                                     <li><i class="ri-star-s-fill"></i></li><li><i class="ri-star-s-fill"></i></li><li><i class="ri-star-s-fill"></i></li><li><i class="ri-star-s-fill"></i></li><li><i class="ri-star-s-fill"></i></li>
                                 </ul>
-                                <p class="quote">"From payroll to cloud services, Kanvtech handles all our IT with a single, reliable point of contact. It's been a huge relief."</p>
+                                <p class="quote">"From Spine Payroll to cloud services, Kanvtech handles all our IT with a single, reliable point of contact. It's been a huge relief."</p>
                                 <div class="flex items-center gap-3">
                                     <div class="testimonial-avatar">AR</div>
                                     <div>
@@ -1131,7 +1161,7 @@
                         <i class="ri-question-line text-xl text-primary me-3"></i>
                         <div class="flex-1">
                             <h5 class="mb-2 text-xl font-semibold">What does <span class="text-primary">Kanvtech</span> do?</h5>
-                            <p class="text-slate-400">We provide HRMS software, payroll, Tally, cloud servers and custom software for growing businesses.</p>
+                            <p class="text-slate-400">We provide HRMS software, Spine Payroll, Tally, cloud servers and custom software for growing businesses.</p>
                         </div>
                     </div>
 
@@ -1146,8 +1176,8 @@
                     <div class="flex" data-aos="fade-up">
                         <i class="ri-question-line text-xl text-primary me-3"></i>
                         <div class="flex-1">
-                            <h5 class="mb-2 text-xl font-semibold">Do you provide Tally services?</h5>
-                            <p class="text-slate-400">Yes. We provide Tally software, setup, customisation and cloud access, delivered entirely by our in-house team.</p>
+                            <h5 class="mb-2 text-xl font-semibold">Do you provide Tally Software?</h5>
+                            <p class="text-slate-400">Yes. We provide Tally Software setup, customisation, support and cloud access, delivered entirely by our in-house team.</p>
                         </div>
                     </div>
 
@@ -1163,7 +1193,7 @@
                         <i class="ri-question-line text-xl text-primary me-3"></i>
                         <div class="flex-1">
                             <h5 class="mb-2 text-xl font-semibold">Do you provide cloud and custom software solutions?</h5>
-                            <p class="text-slate-400">Yes. Alongside HRMS, payroll and Tally, we provide cloud servers, custom software and app development built around your business processes.</p>
+                            <p class="text-slate-400">Yes. Alongside HRMS, Spine Payroll and Tally, we provide cloud servers, custom software and app development built around your business processes.</p>
                         </div>
                     </div>
 
@@ -1276,7 +1306,7 @@
                                     <a class="text-[22px] focus:outline-none" href="/">
                                         <img src="assets/images/logo-light.png" alt="">
                                     </a>
-                                    <p class="mt-6 text-gray-300">Kanvtech brings HRMS, Payroll, Cloud Services and custom software together for growing businesses.</p>
+                                    <p class="mt-6 text-gray-300">Kanvtech brings HRMS, Spine Payroll, Cloud Services and custom software together for growing businesses.</p>
                                     <ul class="list-none footer-list mt-6">
                                         <li class="flex items-center"><i class="ri-mail-line text-primary me-2"></i> <a href="#" data-kv-contact-open="" class="text-gray-300 hover:text-white duration-500 ease-in-out">connect@kanvtech.com</a></li>
                                         <li class="flex items-center mt-2.5"><i class="ri-phone-line text-primary me-2"></i> <a href="tel:+917045998877" class="text-gray-300 hover:text-white duration-500 ease-in-out">+91 70459 98877</a></li>
@@ -1345,7 +1375,7 @@
                 <div class="container relative text-center">
                     <div class="grid md:grid-cols-2 items-center">
                         <div class="md:text-start text-center">
-                            <p class="mb-0 text-sm text-gray-500">© <script>document.write(new Date().getFullYear())</script>2026 Kanvtech Solutions Private Limited. All rights reserved.</p>
+                            <p class="mb-0 text-sm text-gray-500">©<script>document.write(new Date().getFullYear())</script> Kanvtech Solutions Private Limited. All rights reserved.</p>
                             <p class="mb-0 text-sm text-gray-300 mt-2.5">Designed &amp; Developed by: <a href="https://www.kanhaiyasuthar.com/" target="_blank" rel="noopener" style="font-weight:bold;color:#039ECE" class="hover:text-white duration-500 ease-in-out">TechSpeeX</a></p>
                         </div>
 
@@ -1414,6 +1444,40 @@
         <script src="assets/libs/shufflejs/shuffle.min.js"></script>
         <script src="assets/libs/jarallax/jarallax.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const dots = document.querySelectorAll('.carousel-dot');
+                const carousel = document.getElementById('hero-carousel');
+
+                if (carousel && dots.length > 0) {
+                    const updateDots = () => {
+                        const items = carousel.querySelectorAll('[data-carousel-item]');
+                        dots.forEach((dot, index) => {
+                            if (items[index] && !items[index].classList.contains('hidden')) {
+                                dot.style.opacity = '1';
+                            } else {
+                                dot.style.opacity = '0.4';
+                            }
+                        });
+                    };
+
+                    dots.forEach((dot, index) => {
+                        dot.addEventListener('click', () => {
+                            const items = carousel.querySelectorAll('[data-carousel-item]');
+                            items.forEach(item => item.classList.add('hidden'));
+                            items[index].classList.remove('hidden');
+                            updateDots();
+                        });
+                    });
+
+                    updateDots();
+
+                    const observer = new MutationObserver(updateDots);
+                    observer.observe(carousel, { subtree: true, attributes: true, attributeFilter: ['class'] });
+                }
+            });
+        </script>
+
 
 
         <!-- JAVASCRIPTS -->

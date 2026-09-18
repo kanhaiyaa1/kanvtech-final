@@ -524,25 +524,20 @@ try {
 
 try {
     const counter = document.querySelectorAll('.counter-value');
-    const speed = 2500; // The lower the slower
+    const duration = 1100; // Duration in milliseconds for all counters to complete
 
     const runCounter = (counter_value) => {
+        const target = +counter_value.getAttribute('data-target');
+        const startTime = Date.now();
+
         const updateCount = () => {
-            const target = +counter_value.getAttribute('data-target');
-            const count = +counter_value.innerText;
+            const elapsed = Date.now() - startTime;
+            const progress = Math.min(elapsed / duration, 1);
+            const currentCount = Math.floor(target * progress);
 
-            // Lower inc to slow and higher to slow
-            var inc = target / speed;
+            counter_value.innerText = currentCount;
 
-            if (inc < 1) {
-                inc = 1;
-            }
-
-            // Check if target is reached
-            if (count < target) {
-                // Add inc to count and output in counter_value
-                counter_value.innerText = (count + inc).toFixed(0);
-                // Call function every ms
+            if (progress < 1) {
                 setTimeout(updateCount, 1);
             } else {
                 counter_value.innerText = target;
