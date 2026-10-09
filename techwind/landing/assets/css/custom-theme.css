@@ -884,7 +884,16 @@ footer.site-footer-fixed {
 
 @media (max-width: 767px) {
     .footer-cols-wrapper {
-        grid-column: span 12;
+        /* The outer footer grid is grid-cols-1 (one explicit column) below
+           768px, so this must span 1, not 12 - spanning 12 into a 1-column
+           parent forces 11 extra implicit 0-width columns, which squeezes
+           the sibling logo column down to ~146px and wraps its text into
+           far more lines than it needs, ballooning the fixed footer's
+           height on mobile. (A 2-per-row layout was tried here instead of
+           stacking all 3 groups, but the narrower columns made the longer
+           links - "Spine Payroll & HRMS" etc - wrap onto more lines than
+           they saved, so full-width stacking is actually shorter overall.) */
+        grid-column: auto;
         grid-template-columns: 1fr;
     }
     .footer-cols-wrapper > div:nth-child(1),
@@ -893,5 +902,66 @@ footer.site-footer-fixed {
     .footer-cols-wrapper > hr,
     .footer-cols-wrapper > div:nth-child(5) {
         grid-column: auto !important;
+    }
+    .footer-cols-wrapper > div:nth-child(2) {
+        margin-left: 0 !important;
+    }
+    .footer-cols-wrapper > div:nth-child(2),
+    .footer-cols-wrapper > div:nth-child(3) {
+        margin-top: 0.5rem !important;
+    }
+
+    /* The footer is position:fixed (see FOOTER REVEAL above), so its full
+       height must fit a short mobile viewport or the top of it is pushed
+       off-screen and never becomes visible. Link groups wrap horizontally
+       instead of one link per line, and vertical spacing is tightened,
+       to keep the whole footer short enough to show completely. Desktop
+       is untouched — this block only applies below 768px. */
+    #site-footer .footer-list {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 1rem;
+        row-gap: 0.4rem;
+        margin-top: 0.6rem !important;
+        font-size: 0.875rem;
+    }
+    #site-footer .footer-list li {
+        margin: 0 !important;
+    }
+
+    /* The logo file is a wide, short wordmark (256x82) with no size
+       constraint elsewhere, so it renders at full natural height. Cap it
+       on mobile only; desktop is unaffected. */
+    #site-footer .py-15 .grid > div:first-child img {
+        max-height: 32px;
+        width: auto;
+    }
+    /* The description paragraph wraps to 3 lines at the default 16px on a
+       phone-width column; a touch smaller keeps it to 2. */
+    #site-footer .py-15 .grid > div:first-child p {
+        font-size: 0.875rem;
+        line-height: 1.5;
+    }
+
+    #site-footer .py-15 {
+        padding-block: 0.75rem;
+    }
+    #site-footer .gap-7\.5 {
+        gap: 0.75rem;
+    }
+    #site-footer .mt-6 {
+        margin-top: 0.5rem;
+    }
+    #site-footer .py-7\.5 {
+        padding-block: 0.5rem;
+    }
+    .footer-newsletter form.mt-4 {
+        margin-top: 0.5rem;
+    }
+    /* Copyright line is long enough to wrap to 2 lines at the default
+       text-sm on a phone-width column; text-xs keeps it to 1. */
+    #site-footer .py-7\.5 .text-sm {
+        font-size: 0.75rem;
+        line-height: 1.4;
     }
 }

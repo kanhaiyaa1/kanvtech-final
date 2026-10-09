@@ -308,7 +308,7 @@
                             <div class="tss-card-media"><img src="assets/images/illustration/doodle-style-illustration--hand-drawn-loose-linewo.png" alt="" loading="lazy"></div>
                             <i class="ri-lock-2-line tss-card-icon"></i>
                             <h5 class="text-lg font-medium mb-2">Remote Access</h5>
-                            <p class="text-slate-400 text-sm">Access company data securely from anywhere through Tally.NET, with your data kept safe and never stored on Tally's own servers.</p>
+                            <p class="text-slate-400 text-sm">Access company data securely from anywhere through Tally.NET, with data encrypted in transit and not permanently stored on Tally's servers.</p>
                         </div>
                         <div class="tss-card">
                             <div class="tss-card-media"><img src="assets/images/illustration/doodle-style-illustration--hand-drawn-loose-linewo11.png" alt="" loading="lazy"></div>
@@ -973,6 +973,44 @@
                     tab.addEventListener('mouseenter', function () { activate(tab.getAttribute('data-tc-tab')); });
                 });
             })();
+        </script>
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+                {
+                    "@type": "Question",
+                    "name": "What's the difference between TallyPrime Silver, Gold and Server?",
+                    "acceptedAnswer": { "@type": "Answer", "text": "Silver is a single-user licence. Gold is multi-user across a network. TallyPrime Server is an add-on for Gold that adds client-server power for 10 or more simultaneous users." }
+                },
+                {
+                    "@type": "Question",
+                    "name": "What does a TSS subscription unlock that a plain Tally licence does not?",
+                    "acceptedAnswer": { "@type": "Answer", "text": "TSS unlocks the connected side of Tally: GST filing, connected banking, cloud backup and remote report access, plus free product updates. Without an active TSS, Tally keeps working but loses these connected features." }
+                },
+                {
+                    "@type": "Question",
+                    "name": "How is Tally Services different from TSS?",
+                    "acceptedAnswer": { "@type": "Answer", "text": "TSS is Tally's own subscription product. Tally Services is Kanvtech's hands-on work: implementation, training, AMC, data synchronization and cloud migration." }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Do I need to buy Tally again to use it on the cloud?",
+                    "acceptedAnswer": { "@type": "Answer", "text": "No. Tally on Cloud uses your existing TallyPrime licence. Kanvtech hosts it on a secure cloud server, giving you remote access. If you do not have a licence yet, we can help you get one." }
+                },
+                {
+                    "@type": "Question",
+                    "name": "What is the difference between customization and an add-on?",
+                    "acceptedAnswer": { "@type": "Answer", "text": "Customization usually means new reports, extra fields or integrations built around your process. An add-on is a packaged TDL module that plugs in a specific feature, such as security controls or WhatsApp invoicing. Both work around Tally's core, leaving your existing data untouched." }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Can Kanvtech guide us to the right combination of these?",
+                    "acceptedAnswer": { "@type": "Answer", "text": "Yes. Tell us your team size, number of branches and current setup, and we will recommend the right licence, hosting and customization combination for your business." }
+                }
+            ]
+        }
         </script>
     </body>
 </html>

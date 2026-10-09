@@ -125,7 +125,7 @@
                             <li class="inline-block uppercase text-13 font-bold duration-500 ease-in-out text-primary" aria-current="page">Cloud Services</li>
                         </ul>
                         <h1 class="mb-5 md:text-4xl text-3xl md:leading-normal leading-normal font-medium">Reliable Cloud Hosting for <span class="text-primary">Businesses</span></h1>
-                        <p class="text-slate-400 text-lg max-w-2xl">Kanvtech provides fast, secure and always-on cloud servers for business websites, applications and data. Our team configures, monitors and maintains every server, keeping systems reliable and ready to scale as the business grows.</p>
+                        <p class="text-slate-400 text-lg max-w-2xl">Kanvtech provides fast, secure cloud servers built for high availability, for business websites, applications and data. Our team configures, monitors and maintains every server, keeping systems reliable and ready to scale as the business grows.</p>
 
                         <div class="mt-8 flex flex-wrap items-center gap-3">
                             <a href="contact.html" class="py-2.5 px-6 inline-flex items-center gap-2 font-semibold tracking-wide align-middle duration-500 text-base text-center bg-primary hover:bg-primary-700 border border-primary hover:border-primary-700 text-white rounded-md">Book a Free Demo <i class="ri-arrow-right-line"></i></a>
@@ -148,7 +148,7 @@
                         <div class="lg:ms-5">
                             <h6 class="text-primary text-sm font-bold uppercase mb-2">What It Is</h6>
                             <h3 class="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">Reliable Hosting <span class="text-primary">Without the Hardware</span></h3>
-                            <p class="text-slate-400 max-w-xl mb-4">A cloud server hosts websites, business applications and databases across a network of connected virtual servers instead of one physical machine. If one server in the network goes down, another picks up instantly, keeping operations running without interruption.</p>
+                            <p class="text-slate-400 max-w-xl mb-4">A cloud server hosts websites, business applications and databases across a network of connected virtual servers instead of one physical machine. If one server in the network goes down, another is designed to take over, reducing disruption to your operations.</p>
                             <p class="text-slate-400 max-w-xl">This also brings the freedom to add or reduce resources on demand, without buying or maintaining dedicated hardware.</p>
                         </div>
                     </div>
@@ -207,10 +207,10 @@
                     <div class="order-2 md:order-1 lg:me-8">
                         <ul class="list-none text-slate-400 mt-4">
                             <li class="mb-2 flex"><i class="ri-checkbox-circle-line text-primary text-[20px] me-2"></i> Virtual private servers with dedicated CPU, RAM and SSD storage</li>
-                            <li class="mb-2 flex"><i class="ri-checkbox-circle-line text-primary text-[20px] me-2"></i> Scale resources up or down on demand, no downtime, no rebuild</li>
+                            <li class="mb-2 flex"><i class="ri-checkbox-circle-line text-primary text-[20px] me-2"></i> Scale resources up or down on demand, with minimal downtime and no rebuild</li>
                             <li class="mb-2 flex"><i class="ri-checkbox-circle-line text-primary text-[20px] me-2"></i> Built-in security: firewalls, DDoS protection and SSL</li>
                             <li class="mb-2 flex"><i class="ri-checkbox-circle-line text-primary text-[20px] me-2"></i> Automatic daily or weekly backups of server data</li>
-                            <li class="mb-2 flex"><i class="ri-checkbox-circle-line text-primary text-[20px] me-2"></i> High availability with server mirroring to avoid downtime</li>
+                            <li class="mb-2 flex"><i class="ri-checkbox-circle-line text-primary text-[20px] me-2"></i> High-availability setup with server mirroring to reduce downtime risk</li>
                             <li class="mb-2 flex"><i class="ri-checkbox-circle-line text-primary text-[20px] me-2"></i> Fully managed setup, updates, patching and monitoring by our team</li>
                         </ul>
                     </div>
@@ -231,7 +231,7 @@
                         <span class="text-4xl font-bold text-primary/20 me-4">01</span>
                         <div>
                             <h5 class="text-lg font-medium mb-1 flex items-center gap-2"><i class="ri-shield-check-line text-primary"></i> Stay Online</h5>
-                            <p class="text-slate-400">Data moves to another server if one fails.</p>
+                            <p class="text-slate-400">If one server fails, workloads are designed to shift to another, minimising disruption.</p>
                         </div>
                     </div>
                     <div class="flex p-6 rounded-xl bg-white dark:bg-slate-900 shadow-sm dark:shadow-gray-800" data-aos="fade-up" data-aos-delay="100">
@@ -455,6 +455,39 @@
             if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches && window.AOS) {
                 AOS.init({ once: true, duration: 500, easing: 'ease-out-cubic', offset: 60 });
             }
+        </script>
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+                {
+                    "@type": "Question",
+                    "name": "What's the difference between normal web hosting and cloud hosting?",
+                    "acceptedAnswer": { "@type": "Answer", "text": "Regular hosting runs a website on one physical server. Cloud hosting spreads it across several connected servers, delivering better uptime, speed and flexibility." }
+                },
+                {
+                    "@type": "Question",
+                    "name": "What does managed cloud hosting mean?",
+                    "acceptedAnswer": { "@type": "Answer", "text": "It means Kanvtech manages the technical side: server setup, security updates, backups and monitoring, removing the need for a dedicated IT team in-house." }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Is my business data safe on a cloud server?",
+                    "acceptedAnswer": { "@type": "Answer", "text": "Yes. Kanvtech sets up encryption, firewalls, regular updates and secure access controls to keep business data protected." }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Can I increase resources during a busy season?",
+                    "acceptedAnswer": { "@type": "Answer", "text": "Absolutely. RAM, CPU and storage can be increased on demand to manage a rush, then scaled back down afterwards to save cost." }
+                },
+                {
+                    "@type": "Question",
+                    "name": "How is cloud hosting charged?",
+                    "acceptedAnswer": { "@type": "Answer", "text": "It's usually a pay-as-you-go model, billed monthly for the resources actually used, with no large upfront hardware cost." }
+                }
+            ]
+        }
         </script>
     </body>
 </html>
