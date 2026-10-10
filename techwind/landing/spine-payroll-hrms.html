@@ -675,25 +675,27 @@
                         <div class="p-6 rounded-md shadow-sm dark:shadow-gray-800 bg-white dark:bg-slate-900">
                             <h5 class="text-lg font-medium mb-1">Still Have Questions?</h5>
                             <p class="text-slate-400 text-sm mb-6">Send us your details and we will get in touch.</p>
-                            <form>
+                            <form method="POST" action="https://forminit.com/f/o2pcd8ucz9c" class="kv-ajax-form" data-kv-form-name="Spine Payroll &amp; HRMS Page - Still Have Questions" data-kv-success-message="Thank you for reaching out. Our team will contact you shortly.">
+                                <input type="hidden" name="_subject" value="New enquiry from Kanvtech website - Spine Payroll &amp; HRMS page">
+                                <div data-kv-message style="display:none;" class="mb-4"></div>
                                 <div class="grid grid-cols-1 gap-4">
                                     <div>
                                         <label class="form-label">Name</label>
-                                        <input type="text" class="form-input mt-2 rounded w-full py-2 px-3 h-10 bg-gray-50 dark:bg-slate-800 border border-gray-200 dark:border-gray-700 focus:shadow-none focus:ring-0 outline-none" placeholder="Your name" name="name">
+                                        <input type="text" class="form-input mt-2 rounded w-full py-2 px-3 h-10 bg-gray-50 dark:bg-slate-800 border border-gray-200 dark:border-gray-700 focus:shadow-none focus:ring-0 outline-none" placeholder="Your name" name="fi-sender-fullName" required>
                                     </div>
                                     <div>
                                         <label class="form-label">Email</label>
-                                        <input type="email" class="form-input mt-2 rounded w-full py-2 px-3 h-10 bg-gray-50 dark:bg-slate-800 border border-gray-200 dark:border-gray-700 focus:shadow-none focus:ring-0 outline-none" placeholder="Your email" name="email">
+                                        <input type="email" class="form-input mt-2 rounded w-full py-2 px-3 h-10 bg-gray-50 dark:bg-slate-800 border border-gray-200 dark:border-gray-700 focus:shadow-none focus:ring-0 outline-none" placeholder="Your email" name="fi-sender-email" required>
                                     </div>
                                     <div>
                                         <label class="form-label">Phone</label>
-                                        <input type="tel" class="form-input mt-2 rounded w-full py-2 px-3 h-10 bg-gray-50 dark:bg-slate-800 border border-gray-200 dark:border-gray-700 focus:shadow-none focus:ring-0 outline-none" placeholder="Your phone" name="phone">
+                                        <input type="tel" autocomplete="tel" class="form-input mt-2 rounded w-full py-2 px-3 h-10 bg-gray-50 dark:bg-slate-800 border border-gray-200 dark:border-gray-700 focus:shadow-none focus:ring-0 outline-none" placeholder="Your phone" name="fi-text-phone" required>
                                     </div>
                                     <div>
                                         <label class="form-label">Message</label>
-                                        <textarea class="form-input mt-2 rounded w-full py-2 px-3 h-24 bg-gray-50 dark:bg-slate-800 border border-gray-200 dark:border-gray-700 focus:shadow-none focus:ring-0 outline-none" placeholder="Your message" name="message"></textarea>
+                                        <textarea class="form-input mt-2 rounded w-full py-2 px-3 h-24 bg-gray-50 dark:bg-slate-800 border border-gray-200 dark:border-gray-700 focus:shadow-none focus:ring-0 outline-none" placeholder="Your message" name="fi-text-message"></textarea>
                                     </div>
-                                    <button type="submit" class="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-primary hover:bg-primary-700 border-primary hover:border-primary-700 text-white rounded-md">Submit</button>
+                                    <button type="submit" data-kv-submit class="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-primary hover:bg-primary-700 border-primary hover:border-primary-700 text-white rounded-md">Submit</button>
                                 </div>
                             </form>
                         </div>
@@ -780,7 +782,6 @@
 
                                 <div class="footer-newsletter lg:col-span-8 md:col-span-12">
                                     <h5 class="tracking-[1px] text-gray-100 font-semibold">Subscribe to Newsletter</h5>
-                                    <!-- TODO: replace with the real Forminit (https://forminit.com/) endpoint for this form -->
                                     <form method="POST" action="https://forminit.com/f/o2pcd8ucz9c" class="kv-ajax-form mt-4 flex flex-wrap gap-3" data-kv-form-name="Footer - Newsletter" data-kv-success-message="Thank you for subscribing.">
                                         <input type="hidden" name="_subject" value="New newsletter subscription from Kanvtech website">
                                         <input type="email" name="fi-sender-email" required="" placeholder="Your email address" class="form-input flex-1 min-w-50 py-2 px-3 h-10 rounded bg-slate-800 dark:bg-slate-900 text-slate-200 border border-gray-700 focus:border-primary outline-none focus:ring-0">
@@ -817,6 +818,7 @@
         <script src="assets/js/plugins.init.js"></script>
         <script src="assets/js/app.js"></script>
         <script src="assets/js/mobile-nav.js"></script>
+        <script src="assets/js/kv-forms.js"></script>
         <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
         <script>
             if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches && window.AOS) {

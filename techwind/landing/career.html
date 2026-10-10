@@ -289,81 +289,6 @@
             }
         </style>
 
-        <!-- Start: Job Application Modals -->
-        <div id="modal-job-inside-sales" class="job-modal fixed inset-0 z-[60] hidden items-start justify-center p-4 pt-24 md:pt-32 overflow-y-auto">
-            <div class="job-modal-backdrop absolute inset-0 bg-slate-900/70" onclick="closeJobModal('modal-job-inside-sales')"></div>
-            <div class="relative bg-white dark:bg-slate-900 rounded-xl shadow-lg w-full max-w-md max-h-[90vh] overflow-y-auto p-6 md:p-8">
-                <button type="button" onclick="closeJobModal('modal-job-inside-sales')" class="absolute top-4 inset-e-4 size-9 inline-flex items-center justify-center rounded-full bg-gray-100 dark:bg-slate-800 text-slate-500 hover:text-primary" aria-label="Close">
-                    <i class="ri-close-line text-xl"></i>
-                </button>
-
-                <h5 class="text-lg font-semibold mb-1">Apply: Inside Sales Executive</h5>
-                <p class="text-slate-400 text-sm mb-4">Dahisar (East), Mumbai</p>
-
-                <form action="#" method="post">
-                    <input type="hidden" name="position" value="Inside Sales Executive">
-                    <div class="mb-4">
-                        <label class="font-semibold text-sm">Full Name</label>
-                        <input type="text" name="name" required class="form-input mt-2 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 rounded outline-none border border-gray-200 focus:border-primary dark:border-gray-700 focus:ring-0" placeholder="Your Name">
-                    </div>
-                    <div class="mb-4">
-                        <label class="font-semibold text-sm">Email</label>
-                        <input type="email" name="email" required class="form-input mt-2 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 rounded outline-none border border-gray-200 focus:border-primary dark:border-gray-700 focus:ring-0" placeholder="Email">
-                    </div>
-                    <div class="mb-4">
-                        <label class="font-semibold text-sm">Phone</label>
-                        <input type="tel" name="phone" required class="form-input mt-2 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 rounded outline-none border border-gray-200 focus:border-primary dark:border-gray-700 focus:ring-0" placeholder="Phone">
-                    </div>
-                    <div class="mb-4">
-                        <label class="font-semibold text-sm">Resume</label>
-                        <input type="file" name="resume" required class="form-input mt-2 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 rounded outline-none border border-gray-200 focus:border-primary dark:border-gray-700 focus:ring-0">
-                    </div>
-                    <div class="mb-5">
-                        <label class="font-semibold text-sm">Message (optional)</label>
-                        <textarea name="message" class="form-input mt-2 w-full py-2 px-3 h-24 bg-transparent dark:bg-slate-900 rounded outline-none border border-gray-200 focus:border-primary dark:border-gray-700 focus:ring-0" placeholder="Anything you'd like us to know"></textarea>
-                    </div>
-                    <button type="submit" class="py-2 px-5 w-full inline-flex items-center justify-center font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-primary hover:bg-primary-700 border-primary hover:border-primary-700 text-white rounded-md">Submit Application</button>
-                </form>
-            </div>
-        </div>
-
-        <div id="modal-job-sales-executive" class="job-modal fixed inset-0 z-[60] hidden items-start justify-center p-4 pt-24 md:pt-32 overflow-y-auto">
-            <div class="job-modal-backdrop absolute inset-0 bg-slate-900/70" onclick="closeJobModal('modal-job-sales-executive')"></div>
-            <div class="relative bg-white dark:bg-slate-900 rounded-xl shadow-lg w-full max-w-md max-h-[90vh] overflow-y-auto p-6 md:p-8">
-                <button type="button" onclick="closeJobModal('modal-job-sales-executive')" class="absolute top-4 inset-e-4 size-9 inline-flex items-center justify-center rounded-full bg-gray-100 dark:bg-slate-800 text-slate-500 hover:text-primary" aria-label="Close">
-                    <i class="ri-close-line text-xl"></i>
-                </button>
-
-                <h5 class="text-lg font-semibold mb-1">Apply: Sales Executive</h5>
-                <p class="text-slate-400 text-sm mb-4">Dahisar (East), Mumbai</p>
-
-                <form action="#" method="post">
-                    <input type="hidden" name="position" value="Sales Executive">
-                    <div class="mb-4">
-                        <label class="font-semibold text-sm">Full Name</label>
-                        <input type="text" name="name" required class="form-input mt-2 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 rounded outline-none border border-gray-200 focus:border-primary dark:border-gray-700 focus:ring-0" placeholder="Your Name">
-                    </div>
-                    <div class="mb-4">
-                        <label class="font-semibold text-sm">Email</label>
-                        <input type="email" name="email" required class="form-input mt-2 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 rounded outline-none border border-gray-200 focus:border-primary dark:border-gray-700 focus:ring-0" placeholder="Email">
-                    </div>
-                    <div class="mb-4">
-                        <label class="font-semibold text-sm">Phone</label>
-                        <input type="tel" name="phone" required class="form-input mt-2 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 rounded outline-none border border-gray-200 focus:border-primary dark:border-gray-700 focus:ring-0" placeholder="Phone">
-                    </div>
-                    <div class="mb-4">
-                        <label class="font-semibold text-sm">Resume</label>
-                        <input type="file" name="resume" required class="form-input mt-2 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 rounded outline-none border border-gray-200 focus:border-primary dark:border-gray-700 focus:ring-0">
-                    </div>
-                    <div class="mb-5">
-                        <label class="font-semibold text-sm">Message (optional)</label>
-                        <textarea name="message" class="form-input mt-2 w-full py-2 px-3 h-24 bg-transparent dark:bg-slate-900 rounded outline-none border border-gray-200 focus:border-primary dark:border-gray-700 focus:ring-0" placeholder="Anything you'd like us to know"></textarea>
-                    </div>
-                    <button type="submit" class="py-2 px-5 w-full inline-flex items-center justify-center font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-primary hover:bg-primary-700 border-primary hover:border-primary-700 text-white rounded-md">Submit Application</button>
-                </form>
-            </div>
-        </div>
-        <!-- End: Job Application Modals -->
         </div><!--end site-content-->
 
         <!-- Footer Start -->
@@ -428,7 +353,6 @@
 
                                 <div class="footer-newsletter lg:col-span-8 md:col-span-12">
                                     <h5 class="tracking-[1px] text-gray-100 font-semibold">Subscribe to Newsletter</h5>
-                                    <!-- TODO: replace with the real Forminit (https://forminit.com/) endpoint for this form -->
                                     <form method="POST" action="https://forminit.com/f/o2pcd8ucz9c" class="kv-ajax-form mt-4 flex flex-wrap gap-3" data-kv-form-name="Footer - Newsletter" data-kv-success-message="Thank you for subscribing.">
                                         <input type="hidden" name="_subject" value="New newsletter subscription from Kanvtech website">
                                         <input type="email" name="fi-sender-email" required="" placeholder="Your email address" class="form-input flex-1 min-w-50 py-2 px-3 h-10 rounded bg-slate-800 dark:bg-slate-900 text-slate-200 border border-gray-700 focus:border-primary outline-none focus:ring-0">
@@ -461,6 +385,87 @@
             </div>
         </footer><!--end footer-->
         <!-- Footer End -->
+
+        <!-- Start: Job Application Modals -->
+        <div id="modal-job-inside-sales" class="job-modal fixed inset-0 z-50 hidden items-start justify-center p-4 pt-24 md:pt-32 overflow-y-auto">
+            <div class="job-modal-backdrop absolute inset-0 bg-slate-900/70" onclick="closeJobModal('modal-job-inside-sales')"></div>
+            <div class="relative bg-white dark:bg-slate-900 rounded-xl shadow-lg w-full max-w-md max-h-[90vh] overflow-y-auto p-6 md:p-8">
+                <button type="button" onclick="closeJobModal('modal-job-inside-sales')" class="absolute top-4 inset-e-4 size-9 inline-flex items-center justify-center rounded-full bg-gray-100 dark:bg-slate-800 text-slate-500 hover:text-primary" aria-label="Close">
+                    <i class="ri-close-line text-xl"></i>
+                </button>
+
+                <h5 class="text-lg font-semibold mb-1">Apply: Inside Sales Executive</h5>
+                <p class="text-slate-400 text-sm mb-4">Dahisar (East), Mumbai</p>
+
+                <form method="POST" action="https://forminit.com/f/o2pcd8ucz9c" class="kv-ajax-form" data-kv-form-name="Career - Inside Sales Executive" data-kv-success-message="Thank you. We have received your application and will be in touch if there's a fit.">
+                    <input type="hidden" name="_subject" value="New job application - Inside Sales Executive">
+                    <input type="hidden" name="fi-text-position" value="Inside Sales Executive">
+                    <div data-kv-message style="display:none;" class="mb-4"></div>
+                    <div class="mb-4">
+                        <label class="font-semibold text-sm">Full Name</label>
+                        <input type="text" name="fi-sender-fullName" required class="form-input mt-2 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 rounded outline-none border border-gray-200 focus:border-primary dark:border-gray-700 focus:ring-0" placeholder="Your Name">
+                    </div>
+                    <div class="mb-4">
+                        <label class="font-semibold text-sm">Email</label>
+                        <input type="email" name="fi-sender-email" required class="form-input mt-2 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 rounded outline-none border border-gray-200 focus:border-primary dark:border-gray-700 focus:ring-0" placeholder="Email">
+                    </div>
+                    <div class="mb-4">
+                        <label class="font-semibold text-sm">Phone</label>
+                        <input type="tel" name="fi-text-phone" required autocomplete="tel" class="form-input mt-2 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 rounded outline-none border border-gray-200 focus:border-primary dark:border-gray-700 focus:ring-0" placeholder="Phone">
+                    </div>
+                    <div class="mb-4">
+                        <label class="font-semibold text-sm">Resume</label>
+                        <input type="file" name="fi-file-resume" required class="form-input mt-2 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 rounded outline-none border border-gray-200 focus:border-primary dark:border-gray-700 focus:ring-0">
+                    </div>
+                    <div class="mb-5">
+                        <label class="font-semibold text-sm">Message (optional)</label>
+                        <textarea name="fi-text-message" class="form-input mt-2 w-full py-2 px-3 h-24 bg-transparent dark:bg-slate-900 rounded outline-none border border-gray-200 focus:border-primary dark:border-gray-700 focus:ring-0" placeholder="Anything you'd like us to know"></textarea>
+                    </div>
+                    <button type="submit" data-kv-submit class="py-2 px-5 w-full inline-flex items-center justify-center font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-primary hover:bg-primary-700 border-primary hover:border-primary-700 text-white rounded-md">Submit Application</button>
+                </form>
+            </div>
+        </div>
+
+        <div id="modal-job-sales-executive" class="job-modal fixed inset-0 z-50 hidden items-start justify-center p-4 pt-24 md:pt-32 overflow-y-auto">
+            <div class="job-modal-backdrop absolute inset-0 bg-slate-900/70" onclick="closeJobModal('modal-job-sales-executive')"></div>
+            <div class="relative bg-white dark:bg-slate-900 rounded-xl shadow-lg w-full max-w-md max-h-[90vh] overflow-y-auto p-6 md:p-8">
+                <button type="button" onclick="closeJobModal('modal-job-sales-executive')" class="absolute top-4 inset-e-4 size-9 inline-flex items-center justify-center rounded-full bg-gray-100 dark:bg-slate-800 text-slate-500 hover:text-primary" aria-label="Close">
+                    <i class="ri-close-line text-xl"></i>
+                </button>
+
+                <h5 class="text-lg font-semibold mb-1">Apply: Sales Executive</h5>
+                <p class="text-slate-400 text-sm mb-4">Dahisar (East), Mumbai</p>
+
+                <form method="POST" action="https://forminit.com/f/o2pcd8ucz9c" class="kv-ajax-form" data-kv-form-name="Career - Sales Executive" data-kv-success-message="Thank you. We have received your application and will be in touch if there's a fit.">
+                    <input type="hidden" name="_subject" value="New job application - Sales Executive">
+                    <input type="hidden" name="fi-text-position" value="Sales Executive">
+                    <div data-kv-message style="display:none;" class="mb-4"></div>
+                    <div class="mb-4">
+                        <label class="font-semibold text-sm">Full Name</label>
+                        <input type="text" name="fi-sender-fullName" required class="form-input mt-2 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 rounded outline-none border border-gray-200 focus:border-primary dark:border-gray-700 focus:ring-0" placeholder="Your Name">
+                    </div>
+                    <div class="mb-4">
+                        <label class="font-semibold text-sm">Email</label>
+                        <input type="email" name="fi-sender-email" required class="form-input mt-2 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 rounded outline-none border border-gray-200 focus:border-primary dark:border-gray-700 focus:ring-0" placeholder="Email">
+                    </div>
+                    <div class="mb-4">
+                        <label class="font-semibold text-sm">Phone</label>
+                        <input type="tel" name="fi-text-phone" required autocomplete="tel" class="form-input mt-2 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 rounded outline-none border border-gray-200 focus:border-primary dark:border-gray-700 focus:ring-0" placeholder="Phone">
+                    </div>
+                    <div class="mb-4">
+                        <label class="font-semibold text-sm">Resume</label>
+                        <input type="file" name="fi-file-resume" required class="form-input mt-2 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 rounded outline-none border border-gray-200 focus:border-primary dark:border-gray-700 focus:ring-0">
+                    </div>
+                    <div class="mb-5">
+                        <label class="font-semibold text-sm">Message (optional)</label>
+                        <textarea name="fi-text-message" class="form-input mt-2 w-full py-2 px-3 h-24 bg-transparent dark:bg-slate-900 rounded outline-none border border-gray-200 focus:border-primary dark:border-gray-700 focus:ring-0" placeholder="Anything you'd like us to know"></textarea>
+                    </div>
+                    <button type="submit" data-kv-submit class="py-2 px-5 w-full inline-flex items-center justify-center font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-primary hover:bg-primary-700 border-primary hover:border-primary-700 text-white rounded-md">Submit Application</button>
+                </form>
+            </div>
+        </div>
+        <!-- End: Job Application Modals -->
+
         <!-- JAVASCRIPTS -->
         <script src="assets/libs/tobii/js/tobii.min.js"></script>
         <script src="assets/js/plugins.init.js"></script>
@@ -472,6 +477,8 @@
                 AOS.init({ once: true, duration: 500, easing: 'ease-out-cubic', offset: 60 });
             }
         </script>
+
+        <script src="assets/js/kv-forms.js"></script>
 
         <!-- Job application modal open/close -->
         <script>

@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /assets/client-correction/
+Disallow: /assets/Content/
+
+Sitemap: https://www.kanvtech.com/sitemap.xml

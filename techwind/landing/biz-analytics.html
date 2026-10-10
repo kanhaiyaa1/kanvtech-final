@@ -497,7 +497,6 @@
 
                                 <div class="footer-newsletter lg:col-span-8 md:col-span-12">
                                     <h5 class="tracking-[1px] text-gray-100 font-semibold">Subscribe to Newsletter</h5>
-                                    <!-- TODO: replace with the real Forminit (https://forminit.com/) endpoint for this form -->
                                     <form method="POST" action="https://forminit.com/f/o2pcd8ucz9c" class="kv-ajax-form mt-4 flex flex-wrap gap-3" data-kv-form-name="Footer - Newsletter" data-kv-success-message="Thank you for subscribing.">
                                         <input type="hidden" name="_subject" value="New newsletter subscription from Kanvtech website">
                                         <input type="email" name="fi-sender-email" required="" placeholder="Your email address" class="form-input flex-1 min-w-50 py-2 px-3 h-10 rounded bg-slate-800 dark:bg-slate-900 text-slate-200 border border-gray-700 focus:border-primary outline-none focus:ring-0">
@@ -539,6 +538,7 @@
         <script src="assets/js/plugins.init.js"></script>
         <script src="assets/js/app.js"></script>
         <script src="assets/js/mobile-nav.js"></script>
+        <script src="assets/js/kv-forms.js"></script>
         <!-- JAVASCRIPTS -->
 
         <!-- Get a Quick Quotation modal -->
@@ -549,24 +549,26 @@
                 <h4 id="quoteModalTitle" class="text-xl font-semibold mb-1">Get a Quick Quotation</h4>
                 <p class="text-slate-400 text-sm mb-6">Share a few details and we will get back to you with pricing.</p>
 
-                <form id="quoteForm">
+                <form id="quoteForm" method="POST" action="https://forminit.com/f/o2pcd8ucz9c" class="kv-ajax-form" data-kv-form-name="Biz Analyst - Quick Quotation" data-kv-success-target="#quoteSuccess">
+                    <input type="hidden" name="_subject" value="New quick quotation request - Biz Analyst">
+                    <div data-kv-message style="display:none;" class="mb-4"></div>
                     <div class="quote-field">
                         <label for="quoteName">Name <span class="text-red-600">*</span></label>
-                        <input type="text" id="quoteName" name="name" required>
+                        <input type="text" id="quoteName" name="fi-sender-fullName" required>
                     </div>
                     <div class="quote-field">
                         <label for="quoteEmail">Email <span class="text-red-600">*</span></label>
-                        <input type="email" id="quoteEmail" name="email" required>
+                        <input type="email" id="quoteEmail" name="fi-sender-email" required>
                     </div>
                     <div class="quote-field">
                         <label for="quoteMobile">Mobile <span class="text-red-600">*</span></label>
-                        <input type="tel" id="quoteMobile" name="mobile" required>
+                        <input type="tel" id="quoteMobile" name="fi-text-phone" autocomplete="tel" required>
                     </div>
                     <div class="quote-field">
                         <label for="quoteMessage">Message</label>
-                        <textarea id="quoteMessage" name="message" rows="3"></textarea>
+                        <textarea id="quoteMessage" name="fi-text-message" rows="3"></textarea>
                     </div>
-                    <button type="submit" class="py-2 px-5 w-full inline-flex items-center justify-center gap-2 font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-primary hover:bg-primary-700 border-primary hover:border-primary-700 text-white rounded-md">Submit</button>
+                    <button type="submit" data-kv-submit class="py-2 px-5 w-full inline-flex items-center justify-center gap-2 font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-primary hover:bg-primary-700 border-primary hover:border-primary-700 text-white rounded-md">Submit</button>
                 </form>
 
                 <div id="quoteSuccess" class="quote-success" hidden>
@@ -664,17 +666,10 @@
                 document.addEventListener('keydown', function (e) {
                     if (e.key === 'Escape' && modal.classList.contains('is-open')) close();
                 });
-
-                if (form) {
-                    form.addEventListener('submit', function (e) {
-                        e.preventDefault();
-                        form.hidden = true;
-                        if (success) {
-                            success.hidden = false;
-                            success.classList.add('is-visible');
-                        }
-                    });
-                }
+                // Real submission and success/error handling is wired up
+                // by kv-forms.js (data-kv-success-target="#quoteSuccess"
+                // on the form reveals the #quoteSuccess div below, same
+                // as before, but only once the submission actually succeeds).
             })();
         </script>
     </body>

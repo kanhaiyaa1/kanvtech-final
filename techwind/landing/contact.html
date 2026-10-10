@@ -264,16 +264,16 @@
                         <div class="bg-white dark:bg-slate-900 rounded-md shadow-sm dark:shadow-gray-800 p-6">
                             <h3 class="mb-6 text-2xl leading-normal font-medium">Send Us a Message</h3>
 
-                            <form method="post" name="myForm" id="myForm" onsubmit="return validateForm()">
-                                <p class="mb-0" id="error-msg"></p>
-                                <div id="simple-msg"></div>
+                            <form method="POST" action="https://forminit.com/f/o2pcd8ucz9c" class="kv-ajax-form" data-kv-form-name="Contact Page - Enquiry Form" data-kv-success-message="Thank you for reaching out. Our team will contact you shortly.">
+                                <input type="hidden" name="_subject" value="New enquiry from Kanvtech website - Contact page">
+                                <div data-kv-message style="display:none;" class="mb-4"></div>
                                 <div class="grid lg:grid-cols-12 lg:gap-6">
                                     <div class="lg:col-span-6 mb-5">
                                         <div class="text-start">
                                             <label for="name" class="font-semibold">Full Name:</label>
                                             <div class="form-icon relative mt-2">
                                                 <i class="ri-user-line absolute top-2 inset-s-3"></i>
-                                                <input name="name" id="name" type="text" required class="form-input ps-10 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-primary dark:border-gray-800 dark:focus:border-primary focus:ring-0" placeholder="Your Name :">
+                                                <input name="fi-sender-fullName" id="name" type="text" required class="form-input ps-10 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-primary dark:border-gray-800 dark:focus:border-primary focus:ring-0" placeholder="Your Name :">
                                             </div>
                                         </div>
                                     </div>
@@ -283,7 +283,7 @@
                                             <label for="company" class="font-semibold">Company Name:</label>
                                             <div class="form-icon relative mt-2">
                                                 <i class="ri-building-line absolute top-2 inset-s-3"></i>
-                                                <input name="company" id="company" type="text" class="form-input ps-10 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-primary dark:border-gray-800 dark:focus:border-primary focus:ring-0" placeholder="Company Name :">
+                                                <input name="fi-sender-company" id="company" type="text" class="form-input ps-10 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-primary dark:border-gray-800 dark:focus:border-primary focus:ring-0" placeholder="Company Name :">
                                             </div>
                                         </div>
                                     </div>
@@ -295,7 +295,7 @@
                                             <label for="email" class="font-semibold">Your Email:</label>
                                             <div class="form-icon relative mt-2">
                                                 <i class="ri-mail-line absolute top-2 inset-s-3"></i>
-                                                <input name="email" id="email" type="email" required class="form-input ps-10 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-primary dark:border-gray-800 dark:focus:border-primary focus:ring-0" placeholder="Email :">
+                                                <input name="fi-sender-email" id="email" type="email" required class="form-input ps-10 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-primary dark:border-gray-800 dark:focus:border-primary focus:ring-0" placeholder="Email :">
                                             </div>
                                         </div>
                                     </div>
@@ -305,7 +305,7 @@
                                             <label for="phone" class="font-semibold">Your Phone:</label>
                                             <div class="form-icon relative mt-2">
                                                 <i class="ri-phone-line absolute top-2 inset-s-3"></i>
-                                                <input name="phone" id="phone" type="tel" required class="form-input ps-10 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-primary dark:border-gray-800 dark:focus:border-primary focus:ring-0" placeholder="Phone :">
+                                                <input name="fi-text-phone" id="phone" type="tel" required autocomplete="tel" class="form-input ps-10 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-primary dark:border-gray-800 dark:focus:border-primary focus:ring-0" placeholder="Phone :">
                                             </div>
                                         </div>
                                     </div>
@@ -317,7 +317,7 @@
                                             <label for="enquiry_for" class="font-semibold">Enquiry For:</label>
                                             <div class="form-icon relative mt-2">
                                                 <i class="ri-list-check-2 absolute top-2 inset-s-3"></i>
-                                                <select name="enquiry_for" id="enquiry_for" required class="form-input ps-10 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-primary dark:border-gray-800 dark:focus:border-primary focus:ring-0">
+                                                <select name="fi-select-enquiryFor" id="enquiry_for" required class="form-input ps-10 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-primary dark:border-gray-800 dark:focus:border-primary focus:ring-0">
                                                     <option value="" selected disabled>Select an option</option>
                                                     <option value="Spine Payroll">Spine Payroll</option>
                                                     <option value="Spine HRMS">Spine HRMS</option>
@@ -346,7 +346,7 @@
                                             <label for="comments" class="font-semibold">Your Message:</label>
                                             <div class="form-icon relative mt-2">
                                                 <i class="ri-chat-1-line absolute top-2 inset-s-3"></i>
-                                                <textarea name="comments" id="comments" required class="form-input ps-10 w-full py-2 px-3 h-28 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-primary dark:border-gray-800 dark:focus:border-primary focus:ring-0" placeholder="Write your message"></textarea>
+                                                <textarea name="fi-text-comments" id="comments" required class="form-input ps-10 w-full py-2 px-3 h-28 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-primary dark:border-gray-800 dark:focus:border-primary focus:ring-0" placeholder="Write your message"></textarea>
                                             </div>
                                         </div>
                                     </div>
@@ -354,7 +354,7 @@
 
                                 <p class="text-slate-400 text-xs mb-4">By submitting, you agree to our <a href="page-privacy.html" class="text-primary hover:underline">Privacy Policy</a>. Your details are safe with us and used only to respond to your enquiry.</p>
 
-                                <button type="submit" id="submit" name="send" class="py-2 px-5 font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-primary hover:bg-primary-700 border-primary hover:border-primary-700 text-white rounded-md justify-center flex items-center">Send Message</button>
+                                <button type="submit" data-kv-submit class="py-2 px-5 font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-primary hover:bg-primary-700 border-primary hover:border-primary-700 text-white rounded-md justify-center flex items-center">Send Message</button>
                             </form>
                         </div>
                     </div>
@@ -475,7 +475,6 @@
 
                                 <div class="footer-newsletter lg:col-span-8 md:col-span-12">
                                     <h5 class="tracking-[1px] text-gray-100 font-semibold">Subscribe to Newsletter</h5>
-                                    <!-- TODO: replace with the real Forminit (https://forminit.com/) endpoint for this form -->
                                     <form method="POST" action="https://forminit.com/f/o2pcd8ucz9c" class="kv-ajax-form mt-4 flex flex-wrap gap-3" data-kv-form-name="Footer - Newsletter" data-kv-success-message="Thank you for subscribing.">
                                         <input type="hidden" name="_subject" value="New newsletter subscription from Kanvtech website">
                                         <input type="email" name="fi-sender-email" required="" placeholder="Your email address" class="form-input flex-1 min-w-50 py-2 px-3 h-10 rounded bg-slate-800 dark:bg-slate-900 text-slate-200 border border-gray-700 focus:border-primary outline-none focus:ring-0">
@@ -513,6 +512,7 @@
         <script src="assets/js/plugins.init.js"></script>
         <script src="assets/js/app.js"></script>
         <script src="assets/js/mobile-nav.js"></script>
+        <script src="assets/js/kv-forms.js"></script>
         <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
         <script>
             if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches && window.AOS) {

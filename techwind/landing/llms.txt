@@ -1,0 +1,35 @@
+# Kanvtech Solutions
+
+> Kanvtech Solutions Private Limited is an IT solutions company based in Mumbai, India, providing Spine Payroll and HR Suite as an authorised Spine partner, Tally software setup and support, cloud servers, custom software and app development, business analytics, and biometric attendance systems for businesses across industries.
+
+Kanvtech is an authorised Spine partner for Spine's Payroll, HR Suite, and Asset Management products. Kanvtech is not an authorised Tally partner; Tally-related work is provided, set up, customized, and supported by Kanvtech, not sold under an official Tally partnership. Tally, TallyPrime, and Spine are trademarks of their respective owners.
+
+## Solutions
+
+- [Spine Payroll & HRMS](https://www.kanvtech.com/spine-payroll-hrms.html): Payroll processing and HR management software from Spine, implemented and supported by Kanvtech as an authorised partner.
+- [Spine Asset Management](https://www.kanvtech.com/spine-asset.html): Asset tracking and management software from Spine.
+- [Tally Solutions](https://www.kanvtech.com/tally-solutions.html): Tally Prime setup, customization, support, and Tally on Cloud.
+- [App Development](https://www.kanvtech.com/app-development.html): Custom mobile and web application development.
+- [Custom Software Solutions](https://www.kanvtech.com/customize-solutions.html): Software built around a business's existing processes and workflows.
+- [Cloud Server Solutions](https://www.kanvtech.com/cloud-server.html): Cloud hosting and server management services.
+- [Biometric Attendance](https://www.kanvtech.com/biometrics.html): Biometric devices and attendance tracking systems.
+- [Business Analytics](https://www.kanvtech.com/biz-analytics.html): Reporting and data analytics tools for business operations.
+
+## Company
+
+- [About Us](https://www.kanvtech.com/about.html): Company background, experience, and the industries Kanvtech serves.
+- [Solutions & Services](https://www.kanvtech.com/solutions-services.html): Full overview of Kanvtech's offerings grouped by category.
+- [Careers](https://www.kanvtech.com/career.html): Current job openings at Kanvtech.
+- [Contact](https://www.kanvtech.com/contact.html): Enquiry form, phone, email, and office address.
+
+## Contact
+
+- Email: connect@kanvtech.com
+- Phone: +91 70459 98877
+- Address: B-810, 8th Floor, Northern Supremus, Bharucha Road, Off S.V. Road, Dahisar (East), Mumbai - 400068
+
+## Optional
+
+- [Privacy Policy](https://www.kanvtech.com/page-privacy.html)
+- [Terms of Service](https://www.kanvtech.com/page-terms.html)
+- [Disclaimer](https://www.kanvtech.com/disclaimer.html)
