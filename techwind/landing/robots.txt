@@ -3,4 +3,4 @@ Allow: /
 Disallow: /assets/client-correction/
 Disallow: /assets/Content/
 
-Sitemap: https://www.kanvtech.com/sitemap.xml
+Sitemap: https://kanvtech.com/sitemap.xml

@@ -6,21 +6,21 @@ Kanvtech is an authorised Spine partner for Spine's Payroll, HR Suite, and Asset
 
 ## Solutions
 
-- [Spine Payroll & HRMS](https://www.kanvtech.com/spine-payroll-hrms.html): Payroll processing and HR management software from Spine, implemented and supported by Kanvtech as an authorised partner.
-- [Spine Asset Management](https://www.kanvtech.com/spine-asset.html): Asset tracking and management software from Spine.
-- [Tally Solutions](https://www.kanvtech.com/tally-solutions.html): Tally Prime setup, customization, support, and Tally on Cloud.
-- [App Development](https://www.kanvtech.com/app-development.html): Custom mobile and web application development.
-- [Custom Software Solutions](https://www.kanvtech.com/customize-solutions.html): Software built around a business's existing processes and workflows.
-- [Cloud Server Solutions](https://www.kanvtech.com/cloud-server.html): Cloud hosting and server management services.
-- [Biometric Attendance](https://www.kanvtech.com/biometrics.html): Biometric devices and attendance tracking systems.
-- [Business Analytics](https://www.kanvtech.com/biz-analytics.html): Reporting and data analytics tools for business operations.
+- [Spine Payroll & HRMS](https://kanvtech.com/spine-payroll-hrms.html): Payroll processing and HR management software from Spine, implemented and supported by Kanvtech as an authorised partner.
+- [Spine Asset Management](https://kanvtech.com/spine-asset.html): Asset tracking and management software from Spine.
+- [Tally Solutions](https://kanvtech.com/tally-solutions.html): Tally Prime setup, customization, support, and Tally on Cloud.
+- [App Development](https://kanvtech.com/app-development.html): Custom mobile and web application development.
+- [Custom Software Solutions](https://kanvtech.com/customize-solutions.html): Software built around a business's existing processes and workflows.
+- [Cloud Server Solutions](https://kanvtech.com/cloud-server.html): Cloud hosting and server management services.
+- [Biometric Attendance](https://kanvtech.com/biometrics.html): Biometric devices and attendance tracking systems.
+- [Business Analytics](https://kanvtech.com/biz-analytics.html): Reporting and data analytics tools for business operations.
 
 ## Company
 
-- [About Us](https://www.kanvtech.com/about.html): Company background, experience, and the industries Kanvtech serves.
-- [Solutions & Services](https://www.kanvtech.com/solutions-services.html): Full overview of Kanvtech's offerings grouped by category.
-- [Careers](https://www.kanvtech.com/career.html): Current job openings at Kanvtech.
-- [Contact](https://www.kanvtech.com/contact.html): Enquiry form, phone, email, and office address.
+- [About Us](https://kanvtech.com/about.html): Company background, experience, and the industries Kanvtech serves.
+- [Solutions & Services](https://kanvtech.com/solutions-services.html): Full overview of Kanvtech's offerings grouped by category.
+- [Careers](https://kanvtech.com/career.html): Current job openings at Kanvtech.
+- [Contact](https://kanvtech.com/contact.html): Enquiry form, phone, email, and office address.
 
 ## Contact
 
@@ -30,6 +30,6 @@ Kanvtech is an authorised Spine partner for Spine's Payroll, HR Suite, and Asset
 
 ## Optional
 
-- [Privacy Policy](https://www.kanvtech.com/page-privacy.html)
-- [Terms of Service](https://www.kanvtech.com/page-terms.html)
-- [Disclaimer](https://www.kanvtech.com/disclaimer.html)
+- [Privacy Policy](https://kanvtech.com/page-privacy.html)
+- [Terms of Service](https://kanvtech.com/page-terms.html)
+- [Disclaimer](https://kanvtech.com/disclaimer.html)
