@@ -468,6 +468,19 @@ a.border-primary.bg-transparent:hover, a.border-primary.text-primary:hover {
     background: var(--color-slate-900);
 }
 
+/* ============================================================
+   MISSING UTILITY PATCH — tailwind.min.css is a precompiled,
+   non-rebuildable bundle (no build step in this project). These
+   object-fit utilities are used across several pages (logo strips,
+   hero images) but were never generated into that bundle, so the
+   classes silently did nothing and images rendered stretched
+   (object-fit defaults to "fill"). Patched here instead of hunting
+   down every usage, the same way other missing-utility cases
+   elsewhere on the site have been handled.
+   ============================================================ */
+.object-contain { object-fit: contain; }
+.object-cover { object-fit: cover; }
+
 footer.site-footer-fixed {
     position: fixed;
     left: 0;

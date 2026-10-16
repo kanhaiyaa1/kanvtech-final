@@ -6,17 +6,27 @@
         <title>Terms & Conditions | Kanvtech Solutions</title>
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta name="description" content="Terms and conditions for using the Kanvtech Solutions Private Limited website and engaging our products and services.">
+        <link rel="canonical" href="https://www.kanvtech.com/page-terms.html">
+        <meta property="og:type" content="website">
+        <meta property="og:site_name" content="Kanvtech Solutions">
+        <meta property="og:title" content="Terms & Conditions | Kanvtech Solutions">
+        <meta property="og:description" content="Terms and conditions for using the Kanvtech Solutions Private Limited website and engaging our products and services.">
+        <meta property="og:url" content="https://www.kanvtech.com/page-terms.html">
+        <!-- TODO: swap for a dedicated 1200x630 social share image once the client provides one; using the logo as a placeholder -->
+        <meta property="og:image" content="https://www.kanvtech.com/assets/images/logo-light.webp">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Terms & Conditions | Kanvtech Solutions">
+        <meta name="twitter:description" content="Terms and conditions for using the Kanvtech Solutions Private Limited website and engaging our products and services.">
+        <meta name="twitter:image" content="https://www.kanvtech.com/assets/images/logo-light.webp">
         <meta name="author" content="Kanvtech Solutions Private Limited">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
         <link rel="shortcut icon" href="assets/images/favicon.ico">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/fonts.css">
         <link href="assets/libs/remixicon/fonts/remixicon.css" rel="stylesheet" type="text/css" />
         <link rel="stylesheet" href="assets/css/tailwind.min.css">
         <link rel="stylesheet" href="assets/css/custom-theme.css">
-        <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+        <link rel="stylesheet" href="assets/libs/aos/aos.css">
     </head>
 
     <body class="font-nunito text-base text-slate-900 dark:text-white dark:bg-slate-900">
@@ -27,10 +37,10 @@
             <div class="container relative">
                 <a class="logo" href="index.html">
                     <span class="inline-block dark:hidden">
-                        <img src="assets/images/logo-dark.png" class="l-dark" height="24" alt="">
-                        <img src="assets/images/logo-light.png" class="l-light" height="24" alt="">
+                        <img src="assets/images/logo-dark.webp" class="l-dark" width="256" height="77" alt="Kanvtech Solutions">
+                        <img src="assets/images/logo-light.webp" class="l-light" width="256" height="82" alt="Kanvtech Solutions">
                     </span>
-                    <img src="assets/images/logo-light.png" height="24" class="hidden dark:inline-block" alt="">
+                    <img src="assets/images/logo-light.webp" width="256" height="82" class="hidden dark:inline-block" alt="Kanvtech Solutions">
                 </a>
                 <div class="menu-extras">
                     <div class="menu-item">
@@ -164,7 +174,7 @@
                             <div class="grid md:grid-cols-12 grid-cols-1 gap-7.5">
                                 <div class="lg:col-span-4 md:col-span-12">
                                     <a class="text-[22px] focus:outline-none" href="index.html">
-                                        <img src="assets/images/logo-light.png" alt="">
+                                        <img src="assets/images/logo-light.webp" width="256" height="82" alt="Kanvtech Solutions" loading="lazy">
                                     </a>
                                     <p class="mt-6 text-gray-300">Kanvtech brings HRMS, Spine Payroll, Cloud Services and custom software together for growing businesses.</p>
                                     <ul class="list-none footer-list mt-6">
@@ -253,11 +263,20 @@
         <script src="assets/js/app.js"></script>
         <script src="assets/js/mobile-nav.js"></script>
         <script src="assets/js/kv-forms.js"></script>
-        <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+        <script src="assets/libs/aos/aos.js"></script>
         <script>
             if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches && window.AOS) {
                 AOS.init({ once: true, duration: 500, easing: 'ease-out-cubic', offset: 60 });
             }
+        </script>
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "name": "Terms & Conditions | Kanvtech Solutions",
+            "description": "Terms and conditions for using the Kanvtech Solutions Private Limited website and engaging our products and services.",
+            "url": "https://www.kanvtech.com/page-terms.html"
+        }
         </script>
     </body>
 </html>
